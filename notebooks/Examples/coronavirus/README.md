@@ -60,7 +60,7 @@ The following is the number of *DEATHS PER DAY* from the links above.
 
 The result is shown here.
 <p align="center">
-	<img src="figures/death_by_other.jpg" width=500>
+	<img src="figures/death_by_other.png" width=500>
 </p>
 
 So why did we go through all of this trouble?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to MERS and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
