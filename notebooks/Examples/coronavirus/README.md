@@ -3,15 +3,15 @@
 	<img src="figures/covid-19.jpg" width=500>
 </p>
 
-At the time of the writing of this notebook (March 9, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the DOW-Jones Industrial Average dropped from 29,000 to 24,000 points, sending business and retirement accounts tumbling.
+At the time of the writing of this notebook (updated March 13, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
 
 So, is this really a pandemic, or just hype?  According to the Centers for Disease Control and Prevention (CDC), this is no different than the [common flu](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
 
-If you are reading this notebook, you reaize that you are more than a lay-person.  You have powerful tools at your fingertips, and you likely have data to analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker, an individual.
+If you are reading this notebook, you reaize that you are more than a lay-person.  You have powerful tools at your fingertips (Python and Machine Learning), and you likely have access to data so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker, an individual.
 
 Team DSBC had the same notion!
 
-So we collected data from the CDC and [World Health Organization](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/) (WHO) websites.  But we didn't stop there.  We are critical thinkers too.  We also colected data for:
+So we collected data from the CDC and [World Health Organization](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/) (WHO) websites.  But we didn't stop there.  We are critical thinkers too.  We also collected data for:
 - [Coronavirus international incidence dates](https://www.washington.edu/news/2020/02/07/interactive-map-shows-worldwide-spread-of-coronavirus/)
 - [2009 H1N1 Swine Flu](https://academic.oup.com/cid/article/52/suppl_1/S75/499147#97947460), [here](https://www.cdc.gov/flu/spotlights/pandemic-global-estimates.htm), [here](http://www.cidrap.umn.edu/news-perspective/2011/08/study-puts-global-2009-h1n1-infection-rate-11-21), [here](https://www.cdc.gov/flu/pandemic-resources/2009-pandemic-timeline.html), [and here](https://en.wikipedia.org/wiki/2009_flu_pandemic_timeline#March_2009)
 - [Ebola](https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/case-counts.html)
@@ -58,9 +58,9 @@ The following is the number of *DEATHS PER DAY* from the links above.
 - Natural disasters= 26
 - COVID-19 = 1
 
-The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the overall block represents the total of all deaths categorized above.  The size of each block represents the number of deaths in that category.  
+The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the *overall block* represents the *total* of all deaths categorized above.  The size of *each block* represents the number of deaths in that *category*.  
 
-*Notice that COVID-19 (Coronavirus) is smaller than 1 pixel!*  You decide what is more impactful.
+*Notice that COVID-19 (Coronavirus) is smaller than 1 pixel!*
 <p align="center">
 	<img src="figures/death_by_other.png" width=800>
 </p>
@@ -70,8 +70,8 @@ Here is another plot showing the top causes of *death per YEAR*.
 	<img src="figures/annual_disease_deaths.png" width=800>
 </p>
 
-So why did we go through all of this trouble?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to MERS and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
+So why did we go through all of this trouble?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
 
-This notebook imports this data, and provides several plots with some analysis.  Use your judgement and make your own decision.
+This Jupyter notebook imports this data, and provides several plots with some analysis.  Use your judgement and make your own decision.
 
 We will continue to update this notebook over the next several weeks, so stay tuned!
