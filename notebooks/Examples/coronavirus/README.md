@@ -84,7 +84,9 @@ If we look at the China data for the *number of cases*, this does appear to look
 <p align="center">
 	<img src="figures/china_cases.png" width=800>
 </p>
-
+<p align="center">
+	<img src="figures/non_china_cases.png" width=800>
+</p>
 
 So why did we go through all of this trouble, and where are we on the Sigmoid function?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
 
