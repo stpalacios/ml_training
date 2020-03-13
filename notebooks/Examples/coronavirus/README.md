@@ -80,6 +80,12 @@ This model can be expressed mathematically as f(x) = 1/(1+exp(-x)).  To track th
 
 This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.
 
+If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
+<p align="center">
+	<img src="figures/china_cases.png" width=400>
+</p>
+
+
 So why did we go through all of this trouble, and where are we on the Sigmoid function?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
 
 This Jupyter notebook imports this data, and provides several plots with some analysis.  Use your judgement and make your own decision.
