@@ -3,7 +3,7 @@
 	<img src="figures/covid-19.jpg" width=500>
 </p>
 
-At the time of the writing of this notebook (March 10, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the DOW-Jones Industrial Average dropped from 29,000 to 24,000 points, sending business and retirement accounts tumbling.
+At the time of the writing of this notebook (March 9, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the DOW-Jones Industrial Average dropped from 29,000 to 24,000 points, sending business and retirement accounts tumbling.
 
 So, is this really a pandemic, or just hype?  According to the Centers for Disease Control and Prevention (CDC), this is no different than the [common flu](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
 
@@ -14,9 +14,9 @@ Team DSBC had the same notion!
 So we collected data from the CDC and [World Health Organization](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/) (WHO) websites.  But we didn't stop there.  We are critical thinkers too.  We also colected data for:
 - [Coronavirus international incidence dates](https://www.washington.edu/news/2020/02/07/interactive-map-shows-worldwide-spread-of-coronavirus/)
 -[2009 H1N1 Swine Flu](https://academic.oup.com/cid/article/52/suppl_1/S75/499147#97947460), [here](https://www.cdc.gov/flu/spotlights/pandemic-global-estimates.htm), [here](http://www.cidrap.umn.edu/news-perspective/2011/08/study-puts-global-2009-h1n1-infection-rate-11-21), [here](https://www.cdc.gov/flu/pandemic-resources/2009-pandemic-timeline.html), [and here](https://en.wikipedia.org/wiki/2009_flu_pandemic_timeline#March_2009)
-- [Ebola data](https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/case-counts.html)
-- [SARS data](https://www.who.int/csr/sars/country/en/)
-- [MERS data](https://hazards.colorado.edu/quick-response-report/dynamics-of-interorganizational-risk-management-networks-during-the-2015-mers-response-in-south-korea)
+- [Ebola](https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/case-counts.html)
+- [SARS](https://www.who.int/csr/sars/country/en/)
+- [MERS](https://hazards.colorado.edu/quick-response-report/dynamics-of-interorganizational-risk-management-networks-during-the-2015-mers-response-in-south-korea)
 - [1918 Spanish Flu](https://www.cdc.gov/flu/pandemic-resources/1918-commemoration/pandemic-timeline-1918.htm) [and here](https://wwwnc.cdc.gov/eid/article/12/1/05-0979_article)
 
 
