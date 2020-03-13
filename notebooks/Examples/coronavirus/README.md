@@ -58,7 +58,9 @@ The following is the number of *DEATHS PER DAY* from the links above.
 - Natural disasters= 26
 - COVID-19 = 1
 
-The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the overall block represents the total of all deaths categorized above.  The size of each block represents the number of deaths in that category.  *Notice that COVID-19 is smaller than 1 pixel!*  You decide what is more impactful.
+The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the overall block represents the total of all deaths categorized above.  The size of each block represents the number of deaths in that category.  
+
+*Notice that COVID-19 (Coronavirus) is smaller than 1 pixel!*  You decide what is more impactful.
 <p align="center">
 	<img src="figures/death_by_other.png" width=800>
 </p>
