@@ -7,7 +7,7 @@ At the time of the writing of this notebook (updated March 13, 2020), the world 
 
 So, is this really a pandemic, or just hype?  According to the Centers for Disease Control and Prevention (CDC), this is no different than the [common flu](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
 
-If you are reading this notebook, you reaize that you are more than a lay-person.  You have powerful tools at your fingertips (Python and Machine Learning), and you likely have access to data so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker, an individual.
+If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips (Python and Machine Learning), and you likely have access to data so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker, an individual.
 
 Team DSBC had the same notion!
 
@@ -69,6 +69,14 @@ Here is another plot showing the top causes of *death per YEAR*.
 <p align="center">
 	<img src="figures/annual_disease_deaths.png" width=800>
 </p>
+
+The [CDC estimates](https://www.cdc.gov/coronavirus/2019-ncov/index.html) that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu realted deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is [329,227,746 people](https://www.census.gov), the percent of the population that will likely die of COVID-19 is 0.16% ((520,000/329,227,746)*100=0.16).
+
+According to the CDC, epidemics like the Coronavirus initially follow an exponential growth model, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:
+<p align="center">
+	<img src="figures/sigmoid.png" width=400>
+</p>
+This model can be expressed mathematically as $f(x) = \frac{1}{1+\exp(-x)}.$  To track the epidemic in real-time, the CDC does not track the total number of deaths, rather they track the rate of change, i.e. the first derivative of the sigmoid $f(x) \times (1 - f(x))$.  This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.
 
 So why did we go through all of this trouble?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
 
