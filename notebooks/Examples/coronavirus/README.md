@@ -38,25 +38,25 @@ Just for completeness, we also collected data on:
 - [Homicide](https://ourworldindata.org/homicides)
 
 The following is the number of *DEATHS PER DAY* from the links above.
-- Car accidents = 3,287
-- Suicides= 3,000
 - Cancer = 26,302
 - Heart Disease = 24,658
-- Common Flu = 143 (USA only)
-- Stroke = 384 (USA only)
-- Drowning = 877
-- Bed strangulation = 28 (USA only)
-- SIDS = 7
-- Domestic Violence = 137
+- Diabetes = 3,753
+- Car accidents = 3,287
+- Suicides= 3,000
+- HIV AIDS = 2,615
 - Alzheimer = 1,918
 - Malaria = 1,200
 - Homicide = 1,111
+- Drowning = 877
 - Alcohol_disorder = 507
-- HIV AIDS = 2,615
-- Diabetes = 3,753
 - Fire = 331
+- Stroke = 384 (USA only)
+- Common Flu = 143 (USA only)
+- Domestic Violence = 137
+- Bed strangulation = 28 (USA only)
 - Natural disasters= 26
-- COVID-19 = 1
+- SIDS = 7
+- COVID-19 = 1 (USA only)
 
 The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the *overall block* represents the *total* of all deaths categorized above.  The size of *each block* represents the number of deaths in that *category*.  
 
