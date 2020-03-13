@@ -37,6 +37,27 @@ Just for completeness, we also collected data on:
 - [Malaria](https://www.childfund.org/infographic/malaria/)
 - [Homicide](https://ourworldindata.org/homicides)
 
+The following is the number of *deaths per day* from the links above.
+- Car accidents = 3,287
+- Suicides= 3,000
+- Cancer = 26,302
+- Heart Disease = 24,658
+- Common Flu = 143 (USA only)
+- Stroke = 384 (USA only)
+- Drowning = 877
+- Bed strangulation = 28 (USA only)
+- SIDS = 7
+- Domestic Violence = 137
+- Alzheimer = 1,918
+- Malaria = 1,200
+- Homicide = 1,111
+- Alcohol_disorder = 507
+- HIV AIDS = 2,615
+- Diabetes = 3,753
+- Fire = 331
+- Natural disasters= 26
+- COVID-19 = 1
+
 So why did we go through all of this trouble?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to MERS and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
 
 This notebook imports this data, and provides several plots with some analysis.  Use your judgement and make your own decision.
