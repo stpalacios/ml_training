@@ -37,7 +37,7 @@ Just for completeness, we also collected data on:
 - [Malaria](https://www.childfund.org/infographic/malaria/)
 - [Homicide](https://ourworldindata.org/homicides)
 
-The following is the number of *deaths per day* from the links above.
+The following is the number of *DEATHS PER DAY* from the links above.
 - Car accidents = 3,287
 - Suicides= 3,000
 - Cancer = 26,302
