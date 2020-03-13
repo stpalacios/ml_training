@@ -82,7 +82,7 @@ This means that they track the slope of the Sigmoid.  When the rate of change de
 
 If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
 <p align="center">
-	<img src="figures/china_cases.png" width=400>
+	<img src="figures/china_cases.png" width=800>
 </p>
 
 
