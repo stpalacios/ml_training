@@ -76,7 +76,15 @@ According to the CDC, epidemics like the Coronavirus initially follow an exponen
 <p align="center">
 	<img src="figures/sigmoid.png" width=400>
 </p>
-This model can be expressed mathematically as $$f(x) = \frac{1}{1+\exp(-x)}$$.  To track the epidemic in real-time, the CDC does not track the total number of deaths, rather they track the rate of change, i.e. the first derivative of the sigmoid $$f(x) \times (1 - f(x))$$.  This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.
+This model can be expressed mathematically as 
+
+$$f(x) = \frac{1}{1+\exp(-x)}$$.
+
+To track the epidemic in real-time, the CDC does not track the total number of deaths, rather they track the rate of change, i.e. the first derivative of the sigmoid 
+
+$$f(x) \times (1 - f(x))$$.  
+
+This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.
 
 So why did we go through all of this trouble?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
 
