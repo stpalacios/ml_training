@@ -58,9 +58,14 @@ The following is the number of *DEATHS PER DAY* from the links above.
 - Natural disasters= 26
 - COVID-19 = 1
 
-The result is shown here.  The size of the overall block represents the total of all deaths categorized above.  The size of each block represents the number of deaths in that category.  You decide what is more impactful.
+The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the overall block represents the total of all deaths categorized above.  The size of each block represents the number of deaths in that category.  *Notice that COVID-19 is smaller than 1 pixel!*  You decide what is more impactful.
 <p align="center">
 	<img src="figures/death_by_other.png" width=800>
+</p>
+
+Here is another plot showing the top causes of *death per YEAR*.
+<p align="center">
+	<img src="figures/annual_disease_deaths.png" width=800>
 </p>
 
 So why did we go through all of this trouble?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to MERS and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
