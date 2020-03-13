@@ -80,6 +80,8 @@ This model can be expressed mathematically as f(x) = 1/(1+exp(-x)).  To track th
 
 **This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.**
 
+If you are still having trouble with this Sigmoid concept, [watch this great YouTube video](https://youtu.be/Kas0tIxDvrg).
+
 If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
 <p align="center">
 	<img src="figures/china_cases.png" width=800>
