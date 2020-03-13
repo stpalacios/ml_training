@@ -72,13 +72,13 @@ Here is another plot showing the top causes of *death per YEAR*.
 
 The [CDC estimates](https://www.cdc.gov/coronavirus/2019-ncov/index.html) that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu realted deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is [329,227,746 people](https://www.census.gov), the percent of the population that will likely die of COVID-19 is 0.16% ((520,000/329,227,746)*100=0.16).
 
-According to the CDC, epidemics like the Coronavirus initially follow an exponential growth model, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:
+**According to the CDC, epidemics like the Coronavirus initially follow an exponential growth model, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:**
 <p align="center">
 	<img src="figures/sigmoid.png" width=400>
 </p>
 This model can be expressed mathematically as f(x) = 1/(1+exp(-x)).  To track the epidemic in real-time, the CDC does not track the total number of deaths, rather they track the rate of change, i.e. the first derivative of the sigmoid  f'(x) = f(x) * (1 - f(x)).  
 
-This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.
+**This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.**
 
 If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
 <p align="center">
