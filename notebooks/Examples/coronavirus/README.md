@@ -5,7 +5,7 @@
 
 At the time of the writing of this notebook (updated March 18, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
 
-So, is this really a pandemic, or just hype?  According to the Centers for Disease Control and Prevention (CDC), this is no different than the [common flu](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
+So, is this really a pandemic, or just hype?  According to the Centers for Disease Control and Prevention (CDC), this is no different than the [common flu (with some caveats)](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips (Python and Machine Learning), and you likely have access to data so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker, an individual.
 
@@ -93,13 +93,13 @@ If we look at the China data for the *number of cases*, this does appear to look
 	<img src="figures/mortality_and_recovery_rate.png" width=800>
 </p>
 
-So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.
+So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.  Colors (yellow to purple) indicate the number of confirmed cases.  Clearly COVID-19 is much more wide-spread.  Note that this might have some relation to the increased global ability to test, track and confirm viruses in 2020 compared to 2003.
 </p>
 <p align="center">
 	<img src="figures/covid19_ebola_sars.png" width=800>
 </p>
 
-So why did we go through all of this trouble, and where are we on the Sigmoid function?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are not likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidlines of social distancing and personal health precautions.
+So why did we go through all of this trouble, and where are we on the Sigmoid function?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidlines of social distancing and personal health precautions.
 
 [This Jupyter notebook](https://github.com/dsbc2020/ml_training/blob/master/notebooks/Examples/coronavirus/coronavirus-fact-or-hype.ipynb) imports the CDC and WHO raw data (linked above), and provides several plots with some initial analysis.  Use your judgement and make your own decision.
 
