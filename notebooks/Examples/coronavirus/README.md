@@ -9,7 +9,7 @@ Lets first note that both fact and hype exist in discussions regarding COVID-19.
 At the time of the writing of this notebook (updated March 18, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
 
 ## Data Collection
-So, is this really a pandemic, or just hype?  According to the CDC, this is no different than the [common flu (with some caveats)](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
+So, is this really a pandemic, or just hype?  According to the CDC, this is no different than the [common flu](https://www.cdc.gov/coronavirus/2019-ncov/index.html) (with some caveats).
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips (Python and Machine Learning), and you likely have access to data so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
 
