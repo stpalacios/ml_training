@@ -3,15 +3,17 @@
 	<img src="figures/covid-19.jpg" width=500>
 </p>
 
+Lets first note that both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the [Centers for Disease Control and Prevention](https://www.cdc.gov/coronavirus/2019-ncov/index.html) (CDC) and [World Health Organization](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/) (WHO).  As Data Scientists, our job is to look at data to make informed data-driven decisions.
+
 At the time of the writing of this notebook (updated March 18, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
 
-So, is this really a pandemic, or just hype?  According to the Centers for Disease Control and Prevention (CDC), this is no different than the [common flu (with some caveats)](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
+So, is this really a pandemic, or just hype?  According to the CDC, this is no different than the [common flu (with some caveats)](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips (Python and Machine Learning), and you likely have access to data so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker, an individual.
 
 Team DSBC had the same notion!
 
-So we collected data from the CDC and [World Health Organization](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/) (WHO) websites.  But we didn't stop there.  We are critical thinkers too.  We also collected data for:
+So we collected data from the CDC and [WHO](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)websites.  But we didn't stop there.  We are critical thinkers too.  We also collected data for:
 - [Coronavirus international incidence dates](https://www.washington.edu/news/2020/02/07/interactive-map-shows-worldwide-spread-of-coronavirus/)
 - [2009 H1N1 Swine Flu](https://academic.oup.com/cid/article/52/suppl_1/S75/499147#97947460), [here](https://www.cdc.gov/flu/spotlights/pandemic-global-estimates.htm), [here](http://www.cidrap.umn.edu/news-perspective/2011/08/study-puts-global-2009-h1n1-infection-rate-11-21), [here](https://www.cdc.gov/flu/pandemic-resources/2009-pandemic-timeline.html), [and here](https://en.wikipedia.org/wiki/2009_flu_pandemic_timeline#March_2009)
 - [Ebola](https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/case-counts.html)
