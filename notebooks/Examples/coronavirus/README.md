@@ -3,7 +3,7 @@
 	<img src="figures/covid-19.jpg" width=500>
 </p>
 
-At the time of the writing of this notebook (updated March 13, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
+At the time of the writing of this notebook (updated March 18, 2020), the world has decended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
 
 So, is this really a pandemic, or just hype?  According to the Centers for Disease Control and Prevention (CDC), this is no different than the [common flu](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
 
@@ -89,8 +89,17 @@ If we look at the China data for the *number of cases*, this does appear to look
 <p align="center">
 	<img src="figures/non_china_cases.png" width=800>
 </p>
+<p align="center">
+	<img src="figures/mortality_and_recovery_rate.png" width=800>
+</p>
 
-So why did we go through all of this trouble, and where are we on the Sigmoid function?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are more likely to die of a car accident, than you are of COVID-19.
+So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.
+</p>
+<p align="center">
+	<img src="figures/covid19_ebola_sars.png" width=800>
+</p>
+
+So why did we go through all of this trouble, and where are we on the Sigmoid function?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you are not likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidlines of social distancing and personal health precautions.
 
 [This Jupyter notebook](https://github.com/dsbc2020/ml_training/blob/master/notebooks/Examples/coronavirus/coronavirus-fact-or-hype.ipynb) imports the CDC and WHO raw data (linked above), and provides several plots with some initial analysis.  Use your judgement and make your own decision.
 
