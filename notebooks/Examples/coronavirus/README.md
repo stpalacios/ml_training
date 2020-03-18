@@ -86,7 +86,7 @@ This model can be expressed mathematically as f(x) = 1/(1+exp(-x)).  To track th
 
 **This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.**
 
-If you are still having trouble with this Sigmoid concept, [watch this great YouTube video](https://youtu.be/Kas0tIxDvrg).
+If you are still having trouble with this Sigmoid concept, watch this great [YouTube video](https://youtu.be/Kas0tIxDvrg).
 
 If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
 <p align="center">
@@ -114,6 +114,7 @@ So why did we go through all of this trouble, and where are we on the Sigmoid cu
 We will continue to update this notebook over the next several weeks, so stay tuned!
 
 ## Great videos to watch
+ - ["Exponential growth and epidemics"](https://youtu.be/Kas0tIxDvrg)
  - ["How To See Germs Spread - Coronavirus"](https://youtu.be/I5-dI74zxPg)
  - ["We heard the bells: The influenze of 1918"](https://youtu.be/XkGi9FKZzDI)
  - ["1918 Spanish Flu historical documentary | Swine Flu Pandemic | Deadly plague of 1918"](https://youtu.be/UDY5COg2P2c)
