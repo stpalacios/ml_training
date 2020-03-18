@@ -9,11 +9,11 @@ At the time of the writing of this notebook (updated March 18, 2020), the world 
 
 So, is this really a pandemic, or just hype?  According to the CDC, this is no different than the [common flu (with some caveats)](https://www.cdc.gov/coronavirus/2019-ncov/index.html).
 
-If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips (Python and Machine Learning), and you likely have access to data so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker, an individual.
+If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips (Python and Machine Learning), and you likely have access to data so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
 
 Team DSBC had the same notion!
 
-So we collected data from the CDC and [WHO](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)websites.  But we didn't stop there.  We are critical thinkers too.  We also collected data for:
+So we collected data from the CDC and WHO websites.  But we didn't stop there.  We are critical thinkers too.  We also collected data for:
 - [Coronavirus international incidence dates](https://www.washington.edu/news/2020/02/07/interactive-map-shows-worldwide-spread-of-coronavirus/)
 - [2009 H1N1 Swine Flu](https://academic.oup.com/cid/article/52/suppl_1/S75/499147#97947460), [here](https://www.cdc.gov/flu/spotlights/pandemic-global-estimates.htm), [here](http://www.cidrap.umn.edu/news-perspective/2011/08/study-puts-global-2009-h1n1-infection-rate-11-21), [here](https://www.cdc.gov/flu/pandemic-resources/2009-pandemic-timeline.html), [and here](https://en.wikipedia.org/wiki/2009_flu_pandemic_timeline#March_2009)
 - [Ebola](https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/case-counts.html)
@@ -80,7 +80,9 @@ The [CDC estimates](https://www.cdc.gov/coronavirus/2019-ncov/index.html) that C
 </p>
 This model can be expressed mathematically as f(x) = 1/(1+exp(-x)).  To track the epidemic in real-time, the CDC does not track the total number of deaths, rather they track the rate of change, i.e. the first derivative of the sigmoid  f'(x) = f(x) * (1 - f(x)).  
 
+
 **This means that they track the slope of the Sigmoid.  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.**
+
 
 If you are still having trouble with this Sigmoid concept, [watch this great YouTube video](https://youtu.be/Kas0tIxDvrg).
 
@@ -101,7 +103,7 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 	<img src="figures/covid19_ebola_sars.png" width=800>
 </p>
 
-So why did we go through all of this trouble, and where are we on the Sigmoid function?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/index.html), you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidlines of social distancing and personal health precautions.
+So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html), you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the [CDC guidlines](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html) of social distancing and personal health precautions.
 
 [This Jupyter notebook](https://github.com/dsbc2020/ml_training/blob/master/notebooks/Examples/coronavirus/coronavirus-fact-or-hype.ipynb) imports the CDC and WHO raw data (linked above), and provides several plots with some initial analysis.  Use your judgement and make your own decision.
 
