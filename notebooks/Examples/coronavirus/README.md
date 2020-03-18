@@ -78,7 +78,7 @@ Here is another plot showing the top causes of *death per YEAR*.
 
 The [CDC estimates](https://www.cdc.gov/coronavirus/2019-ncov/index.html) that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu realted deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is [329,227,746 people](https://www.census.gov), the percent of the population that will likely die of COVID-19 is 0.16% ((520,000/329,227,746)*100=0.16).
 
-**According to the CDC**, epidemics like the Coronavirus initially follow an exponential growth model, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:
+**According to the CDC, epidemics like the Coronavirus initially follow an exponential growth model**, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:
 <p align="center">
 	<img src="figures/sigmoid.png" width=400>
 </p>
