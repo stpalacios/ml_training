@@ -113,7 +113,7 @@ During times of crisis, the stock market tends to be volatile.  Many people pani
  - NASDAQ: [here](https://www.macrotrends.net/1320/nasdaq-historical-chart), [and here](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices)
  - S&P 500: [here](https://www.macrotrends.net/2324/sp-500-historical-chart-data), [and here](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)
  
-The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  In all cases the market recovered, so be mindful when you panic and consider liquidating your retirement accounts and investments.
+The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so be mindful when you panic and consider liquidating your retirement accounts and investments.
 <p align="center">
 	<img src="figures/stock_recovery.png" width=800>
 </p>
