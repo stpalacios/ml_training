@@ -25,7 +25,7 @@ So we collected data from the CDC and WHO websites.  But we didn't stop there.  
 
 
 Just for completeness, we also collected data on:
-- Stock Prices: [DJIA](https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices), [NASDAQ](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices), [S&P 500](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices), 
+- Stock Prices: [DJIA](https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices), [NASDAQ](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices), [S&P 500](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)
 - [Car crashes](https://www.asirt.org/safe-travel/road-safety-facts/)
 - [Suicides](https://www.medicalnewstoday.com/articles/234219.php#1)
 - [Cancer](https://www.who.int/news-room/fact-sheets/detail/cancer)
@@ -44,7 +44,7 @@ Just for completeness, we also collected data on:
 
 
 ## Initial Results
-The following is the number of *DEATHS PER DAY* from the links above.
+The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 - Cancer = 26,302
 - Heart Disease = 24,658
 - Diabetes = 3,753
@@ -63,7 +63,7 @@ The following is the number of *DEATHS PER DAY* from the links above.
 - Bed strangulation = 28 (USA only)
 - Natural disasters= 26
 - SIDS = 7
-- COVID-19 = 1 (USA only)
+- COVID-19 = 3 (USA only)
 
 The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the *overall block* represents the *total* of all deaths categorized above.  The size of *each block* represents the number of deaths in that *category*.  
 
@@ -108,12 +108,12 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 
 
 ## Stock Market Analysis
-During times of crisis, the stock market tends to be volatile.  Many people panic and consider liquidating their 401k, and other retirement accounts. As Data Scientists we have data to evaluate.  We pulled data from the following:
+During times of crisis, the stock market tends to be volatile.  Many people panic and consider liquidating their 401k and other retirement accounts. As Data Scientists we have data to evaluate.  We pulled data from the following:
  - [Dow Jones Industrial Average](https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart), [also here](https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices)
  - [NASDAQ](https://www.macrotrends.net/1320/nasdaq-historical-chart), [also here](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices)
- - [S&P 500](https://www.macrotrends.net/2324/sp-500-historical-chart-data), [also here] (https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)
+ - [S&P 500](https://www.macrotrends.net/2324/sp-500-historical-chart-data), [also here](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)
  
-The following figure provides the daily closing for DJIA, S&P 500, and NASDAQ.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  In all cases the market recovered, so be mindful when you panic and consider liquidating your retirement accounts and investments.
+The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  In all cases the market recovered, so be mindful when you panic and consider liquidating your retirement accounts and investments.
 <p align="center">
 	<img src="figures/stock_recovery.png" width=800>
 </p>
