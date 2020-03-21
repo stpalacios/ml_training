@@ -6,7 +6,7 @@
 ## Introduction
 Lets first note that both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the [Centers for Disease Control and Prevention](https://www.cdc.gov/coronavirus/2019-ncov/index.html) (CDC) and [World Health Organization](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/) (WHO).  As Data Scientists, our job is to look at data to make informed data-driven decisions.
 
-At the time of the writing of this notebook (updated March 18, 2020), the world has descended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
+At the time of the writing of this notebook (updated March 21, 2020), the world has descended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
 
 ## Data Collection
 So, is this really a pandemic, or just hype?  According to the CDC, this is no different than the [common flu](https://www.cdc.gov/coronavirus/2019-ncov/index.html) (with some caveats).
@@ -75,6 +75,11 @@ The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the *overa
 Here is another plot showing the top causes of *death per YEAR*.
 <p align="center">
 	<img src="figures/annual_disease_deaths.png" width=800>
+</p>
+
+Compare this to the COVID-19 data.
+<p align="center">
+	<img src="figures/covid_19_block_chart.png" width=800>
 </p>
 
 The [CDC estimates](https://www.cdc.gov/coronavirus/2019-ncov/index.html) that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is [329,227,746 people](https://www.census.gov), the percent of the population that will likely die of COVID-19 is 0.16% ((520,000/329,227,746)*100=0.16).
