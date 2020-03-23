@@ -105,7 +105,7 @@ If we look at the China data for the *number of cases*, this does appear to look
 
 
 
-# Comparison to other pandemics
+# Comparison to Other Pandemics
 So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.  Colors (yellow to purple) indicate the number of confirmed cases.  Clearly COVID-19 is much more wide-spread.  Note that this might have some relation to the increased global ability to test, track and confirm viruses in 2020 compared to 2003.
 
 ## Block Chart
