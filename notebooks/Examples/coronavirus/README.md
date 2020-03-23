@@ -109,6 +109,11 @@ If we look at the China data for the *number of cases*, this does appear to look
 So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.  Colors (yellow to purple) indicate the number of confirmed cases.  Clearly COVID-19 is much more wide-spread.  Note that this might have some relation to the increased global ability to test, track and confirm viruses in 2020 compared to 2003.
 
 ## Block Chart
+The size of the *overall block* represents the *total of all countries*.  The size of *each block* represents the number of cases/recovered/deaths in that *country*.
+<p align="center">
+	<img src="figures/covid_19_block_chart.png" width=800>
+</p>
+
 </p>
 <p align="center">
 	<img src="figures/covid19_ebola_sars.png" width=800>
@@ -150,7 +155,7 @@ The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 - SIDS = 7
 - COVID-19 = 5 (USA only)
 
-The result of *WORLD-WIDE DEATHS PER DAY* is shown here.  The size of the *overall block* represents the *total* of all deaths categorized above.  The size of *each block* represents the number of deaths in that *category*.  
+The result of *WORLD-WIDE DEATHS PER DAY* is shown here.    
 
 *Notice that COVID-19 (Coronavirus) is smaller than 1 pixel!*
 <p align="center">
@@ -162,10 +167,6 @@ Here is another plot showing the top causes of *death per YEAR*.
 	<img src="figures/annual_disease_deaths.png" width=800>
 </p>
 
-Compare this to the COVID-19 data.
-<p align="center">
-	<img src="figures/covid_19_block_chart.png" width=800>
-</p>
 
 
 
