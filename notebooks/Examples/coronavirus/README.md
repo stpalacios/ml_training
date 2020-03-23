@@ -12,10 +12,10 @@ At the time of the writing of this notebook (updated March 23, 2020), the world 
 # Initial Comments
 
 ## Corona Virus
-- Coronaviruses are zoonotic viruses (means transmitted between animals and people).
-- Symptoms include from fever, cough, respiratory symptoms, and breathing difficulties.
+- Coronaviruses are zoonotic viruses (transmitted between animals and people).
+- Symptoms include: fever, cough, respiratory symptoms, and breathing difficulties.
 - In severe cases, it can cause pneumonia, severe acute respiratory syndrome (SARS), kidney failure and even death.
-- Coronaviruses are also asymptomatic, means a person can be a carrier for the infection but experiences no symptoms
+- Coronaviruses are also asymptomatic, meaning a person can be a carrier of the infection but experience no symptoms.
 
 ## Novel coronavirus (nCoV)
 - A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.
@@ -23,12 +23,12 @@ At the time of the writing of this notebook (updated March 23, 2020), the world 
 ## COVID-19 (Corona Virus Disease 2019)
 - Caused by a SARS-COV-2 corona virus.
 - First identified in Wuhan, Hubei, China. Earliest reported symptoms reported in November 2019.
-- First cases were linked to contact with the Huanan Seafood Wholesale Market, which sold live animals.
-- On 30 January the WHO declared the outbreak to be a Public Health Emergency of International Concern
+- First cases were linked to contact with the Huanan Seafood Wholesale Market that sold live animals.
+- On January 30, 2020 the WHO declared the outbreak to be a Public Health Emergency of International Concern
 
 
 # Data Collection
-So, is this really a pandemic, or just hype?  [According to the CDC](https://www.cdc.gov/coronavirus/2019-ncov/index.html), this is similar to the common flu (with some caveats).
+So is this really a pandemic, and how does it compare to other pandemics?  [According to the CDC](https://www.cdc.gov/coronavirus/2019-ncov/index.html), this is similar to the common flu (with some caveats).
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips ([Data Science](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-DS), [Python](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Python-in-2-days), and [Machine Learning](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Machine-Learning-in-1-day)), and you likely have access to the [Coronavirus raw data](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/data) so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
 
