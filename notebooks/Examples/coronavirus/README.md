@@ -58,6 +58,7 @@ Team DSBC had the same notion!
 
 So we collected data from the CDC and WHO websites.  But we didn't stop there.  We are critical thinkers too.  We also collected data for:
 - [Coronavirus international incidence dates](https://www.washington.edu/news/2020/02/07/interactive-map-shows-worldwide-spread-of-coronavirus/)
+- JHU Data sources [here](https://github.com/CSSEGISandData/COVID-19), [here](https://github.com/imdevskp/covid_19_jhu_data_web_scrap_and_cleaning)
 - [2009 H1N1 Swine Flu](https://academic.oup.com/cid/article/52/suppl_1/S75/499147#97947460), [here](https://www.cdc.gov/flu/spotlights/pandemic-global-estimates.htm), [here](http://www.cidrap.umn.edu/news-perspective/2011/08/study-puts-global-2009-h1n1-infection-rate-11-21), [here](https://www.cdc.gov/flu/pandemic-resources/2009-pandemic-timeline.html), [and here](https://en.wikipedia.org/wiki/2009_flu_pandemic_timeline#March_2009)
 - [Ebola](https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/case-counts.html)
 - [SARS](https://www.who.int/csr/sars/country/en/)
@@ -82,6 +83,8 @@ Just for completeness, we also collected data on:
 - [Alzheimer's](https://braintest.com/alzheimers-statistics-throughout-the-united-states-and-worldwide/)
 - [Malaria](https://www.childfund.org/infographic/malaria/)
 - [Homicide](https://ourworldindata.org/homicides)
+
+
 
 
 
@@ -212,7 +215,7 @@ Here is another plot showing the top causes of *death per YEAR*.
 # SIR Model <a name="SIR_Model"/>
 Applying the models found in the literature (see SIR References below) we can evaluate the spread of a virus by splitting the population into three categories, *Susceptible*, *Infected*, and *Recovered*.  Then using a partial differential equation (recall your calculus), we can solve the rate of change of each category.
 
-The weights (or constants) are the Transmission Rate (ex: a = 3.2), and Recovery Rate (ex: b = 0.23).
+The weights (or constants) are the Transmission Rate (CDC example: a = 3.2), and Recovery Rate (CDC example: b = 0.23).
 
 The Susceptible Equation, meaning the rate at which the Susceptible population is affected over time:
 
@@ -235,7 +238,7 @@ We can then evaluate the equations with various weights, first consider the case
 	<img src="matlab/SIR_model/covid-19_model_Figure_1.png" width=800>
 </p>
 
-Now consider the case if we hold the Transmission Rate fixed, and vary the Recovery Rate.  If the Recovery Rate is low (b=0.23), the Infected Population is prolonged in time.  Whereas if the Recovery Rate is high (ex: b=0.95), the Infected Population is reduced in time and the Susceptible Population never reaches 100%.  Notice that for b-0.95, the Recovered Population never reaches 1, this is because the Susceptible Population never reaches 0.
+Now consider the case if we hold the Transmission Rate fixed, and vary the Recovery Rate.  If the Recovery Rate is low (ex: b=0.23), the Infected Population is prolonged in time.  Whereas if the Recovery Rate is high (ex: b=0.95), the Infected Population is reduced in time and the Susceptible Population never reaches 100%.  Notice that for b=0.95, the Recovered Population never reaches 1, this is because the Susceptible Population never reaches 0.
 <p align="center">
 	<img src="matlab/SIR_model/covid-19_model_Figure_2.png" width=800>
 </p>
