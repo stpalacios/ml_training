@@ -8,7 +8,7 @@
 
 # Table of Contents
 - [Introduction](#Introduction)
-- [Initial Comments](#Initial_Comments)
+- [Definitions](#Definitions)
 - [Data Collection](#Data_Collection)
 - [COVID-19 Analysis](#COVID-19_Analysis)
 - [Comparison to Other Pandemics](#Comparison_to_Other_Pandemics)
@@ -23,12 +23,12 @@
 # Introduction <a name="Introduction"/>
 Lets first note that both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the [Centers for Disease Control and Prevention](https://www.cdc.gov/coronavirus/2019-ncov/index.html) (CDC) and [World Health Organization](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/) (WHO).  As Data Scientists, our job is to look at data to make informed data-driven decisions.
 
-At the time of the writing of this notebook (updated March 23, 2020), the world has descended into mass panic, fueled by misinformation in the media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
+At the time of the writing of this notebook (updated March 27, 2020), the world has descended into mass panic, fueled by misinformation in media and social media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
 
 
 
 
-# Initial Comments <a name="Initial_Comments"/>
+# Definitions <a name="Definitions"/>
 
 ## Corona Virus
 - Coronaviruses are zoonotic viruses (transmitted between animals and people).
@@ -50,7 +50,7 @@ At the time of the writing of this notebook (updated March 23, 2020), the world 
 
 
 # Data Collection <a name="Data_Collection"/>
-So is this really a pandemic, and how does it compare to other pandemics?  [According to the CDC](https://www.cdc.gov/coronavirus/2019-ncov/index.html), this is similar to the common flu (with some caveats).
+So is this really a pandemic? If so, how does it compare to other pandemics?  [According to the CDC](https://www.cdc.gov/coronavirus/2019-ncov/index.html), this is similar to the common flu (with some caveats).
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips ([Data Science](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-DS), [Python](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Python-in-2-days), and [Machine Learning](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Machine-Learning-in-1-day)), and you likely have access to the [Coronavirus raw data](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/data) so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
 
@@ -89,17 +89,26 @@ Just for completeness, we also collected data on:
 
 # COVID-19 Analysis <a name="COVID-19_Analysis"/>
 ## Background
-The [CDC estimates](https://www.cdc.gov/coronavirus/2019-ncov/index.html) that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is [329,227,746 people](https://www.census.gov), the percent of the population that will likely die of COVID-19 is 0.16% ((520,000/329,227,746)*100=0.16).
+The [CDC estimates](https://www.cdc.gov/coronavirus/2019-ncov/index.html) that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is [329,227,746 people](https://www.census.gov), the percent of the population that will likely die of COVID-19 is 0.16%:
+
+	(520,000/329,227,746) * 100 = 0.16%
 
 **According to the CDC, epidemics like the Coronavirus initially follow an exponential growth model**, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:
 <p align="center">
 	<img src="figures/sigmoid.png" width=400>
 </p>
-This model can be expressed mathematically as f(x) = 1/(1+exp(-x)).  To track the epidemic in real-time, the CDC does not track the total number of deaths, rather they track the rate of change, i.e. the first derivative of the sigmoid  f'(x) = f(x) * (1 - f(x)).  
+This model can be expressed mathematically as
+
+	f(x) = 1/(1+exp(-x)).  
+	
+To track the epidemic in real-time, the CDC does not track the total number of deaths, rather they track the rate of change, i.e. the first derivative of the sigmoid  
+
+	f'(x) = f(x) * (1 - f(x)).  
 
 This means that **the CDC track the slope (or rate of change) of the Sigmoid.**  When the rate of change decreases, the inflection point has passed and the "end is in sight."  Effectively, you could estimate the total number of deaths by doubling the number of deaths prior to the inflection point.
 
 If you are still having trouble with this Sigmoid concept, watch this great [YouTube video](https://youtu.be/Kas0tIxDvrg).
+
 
 ## Cases
 If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
@@ -112,6 +121,7 @@ If we look at the China data for the *number of cases*, this does appear to look
 <p align="center">
 	<img src="figures/mortality_and_recovery_rate.png" width=800>
 </p>
+
 
 ## Maps
 <p align="center">
@@ -133,6 +143,7 @@ If we look at the China data for the *number of cases*, this does appear to look
 # Comparison to Other Pandemics <a name="Comparison_to_Other_Pandemics"/>
 So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.  Colors (yellow to purple) indicate the number of confirmed cases.  Clearly COVID-19 is much more wide-spread.  Note that this might have some relation to the increased global ability to test, track and confirm viruses in 2020 compared to 2003.
 
+
 ## Block Chart
 The size of the *overall block* represents the *total of all countries*.  The size of *each block* represents the number of cases/recovered/deaths in that *country*.
 <p align="center">
@@ -143,6 +154,7 @@ The size of the *overall block* represents the *total of all countries*.  The si
 <p align="center">
 	<img src="figures/covid19_ebola_sars.png" width=800>
 </p>
+
 
 ## Comparison
 <p align="center">
@@ -157,6 +169,7 @@ The size of the *overall block* represents the *total of all countries*.  The si
 <p align="center">
 	<img src="figures/comparison_num_deaths.png" width=800>
 </p>
+
 
 ## Averages
 The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
@@ -177,8 +190,9 @@ The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 - Domestic Violence = 137
 - Bed strangulation = 28 (USA only)
 - Natural disasters= 26
+- COVID-19 = 14 (USA only)
 - SIDS = 7
-- COVID-19 = 5 (USA only)
+
 
 The result of *WORLD-WIDE DEATHS PER DAY* is shown here.    
 
@@ -253,7 +267,7 @@ The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 0
 
 
 # Conclusion <a name="Conclusion"/>
-So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to common flu and others.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html), you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the [CDC guidlines](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html) of social distancing and personal health precautions.
+So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to the common flu, SARS, MERS, etc.  As you will likely find, as we did, if you are [older than 5 and younger than 60](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html), you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the [CDC guidlines](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html) of social distancing and personal health precautions.
 
 [This Jupyter notebook](https://github.com/dsbc2020/ml_training/blob/master/notebooks/Examples/coronavirus/coronavirus-fact-or-hype.ipynb) imports the CDC and WHO raw data (linked above), and provides several plots with some initial analysis.  Use your judgement and make your own decision.
 
