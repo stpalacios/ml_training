@@ -201,16 +201,20 @@ Applying the models found in the literature (see SIR Reference) we can evaluate 
 The weights (or constants) are the Transmission Rate (ex: a = 3.2), and Recovery Rate (ex: b = 0.23).
 
 The Susceptible Equation, meaning the rate at which the Susceptible population is affected over time:
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{ds}{dt} = -a s(t) i(t)"/>
+
+	ds/dt = -a s(t) i(t)
 
 The Recovered Equation, meaning the rate at which the Recovered population is affected over time: 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{dr}{dt} = b i(t)"/>
+
+	dr/dt = b i(t)
 
 The Infected Equation, meaning the rate at which the Infected population is affected over time. First we know that the three partial derivatives must balance each other, meaning the equations depend on each other and together cannot exceed 100% of the population:
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{ds}{dt} + \frac{di}{dt} + \frac{dr}{dt} = 0)"/>
+
+	ds/dt + di/dt + dr/dt = 0
 
 therefore: 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{di}{dt}= a s(t) i(t) - b i(t)"/>
+
+	di/dt = a s(t) i(t) - b i(t)
 
 We can then evaluate the equations with various weights, first consider the case where we hold the Recovery Rate fixed. Notice that if the Transmission Rate is low (a=0.5), the Susceptible population never reaches 0, meaning that the entire population is not affected by the virus, only a portion of it.  Conversly, if the Transmission Rate is high (a=3.2, as expected by the CDC for COVID-19) then the entire population is affected.  The logical solution to reduce Transmission Rate is to reduce the interactions within the population.
 <p align="center">
