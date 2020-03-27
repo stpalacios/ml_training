@@ -196,7 +196,7 @@ Here is another plot showing the top causes of *death per YEAR*.
 
 
 # SIR Model <a name="SIR_Model"/>
-Applying the models found in the literature (see SIR Reference) we can evaluate the model for spread of a virus by splitting the population into three categories, Susceptible, Infected, and Recovered.  Then using a partial differential equation (recall your calculus), we can solve the rate of change of each category.
+Applying the models found in the literature (see SIR References below) we can evaluate the spread of a virus by splitting the population into three categories, *Susceptible*, *Infected*, and *Recovered*.  Then using a partial differential equation (recall your calculus), we can solve the rate of change of each category.
 
 The weights (or constants) are the Transmission Rate (ex: a = 3.2), and Recovery Rate (ex: b = 0.23).
 
@@ -212,16 +212,16 @@ The Infected Equation, meaning the rate at which the Infected population is affe
 
 	ds/dt + di/dt + dr/dt = 0
 
-therefore: 
+therefore,
 
 	di/dt = a s(t) i(t) - b i(t)
 
-We can then evaluate the equations with various weights, first consider the case where we hold the Recovery Rate fixed. Notice that if the Transmission Rate is low (a=0.5), the Susceptible population never reaches 0, meaning that the entire population is not affected by the virus, only a portion of it.  Conversly, if the Transmission Rate is high (a=3.2, as expected by the CDC for COVID-19) then the entire population is affected.  The logical solution to reduce Transmission Rate is to reduce the interactions within the population.
+We can then evaluate the equations with various weights, first consider the case where we hold the Recovery Rate fixed. Notice that if the Transmission Rate is low (a=0.5), the Susceptible population never reaches 0, meaning that the entire population is not affected by the virus, only a portion of it.  Conversely, if the Transmission Rate is high (a=3.2, as expected by the CDC for COVID-19) then the entire population is affected.  The logical solution to reduce Transmission Rate is to reduce the interactions within the population.
 <p align="center">
 	<img src="matlab/SIR_model/covid-19_model_Figure_1.png" width=800>
 </p>
 
-Now consider the case if we hold the Transmission Rate fixed, and vary the Recovery Rate.  If the Recovery Rate is low (b=0.23), the Infected Population is prolonged in time.  Whereas if the Recovery Rate is high (ex: b=0.95), the Infected Population is reduced in time and the Susceptible Population never reaches 100%.  Notice that for b-0.95, the Recoverd Population never reaches 1, this is because the Susceptible Population never reaches 0.
+Now consider the case if we hold the Transmission Rate fixed, and vary the Recovery Rate.  If the Recovery Rate is low (b=0.23), the Infected Population is prolonged in time.  Whereas if the Recovery Rate is high (ex: b=0.95), the Infected Population is reduced in time and the Susceptible Population never reaches 100%.  Notice that for b-0.95, the Recovered Population never reaches 1, this is because the Susceptible Population never reaches 0.
 <p align="center">
 	<img src="matlab/SIR_model/covid-19_model_Figure_2.png" width=800>
 </p>
@@ -230,6 +230,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 - McCluskey, C. Connell. "Complete global stability for an SIR epidemic model with delay—distributed or discrete." Nonlinear Analysis: Real World Applications 11.1 (2010): 55-59.
 - Takeuchi, Yasuhiro, Wanbiao Ma, and Edoardo Beretta. "Global asymptotic properties of a delay SIR epidemic model with finite incubation times." Nonlinear Analysis: Theory, Methods & Applications 42.6 (2000): 931-947.
 - Beretta, Edoardo, and Yasuhiro Takeuchi. "Global stability of an SIR epidemic model with time delays." Journal of mathematical biology 33.3 (1995): 250-260.
+
 
 
 
