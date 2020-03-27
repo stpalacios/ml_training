@@ -7,15 +7,15 @@
 
 
 # Table of Contents
-[Introduction](#Introduction)
-[Initial Comments](#Initial Comments)
-[Data Collection](#Data Collection)
-[COVID-19 Analysis](#COVID-19 Analysis)
-[Comparison to Other Pandemics](#Comparison to Other Pandemics)
-[SIR Model](#SIR Model)
-[Stock Market Analysis](#Stock Market Analysis)
-[Conclusion](#Conclusion)
-[Great videos to watch](#Great videos to watch)
+- [Introduction](#Introduction)
+- [Initial Comments](#Initial_Comments)
+- [Data Collection](#Data_Collection)
+- [COVID-19 Analysis](#COVID-19_Analysis)
+- [Comparison to Other Pandemics](#Comparison_to_Other_Pandemics)
+- [SIR Model](#SIR_Model)
+- [Stock Market Analysis](#Stock_Market_Analysis)
+- [Conclusion](#Conclusion)
+- [Great videos to watch](#Great_videos)
 
 
 
@@ -28,7 +28,7 @@ At the time of the writing of this notebook (updated March 23, 2020), the world 
 
 
 
-# Initial Comments <a name="Initial Comments"/>
+# Initial Comments <a name="Initial_Comments"/>
 
 ## Corona Virus
 - Coronaviruses are zoonotic viruses (transmitted between animals and people).
@@ -49,7 +49,7 @@ At the time of the writing of this notebook (updated March 23, 2020), the world 
 
 
 
-# Data Collection <a name="Data Collection"/>
+# Data Collection <a name="Data_Collection"/>
 So is this really a pandemic, and how does it compare to other pandemics?  [According to the CDC](https://www.cdc.gov/coronavirus/2019-ncov/index.html), this is similar to the common flu (with some caveats).
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips ([Data Science](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-DS), [Python](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Python-in-2-days), and [Machine Learning](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Machine-Learning-in-1-day)), and you likely have access to the [Coronavirus raw data](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/data) so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
@@ -87,7 +87,7 @@ Just for completeness, we also collected data on:
 
 
 
-# COVID-19 Analysis <a name="COVID-19 Analysis"/>
+# COVID-19 Analysis <a name="COVID-19_Analysis"/>
 ## Background
 The [CDC estimates](https://www.cdc.gov/coronavirus/2019-ncov/index.html) that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is [329,227,746 people](https://www.census.gov), the percent of the population that will likely die of COVID-19 is 0.16% ((520,000/329,227,746)*100=0.16).
 
@@ -130,7 +130,7 @@ If we look at the China data for the *number of cases*, this does appear to look
 
 
 
-# Comparison to Other Pandemics <a name="Comparison to Other Pandemics"/>
+# Comparison to Other Pandemics <a name="Comparison_to_Other_Pandemics"/>
 So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.  Colors (yellow to purple) indicate the number of confirmed cases.  Clearly COVID-19 is much more wide-spread.  Note that this might have some relation to the increased global ability to test, track and confirm viruses in 2020 compared to 2003.
 
 ## Block Chart
@@ -195,7 +195,7 @@ Here is another plot showing the top causes of *death per YEAR*.
 
 
 
-# SIR Model <a name="SIR Model"/>
+# SIR Model <a name="SIR_Model"/>
 Applying the models found in the literature (see SIR Reference) we can evaluate the model for spread of a virus by splitting the population into three categories, Susceptible, Infected, and Recovered.  Then using a partial differential equation (recall your calculus), we can solve the rate of change of each category.
 
 The weights (or constants) are the Transmission Rate (ex: a = 3.2), and Recovery Rate (ex: b = 0.23).
@@ -231,7 +231,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 
 
 
-# Stock Market Analysis <a name="Stock Market Analysis"/>
+# Stock Market Analysis <a name="Stock_Market_Analysis"/>
 During times of crisis, the stock market tends to be volatile.  Many people panic and consider liquidating their 401k and other retirement accounts. As Data Scientists we have data to evaluate.  We pulled data from the following:
  - Dow Jones Industrial Average: [here](https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart), [and here](https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices)
  - NASDAQ: [here](https://www.macrotrends.net/1320/nasdaq-historical-chart), [and here](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices)
@@ -256,7 +256,7 @@ We will continue to update this notebook over the next several weeks, so stay tu
 
 
 
-# Great videos to watch <a name="Great videos to watch"/>
+# Great Videos to Watch <a name="Great_videos"/>
  - ["Exponential growth and epidemics"](https://youtu.be/Kas0tIxDvrg)
  - ["How To See Germs Spread - Coronavirus"](https://youtu.be/I5-dI74zxPg)
  - ["We heard the bells: The influenza of 1918"](https://youtu.be/XkGi9FKZzDI)
