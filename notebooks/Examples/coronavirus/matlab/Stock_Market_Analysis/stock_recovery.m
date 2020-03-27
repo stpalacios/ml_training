@@ -15,15 +15,15 @@ xlim([datetime('03/20/0000') datetime('05/01/0020')])
 d1 = datetime('09/10/0001');
 d2 = datetime('11/09/0001');
 between(d1,d2,'Days')
-vline(d1,'r','9/11 Attack')
-vline(d2,'g')
+vline(d1,'m','9/11 Attack')
+vline(d2,'k')
 text(datetime('11/09/0001'),0.5e4,'Recovery = 61 days','Interpreter','latex');
 
 d1 = datetime('10/08/0008');
 d2 = datetime('03/24/0010');
 between(d1,d2,'Days')
-vline(d1,'r','2008 Crash')
-vline(d2,'g')
+vline(d1,'m','2008 Crash')
+vline(d2,'k')
 text(datetime('03/24/0010'),0.5e4,'Recovery = 532 days','Interpreter','latex');
 
 dock_all_figures
