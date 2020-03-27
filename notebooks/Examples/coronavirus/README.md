@@ -149,11 +149,6 @@ The size of the *overall block* represents the *total of all countries*.  The si
 </p>
 
 </p>
-<p align="center">
-	<img src="figures/covid19_ebola_sars.png" width=800>
-</p>
-
-
 
 
 
@@ -163,6 +158,9 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 
 
 ## Comparison
+<p align="center">
+	<img src="figures/covid19_ebola_sars.png" width=800>
+</p>
 <p align="center">
 	<img src="figures/comparison_num_countries.png" width=800>
 </p>
