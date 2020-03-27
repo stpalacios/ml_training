@@ -57,6 +57,7 @@ If you are reading this notebook, you realize that you are more than a lay-perso
 Team DSBC had the same notion!
 
 So we collected data from the CDC and WHO websites.  But we didn't stop there.  We are critical thinkers too.  We also collected data for:
+- [The COVID Tracking Project](https://covidtracking.com/)
 - [Coronavirus international incidence dates](https://www.washington.edu/news/2020/02/07/interactive-map-shows-worldwide-spread-of-coronavirus/)
 - JHU Data sources [here](https://github.com/CSSEGISandData/COVID-19), [here](https://github.com/imdevskp/covid_19_jhu_data_web_scrap_and_cleaning)
 - [2009 H1N1 Swine Flu](https://academic.oup.com/cid/article/52/suppl_1/S75/499147#97947460), [here](https://www.cdc.gov/flu/spotlights/pandemic-global-estimates.htm), [here](http://www.cidrap.umn.edu/news-perspective/2011/08/study-puts-global-2009-h1n1-infection-rate-11-21), [here](https://www.cdc.gov/flu/pandemic-resources/2009-pandemic-timeline.html), [and here](https://en.wikipedia.org/wiki/2009_flu_pandemic_timeline#March_2009)
