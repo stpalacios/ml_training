@@ -267,11 +267,13 @@ The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 0
 
 # Great Videos to Watch <a name="Great_videos"/>
  - ["Exponential growth and epidemics"](https://youtu.be/Kas0tIxDvrg)
+ - ["Understanding R nought | Khan Academy"](https://youtu.be/jKUGZvW99os)
  - ["Estimating actual COVID 19 cases (novel corona virus infections) in an area based on deaths"](https://youtu.be/mCa0JXEwDEk)
- - [How To Tell If We're Beating COVID-19"](https://youtu.be/54XLXg4fYsc)
+ - ["How To Tell If We're Beating COVID-19"](https://youtu.be/54XLXg4fYsc)
  - ["How To See Germs Spread - Coronavirus"](https://youtu.be/I5-dI74zxPg)
  - ["We heard the bells: The influenza of 1918"](https://youtu.be/XkGi9FKZzDI)
  - ["1918 Spanish Flu historical documentary | Swine Flu Pandemic | Deadly plague of 1918"](https://youtu.be/UDY5COg2P2c)
+ 
  
  
 
