@@ -51,7 +51,7 @@ At the time of the writing of this notebook (**updated March 27, 2020**), the wo
 
 
 # Data Collection <a name="Data_Collection"/>
-So is this really a pandemic? If so, how does it compare to other pandemics?  According to the CDC [[3](https://www.cdc.gov/coronavirus/2019-ncov/index.html)], this is similar to the common flu (with some caveats).
+So is COVID-19 really a pandemic? If so, how does it compare to other pandemics?  According to the CDC [[3](https://www.cdc.gov/coronavirus/2019-ncov/index.html)], COVID-19 is "similar" to the common flu (with some caveats).
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips ([Data Science](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-DS), [Python](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Python-in-2-days), and [Machine Learning](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Machine-Learning-in-1-day)), and you likely have access to the [Coronavirus raw data](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/data) so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
 
