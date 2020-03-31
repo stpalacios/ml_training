@@ -277,7 +277,11 @@ The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 0
 
 
 # Conclusion <a name="Conclusion"/>
-So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to the common flu, SARS, MERS, etc.  As you will likely find, as we did, if you are older than 5 and younger than 60 [[44](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html)], you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidelines [[45](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html)] of social distancing and personal health precautions.
+So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to the common flu, SARS, MERS, etc.  As you will likely find, as we did, if you are older than 5 and younger than 60 [[44](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html)], you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidelines [[45](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html)] of social distancing and personal health precautions.  
+
+**If you are concerned that you may have contracted COVID-19**, you can take an **online screening test** created by the CDC and Apple [[46](https://www.apple.com/covid19)].  
+
+You can get the latest information for the USA at [coronavirus.gov](https://www.coronavirus.gov/) [[47](https://www.coronavirus.gov/)].
 
 [This Jupyter notebook](https://github.com/dsbc2020/ml_training/blob/master/notebooks/Examples/coronavirus/coronavirus-fact-or-hype.ipynb) imports the CDC and WHO raw data (linked above), and provides several plots with some initial analysis.  Use your judgement and make your own decision.
 
@@ -332,3 +336,5 @@ We will continue to update this notebook over the next several weeks, so stay tu
 43. https://www.macrotrends.net/2324/sp-500-historical-chart-data
 44. https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html
 45. https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html
+46. https://www.apple.com/covid19
+47. https://www.coronavirus.gov/
