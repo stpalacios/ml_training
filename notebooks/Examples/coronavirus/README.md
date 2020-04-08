@@ -189,18 +189,28 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 
 
 ## Comparison
+Cases
 <p align="center">
-	<img src="figures/covid19_ebola_sars.png" width=800>
+	<img src="figures/covid19_ebola_sars_cases.png" width=800>
 </p>
+
+Deaths
+<p align="center">
+	<img src="figures/covid19_ebola_sars_deaths.png" width=800>
+</p>
+
 <p align="center">
 	<img src="figures/comparison_num_countries.png" width=800>
 </p>
+
 <p align="center">
 	<img src="figures/comparison_mortality_rate.png" width=800>
 </p>
+
 <p align="center">
 	<img src="figures/comparison_num_cases.png" width=800>
 </p>
+
 <p align="center">
 	<img src="figures/comparison_num_deaths.png" width=800>
 </p>
