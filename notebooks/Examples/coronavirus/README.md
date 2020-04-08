@@ -325,6 +325,8 @@ So why did we go through all of this trouble, and where are we on the Sigmoid cu
 
 You can get the latest information for the USA at [coronavirus.gov](https://www.coronavirus.gov/) [[47](https://www.coronavirus.gov/)].
 
+If you are interested in the IHME COVID-19 models can be found at [[48](http://www.healthdata.org/covid)]. And world population data [[49](https://www.populationpyramid.net/)].
+
 [This Jupyter notebook](https://github.com/dsbc2020/ml_training/blob/master/notebooks/Examples/coronavirus/coronavirus-fact-or-hype.ipynb) imports the CDC and WHO raw data (linked above), and provides several plots with some initial analysis.  Use your judgement and make your own decision.
 
 We will continue to update this notebook over the next several weeks, so stay tuned!
@@ -380,3 +382,4 @@ We will continue to update this notebook over the next several weeks, so stay tu
 45. https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html
 46. https://www.apple.com/covid19
 47. https://www.coronavirus.gov/
+48. http://www.healthdata.org/covid
