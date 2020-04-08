@@ -294,7 +294,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 
 # R nought <a name="R_nought"/>
 <p align="center">
-	<img src="figures/world_mask.png" width=800>
+	<img src="figures/world_mask.jpeg" width=800>
 </p>
 
 
@@ -345,7 +345,7 @@ As data science practitioners, you should be empowered to know that the same too
 ## Bayes Theory for COVID-19
 Bayes’ theorem is the most powerful rule of probability theory. It describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
 <p align="center">
-	<img src="figures/bayes.png" width=800>
+	<img src="figures/bayes.png" width=400>
 </p>
 
 Bayes’ theorem lets us begin with a hypothesis and a certain degree of belief in that hypothesis, based on prior knowledge (or domain expertise). Thereafter, we gather data and update our initial beliefs. If the data support the hypothesis then the probability increases, if it does not match, then probability decreases.  In medical testing this is similar to seeing a second opinion from a doctor about the diagnosis of a disease.
@@ -356,7 +356,7 @@ If we write the testing process in terms of probability, then:
 
 **P(test = positive|COVID-19 positive)**: This is the prior probability, P(B|A). This is the sensitivity, i.e. how many true positives (test results) are there among all true positive cases.
 
-**P(COVID-19 positive)**: This is the probability of a randomly selected individual infected by COVID-19. In medical testing, this is called the ‘prevalence rate’. For COVID-19, experts say the general prevalence rate is 0.1%, i.e. 1 out of 1000 people may be infected with the virus. Of course, this number can change based on the country, health system, active social distancing measure, etc. This term appears in the numerator of the Bayes’ rule ( P(A) in the Bayes’ rule).
+**P(COVID-19 positive)**: This is the probability of a randomly selected individual infected by COVID-19. In medical testing, this is called the "prevalence rate". For COVID-19, experts say the general prevalence rate is 0.1%, i.e. 1 out of 1000 people may be infected with the virus. Of course, this number can change based on the country, health system, active social distancing measure, etc. This term appears in the numerator of the Bayes’ rule ( P(A) in the Bayes’ rule).
 
 **P(test=positive)**: This is the probability of a randomly selected test being positive, P(B), calculated as,
 
@@ -365,6 +365,7 @@ If we write the testing process in terms of probability, then:
 **P(test=positive|COVID-19 negative)** is the FALSE POSITIVE rate.
 
 
+## P-value
 
 
 
