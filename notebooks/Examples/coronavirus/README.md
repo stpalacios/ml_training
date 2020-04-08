@@ -13,6 +13,8 @@
 - [COVID-19 Analysis](#COVID-19_Analysis)
 - [Comparison to Other Pandemics](#Comparison_to_Other_Pandemics)
 - [SIR Model](#SIR_Model)
+- [R nought](#R_nought)
+- [Bayes Theorem and Coronavirus](#Bayes_Theorem_and_Coronavirus)
 - [Stock Market Analysis](#Stock_Market_Analysis)
 - [Great videos to watch](#Great_videos)
 - [Conclusion](#Conclusion)
@@ -290,6 +292,87 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 
 
 
+# R nought <a name="R_nought"/>
+<p align="center">
+	<img src="figures/world_mask.png" width=800>
+</p>
+
+
+
+
+# Bayes Theorem and Coronavirus <a name="Bayes_Theorem_and_Coronavirus"/>
+Mark Twain stated "There are lies, damned lies and statistics" 
+<p align="center">
+	<img src="figures/lies.png" width=600>
+</p>
+
+So how does this apply to the Coronavirus?  As with most medical testing, **no test is 100% accurate** [[49](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121570/)].  Such is the case for COVID-19 testing.  
+
+According to the CDC "The CDC 2019-nCoV Real-Time RT-PCR Diagnostic Panel has been designed to minimize the likelihood of false positive test results." ... "A negative test result for this test means that SARS-CoV-2 RNA was not present in the specimen above the limit of detection. However, a negative result does not rule out COVID-19 and should not be used as the sole basis for treatment or patient management decisions." [[50](https://www.fda.gov/media/134920/download)]
+
+Notice the language used; **"minimize the likelihood"** and **"limit of detection"**, indicating that the test is not a 0% or 100%, rather it is a likelihood.
+
+Initial research indicates that COVID-19 "sputum sample showed the highest positive rate in both severe (88.9%) and mild (82.2%) cases, follow by nasal swabs (73.3%, 72.1%) and then the throat swabs (60.0%, 61.3%)" [[51](https://www.medrxiv.org/content/10.1101/2020.02.11.20021493v2.full.pdf)].  Also note their tests use a p-value < 0.05 (we will use this in a moment).
+
+
+Consider an example: assume you take the COVID-19 test, and the test result is 98% positive (you have COVID-19), this means that there is a 2% chance you don’t have COVID-19.  However, given the overwhelming evidence (remember 98% positive), the doctor will say that you have COVID-19.  This results in a **false positive** rate of 2% (in our example).
+
+How might our false positive example translate to the USA population?  
+
+According to the CDC, 60% of the USA population (197,536,648 people) will contract COVID-19 [[52](https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html#anchor_1582494216224)].  This means that at 2% (in our example), there are 3,950,733 people with tests that are false positives. Therefore 4 million people, who don’t have COVID-19, will receive medical care for a virus they don’t have.  What is the impact to medical facilities and personnel, and the metal stability of those 4 million people?
+
+So why are the COVID-19 tests not 0% or 100%?  The answer involves Bayesian Statistics, probabilities and p-value.
+
+
+## True Positives vs. False Positives
+There are four distinct scenarios, for a particular test outcome, with respect to a specific person.
+- You may be really infected, and the test says ‘YES’. This is called a **TRUE POSITIVE (TP)**.
+- You may not be infected, but still, the test says ‘YES’. This is called a **FALSE POSITIVE (FP)**.
+- You may not be infected, and the test says ‘NO’. This is called a **TRUE NEGATIVE (TN)**.
+- You may be really infected, but the test says ‘NO’. This is called a **FALSE NEGATIVE (FN)**.
+
+We can calculate a number of useful metrics from just the four numbers,
+<p align="center">
+	<img src="figures/accuracy.png" width=400>
+</p>
+<p align="center">
+	<img src="figures/sensitivity.png" width=400>
+</p>
+
+As data science practitioners, you should be empowered to know that the same tools that you use in your ML algorithms or statistical modeling, are utilized for measuring the success of mission-critical medical testing and public health systems. You can simply assign different costs to each of these metrics and tune the test or algorithm to minimize the overall cost.
+
+
+## Bayes Theory for COVID-19
+Bayes’ theorem is the most powerful rule of probability theory. It describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
+<p align="center">
+	<img src="figures/bayes.png" width=800>
+</p>
+
+Bayes’ theorem lets us begin with a hypothesis and a certain degree of belief in that hypothesis, based on prior knowledge (or domain expertise). Thereafter, we gather data and update our initial beliefs. If the data support the hypothesis then the probability increases, if it does not match, then probability decreases.  In medical testing this is similar to seeing a second opinion from a doctor about the diagnosis of a disease.
+
+If we write the testing process in terms of probability, then:
+
+**P(COVID-19 positive| test = positive)**: From Bayes’ this is the posterior conditional probability, P(A|B). This is read as "the probability that the individual has COVID-19, given, the test result is positive". .
+
+**P(test = positive|COVID-19 positive)**: This is the prior probability, P(B|A). This is the sensitivity, i.e. how many true positives (test results) are there among all true positive cases.
+
+**P(COVID-19 positive)**: This is the probability of a randomly selected individual infected by COVID-19. In medical testing, this is called the ‘prevalence rate’. For COVID-19, experts say the general prevalence rate is 0.1%, i.e. 1 out of 1000 people may be infected with the virus. Of course, this number can change based on the country, health system, active social distancing measure, etc. This term appears in the numerator of the Bayes’ rule ( P(A) in the Bayes’ rule).
+
+**P(test=positive)**: This is the probability of a randomly selected test being positive, P(B), calculated as,
+
+	P(test=positive) = P(test=positive|COVID-19 positive) x P(COVID-19 positive) + P(test=positive|COVID-19 negative) x P(COVID-19 negative)
+
+**P(test=positive|COVID-19 negative)** is the FALSE POSITIVE rate.
+
+
+
+
+
+
+
+
+
+
 
 # Stock Market Analysis <a name="Stock_Market_Analysis"/>
 During times of crisis, the stock market tends to be volatile.  Many people panic and consider liquidating their 401k and other retirement accounts. As Data Scientists we have data to evaluate.  We pulled data from the following:
@@ -323,15 +406,18 @@ The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 0
 # Conclusion <a name="Conclusion"/>
 So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to the common flu, SARS, MERS, etc.  As you will likely find, as we did, if you are older than 5 and younger than 60 [[44](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html)], you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidelines [[45](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html)] of social distancing and personal health precautions.  
 
+**Note from the authors:** This analysis is based on the study of data science and machine learning. We are not health professionals or epidemiologists, and the analysis/opinions of this article should not be interpreted as professional advice.
+
 **If you are concerned that you may have contracted COVID-19**, you can take an **online screening test** created by the CDC and Apple [[46](https://www.apple.com/covid19)].  
 
 You can get the latest information for the USA at [coronavirus.gov](https://www.coronavirus.gov/) [[47](https://www.coronavirus.gov/)].
 
-If you are interested in the IHME COVID-19 models can be found at [[48](http://www.healthdata.org/covid)]. And world population data [[49](https://www.populationpyramid.net/)].
+The IHME COVID-19 SIR models can be found at [[48](http://www.healthdata.org/covid)], and world population data [[49](https://www.populationpyramid.net/)].
 
 [This Jupyter notebook](https://github.com/dsbc2020/ml_training/blob/master/notebooks/Examples/coronavirus/coronavirus-fact-or-hype.ipynb) imports the CDC and WHO raw data (linked above), and provides several plots with some initial analysis.  Use your judgement and make your own decision.
 
 We will continue to update this notebook over the next several weeks, so stay tuned!
+
 
 
 
@@ -385,3 +471,8 @@ We will continue to update this notebook over the next several weeks, so stay tu
 46. https://www.apple.com/covid19
 47. https://www.coronavirus.gov/
 48. http://www.healthdata.org/covid
+49. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121570/
+50. https://www.fda.gov/media/134920/download
+51. Yang, et.al. "Evaluating the accuracy of different respiratory specimens in the laboratory diagnosis and monitoring the viral shedding of 2019-nCoV infections", Cold Spring Harbor Laboratory Press, 10.1101/2020.02.11.20021493 (2020).
+52. https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html#anchor_1582494216224
+
