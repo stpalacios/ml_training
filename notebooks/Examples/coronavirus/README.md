@@ -53,7 +53,7 @@ At the time of the writing of this notebook (**updated April 8, 2020**), the wor
 # Data Collection <a name="Data_Collection"/>
 So is COVID-19 really a pandemic? If so, how does it compare to other pandemics?  According to the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)], COVID-19 **may** be 10x worse than the common flu, though some people will contract COVID-19 and have little to no symptoms whatsoever.
 
-However, a recent article by Dr. Anthony Fauci, et.al., states that the COVID-19 models are very conservative, and the mortality rate of COVID-19 is considerably less than initial predictions [[3](https://www.nejm.org/doi/full/10.1056/NEJMe2002387)].
+However, a recent article by Dr. Anthony Fauci, et.al., states that the COVID-19 models are very conservative, and the COVID-19 **mortality rate is considerably less than initial predictions** [[3](https://www.nejm.org/doi/full/10.1056/NEJMe2002387)].
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips ([Data Science](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-DS), [Python](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Python-in-2-days), and [Machine Learning](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Machine-Learning-in-1-day)), and you likely have access to the [Coronavirus raw data](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/data) so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
 
