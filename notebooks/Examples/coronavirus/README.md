@@ -135,19 +135,42 @@ If we look at the China data for the *number of cases*, this does appear to look
 </p>
 
 
-## Maps
+## Maps - World
+Confirmed cases by country
 <p align="center">
 	<img src="figures/covid_19_worldwide_confirmed.png" width=800>
 </p>
+
+Deaths by country
 <p align="center">
 	<img src="figures/covid_19_worldwide_deaths.png" width=800>
 </p>
+
+
+## Maps - USA 
+Confirmed cases by state
 <p align="center">
-	<img src="figures/covid_19_usa_confirmed.png" width=800>
+	<img src="figures/covid_19_usa_confirmed_by_state.png" width=800>
 </p>
+
+Deaths by state
 <p align="center">
 	<img src="figures/covid_19_usa_deaths.png" width=800>
 </p>
+
+Confirmed cases by county
+<p align="center">
+	<img src="figures/covid_19_usa_confirmed_by_county.png" width=800>
+</p>
+
+Confirmed Cases by County (circle size indicates number of cases)
+<p align="center">
+	<img src="figures/covid_19_usa_confirmed_by_county_scale.png" width=800>
+</p>
+
+
+
+
 
 
 ## Block Chart
