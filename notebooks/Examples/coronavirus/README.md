@@ -371,7 +371,7 @@ If we write the testing process in terms of probability, then:
 ## P-value
 In hypothesis testing, assuming the null hypothesis is correct, the probability value (p-value) is the probability that the test result is as extreme as the results actually observed.  
 <p align="center">
-	<img src="figures/p-value.png" width=400>
+	<img src="figures/p-value.png" width=600>
 </p>
 
 For example, if the desired COVID-19 test assumes true negative (our null hypothesis), the test must find cases above 95% significance threshold, p=0.05, to determine that an individual is a true positive (they have COVID-19).  The designer of the test typically selects the p-value. 
