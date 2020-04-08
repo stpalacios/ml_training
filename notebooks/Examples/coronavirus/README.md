@@ -294,7 +294,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 
 # R nought <a name="R_nought"/>
 <p align="center">
-	<img src="figures/world_mask.jpeg" width=800>
+	<img src="figures/world_mask.jpeg" width=400>
 </p>
 
 
@@ -325,7 +325,7 @@ So why are the COVID-19 tests not 0% or 100%?  The answer involves Bayesian Stat
 
 
 ## True Positives vs. False Positives
-There are four distinct scenarios, for a particular test outcome, with respect to a specific person.
+In hypothesis testing there are four distinct scenarios, for a particular test outcome, with respect to a specific person.
 - You may be really infected, and the test says ‘YES’. This is called a **TRUE POSITIVE (TP)**.
 - You may not be infected, but still, the test says ‘YES’. This is called a **FALSE POSITIVE (FP)**.
 - You may not be infected, and the test says ‘NO’. This is called a **TRUE NEGATIVE (TN)**.
@@ -350,6 +350,8 @@ Bayes’ theorem is the most powerful rule of probability theory. It describes t
 
 Bayes’ theorem lets us begin with a hypothesis and a certain degree of belief in that hypothesis, based on prior knowledge (or domain expertise). Thereafter, we gather data and update our initial beliefs. If the data support the hypothesis then the probability increases, if it does not match, then probability decreases.  In medical testing this is similar to seeing a second opinion from a doctor about the diagnosis of a disease.
 
+**Summary: Bayes' prediction accuracy increases with more data.**
+
 If we write the testing process in terms of probability, then:
 
 **P(COVID-19 positive| test = positive)**: From Bayes’ this is the posterior conditional probability, P(A|B). This is read as "the probability that the individual has COVID-19, given, the test result is positive". .
@@ -365,10 +367,14 @@ If we write the testing process in terms of probability, then:
 **P(test=positive|COVID-19 negative)** is the FALSE POSITIVE rate.
 
 
+
 ## P-value
+In hypothesis testing, assuming the null hypothesis is correct, the probability value (p-value) is the probability that the test result is as extreme as the results actually observed.  
+<p align="center">
+	<img src="figures/p-value.png" width=400>
+</p>
 
-
-
+For example, if the desired COVID-19 test assumes true negative (our null hypothesis), the test must find cases above 95% significance threshold, p=0.05, to determine that an individual is a true positive (they have COVID-19).  The designer of the test typically selects the p-value. 
 
 
 
