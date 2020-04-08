@@ -24,7 +24,7 @@
 # Introduction <a name="Introduction"/>
 Lets first note that both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  As Data Scientists, our job is to look at data to make informed data-driven decisions.
 
-At the time of the writing of this notebook (**updated March 27, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
+At the time of the writing of this notebook (**updated April 8, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  In the stock market, the Dow-Jones Industrial Average dropped from 29,718 to 21,749 points, sending business and retirement accounts tumbling.
 
 
 
@@ -51,7 +51,7 @@ At the time of the writing of this notebook (**updated March 27, 2020**), the wo
 
 
 # Data Collection <a name="Data_Collection"/>
-So is COVID-19 really a pandemic? If so, how does it compare to other pandemics?  According to the CDC [[3](https://www.cdc.gov/coronavirus/2019-ncov/index.html)], COVID-19 is "similar" to the common flu (with some caveats).
+So is COVID-19 really a pandemic? If so, how does it compare to other pandemics?  According to the CDC [[3](https://www.cdc.gov/coronavirus/2019-ncov/index.html)], COVID-19 **may** be 10x worse than the common flu, though some people will contract COVID-19 and have little to no symptoms whatsoever.
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips ([Data Science](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-DS), [Python](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Python-in-2-days), and [Machine Learning](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Machine-Learning-in-1-day)), and you likely have access to the [Coronavirus raw data](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/data) so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
 
@@ -95,7 +95,15 @@ Just for completeness, we also collected data on:
 ## Background
 The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is 329,227,746 people [[37](https://www.census.gov)], the percent of the population that will likely die of COVID-19 is 0.16%:
 
-	(520,000 / 329,227,746) * 100 = 0.16%
+	(520,000 / 329,227,746) * 100 = 0.157%
+	
+The current death rate (April 8, 2020) is 0.004% (roughly 4 in every 1,000 people):
+	
+	(12,733 / 329,227,746) * 100 = 0.004%
+	
+Compare this to the cancer, 2.915% (roughly 3 in every 100 people):
+
+	(9,600,000 / 329,227,746) * 100 = 2.915%
 
 **According to the CDC, epidemics like the Coronavirus initially follow an exponential growth model**, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:
 <p align="center">
@@ -186,6 +194,7 @@ The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 - Alzheimer = 1,918
 - Malaria = 1,200
 - Homicide = 1,111
+- COVID-19 = 909
 - Drowning = 877
 - Alcohol_disorder = 507
 - Fire = 331
@@ -194,13 +203,11 @@ The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 - Domestic Violence = 137
 - Bed strangulation = 28 (USA only)
 - Natural disasters= 26
-- COVID-19 = 14 (USA only)
 - SIDS = 7
 
 
 The result of *WORLD-WIDE DEATHS PER DAY* is shown here.    
 
-*Notice that COVID-19 (Coronavirus) is smaller than 1 pixel!*
 <p align="center">
 	<img src="figures/death_by_other.png" width=800>
 </p>
