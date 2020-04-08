@@ -150,7 +150,7 @@ Deaths by country
 ## Maps - USA 
 Confirmed cases by state
 <p align="center">
-	<img src="figures/covid_19_usa_confirmed_by_state.png" width=800>
+	<img src="figures/covid_19_usa_confirmed.png" width=800>
 </p>
 
 Deaths by state
