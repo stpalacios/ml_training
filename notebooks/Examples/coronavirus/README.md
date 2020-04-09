@@ -325,7 +325,7 @@ According to the CDC, 60% of the USA population (197,536,648 people) will contra
 So why are the COVID-19 tests not 0% or 100%?  The answer involves Bayesian Statistics, probabilities and p-value.
 
 
-## True Positives vs. False Positives
+### True Positives vs. False Positives
 In hypothesis testing there are four distinct scenarios, for a particular test outcome, with respect to a specific person.
 - You may be really infected, and the test says ‘YES’. This is called a **TRUE POSITIVE (TP)**.
 - You may not be infected, but still, the test says ‘YES’. This is called a **FALSE POSITIVE (FP)**.
@@ -343,7 +343,7 @@ We can calculate a number of useful metrics from just the four numbers,
 As data science practitioners, you should be empowered to know that the same tools that you use in your ML algorithms or statistical modeling, are utilized for measuring the success of mission-critical medical testing and public health systems. You can simply assign different costs to each of these metrics and tune the test or algorithm to minimize the overall cost.
 
 
-## Bayes Theory for COVID-19
+### Bayes Theory for COVID-19
 Bayes’ theorem is the most powerful rule of probability theory. It describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
 <p align="center">
 	<img src="figures/bayes.png" width=400>
