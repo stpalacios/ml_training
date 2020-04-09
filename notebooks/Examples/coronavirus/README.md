@@ -15,6 +15,7 @@
 - [SIR Model](#SIR_Model)
 - [R nought](#R_nought)
 - [Bayes Theorem and Coronavirus](#Bayes_Theorem_and_Coronavirus)
+- [P-value](#P-value)
 - [Stock Market Analysis](#Stock_Market_Analysis)
 - [Great videos to watch](#Great_videos)
 - [Conclusion](#Conclusion)
@@ -368,7 +369,10 @@ If we write the testing process in terms of probability, then:
 
 
 
-## P-value
+
+
+
+# P-value <a name="P-value"/>
 In hypothesis testing, assuming the null hypothesis is correct, the probability value (p-value) is the probability that the test result is as extreme as the results actually observed.  
 
 For example, assume that a city claims that COVID-19 has infected 20% of the population.
@@ -414,6 +418,10 @@ P-value is not enough, we need to set a threshold (the significance level — al
 The rule of thumb is to set alpha to be either 0.05 or 0.01 (again, the value depends on your problems at hand), meaning that observed p-values lower than 95% or 99% are *statistically significant*.
 
 p-value can be confusing. Fortunately, we have Python and NumPy to do the math for us.  You can now use this method to select your threshold value (alpha) and your p-value (significance test) along with the COVID-19 data for any city, and make a resonable decision about our data collection and its distribution with regard to the mean.
+
+
+
+
 
 
 
