@@ -259,7 +259,7 @@ Here is another plot showing the top causes of *death per YEAR*.
 
 
 # SIR Model <a name="SIR_Model"/>
-Applying the models found in the literature [38],[39],[40] we can evaluate the spread of a virus by splitting the population into three categories, *Susceptible*, *Infected*, and *Recovered*.  Then using a partial differential equation (recall your calculus), we can solve the rate of change of each category.
+Applying the models found in the literature [38],[39],[40] we can evaluate the spread of a virus by splitting the population into three categories, *Susceptible*, *Infected*, and *Recovered*.  Then using a partial differential equation (recall your calculus), we can solve the rate of change of each category. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/SIR_model).
 
 The weights (or constants) are the Transmission Rate (CDC example: a = 3.2), and Recovery Rate (CDC example: b = 0.23).
 
@@ -290,7 +290,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 </p>
 
 
-Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/SIR_model).
+
 
 
 
@@ -318,7 +318,7 @@ Mark Twain stated
 	<img src="figures/lies.png" width=400>
 </p>
 
-So how does this apply to the Coronavirus?  As with most medical testing, **no test is 100% accurate** [[49](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121570/)].  Such is the case for COVID-19 testing.  
+So how does this apply to the Coronavirus?  As with most medical testing, **no test is 100% accurate** [[49](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121570/)].  Such is the case for COVID-19 testing.  Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Bayes_Theorem). 
 
 According to the CDC "The CDC 2019-nCoV Real-Time RT-PCR Diagnostic Panel has been **designed to minimize the likelihood of false positive test results**." ... "A negative test result for this test means that SARS-CoV-2 RNA was not present in the specimen **above the limit of detection**. However, a negative result does not rule out COVID-19 and should not be used as the sole basis for treatment or patient management decisions." [[50](https://www.fda.gov/media/134920/download)]
 
@@ -335,7 +335,6 @@ According to the CDC, 60% of the USA population (197,536,648 people) will contra
 
 So why are the COVID-19 tests not 0% or 100%?  The answer involves Bayesian Statistics, probabilities and p-value.
 
-Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Bayes_Theorem).
 
 
 ### True Positives vs. False Positives
@@ -446,9 +445,7 @@ During times of crisis, the stock market tends to be volatile.  Many people pani
 - NASDAQ: [[19](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices)], [[42](https://www.macrotrends.net/1320/nasdaq-historical-chart)]
 - S&P 500: [[20](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)], [[43](https://www.macrotrends.net/2324/sp-500-historical-chart-data)]
  
-The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so be mindful when you panic and consider liquidating your retirement accounts and investments.
-
-Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Stock_Market_Analysis).
+The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so be mindful when you panic and consider liquidating your retirement accounts and investments. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Stock_Market_Analysis).
 
 <p align="center">
 	<img src="matlab/Stock_Market_Analysis/stock_recovery.png" width=800>
