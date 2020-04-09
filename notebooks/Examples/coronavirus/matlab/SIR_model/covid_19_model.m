@@ -42,31 +42,34 @@ close all;
 %   x=(x(1),x(2),x(3))'
 
 a_ii = [0.5 1.5 3.2]; 
-b_ii = [0.23 0.5 0.95];
+b_jj = [0.23 0.5 0.8];
 
 I0 = 0.01;  % inital infected
 S0 = 0.99;  % initial susceptible
 R0 = 0;     % initial recovered
-
-
-% varied transmission rate
 tSpan = (0:0.1:50)';
+% figInc = 0;
+
 t_ii = zeros(length(tSpan),1);
 y_ii = zeros(length(tSpan),3,3);
-for ii = 1:3
-    a = a_ii(ii);
-    b = b_ii(1);
-    f = @(t,x) [-a*x(1)*x(2); a*x(1)*x(2)-b*x(2); b*x(2)];
-    [t,y]=ode45(f,tSpan, [S0 I0 R0]);
 
-    t_ii(:,ii) = t;
-    y_ii(:,:,ii) = y;
+% varied transmission rate
+for ii = 1:3
+    for jj = 1
+        a = a_ii(ii);
+        b = b_jj(jj);
+        f = @(t,x) [-a*x(1)*x(2); a*x(1)*x(2)-b*x(2); b*x(2)];
+        [t,y]=ode45(f,tSpan, [S0 I0 R0]);
+
+        t_ii(:,ii) = t;
+        y_ii(:,:,ii) = y;
+    end
 end
 
 figure(1)
 plot(t_ii(:,1),y_ii(:,1,1),'b.-',t_ii(:,1),y_ii(:,2,1),'r.-',t_ii(:,1),y_ii(:,3,1),'g.-',...
-    t_ii(:,2),y_ii(:,1,2),'bd-',t_ii(:,2),y_ii(:,2,2),'rd-',t_ii(:,2),y_ii(:,3,2),'gd-',...
-    t_ii(:,3),y_ii(:,1,3),'bo-',t_ii(:,3),y_ii(:,2,3),'ro-',t_ii(:,3),y_ii(:,3,3),'go-')
+    t_ii(:,1),y_ii(:,1,2),'bd-',t_ii(:,1),y_ii(:,2,2),'rd-',t_ii(:,1),y_ii(:,3,2),'gd-',...
+    t_ii(:,1),y_ii(:,1,3),'bo-',t_ii(:,1),y_ii(:,2,3),'ro-',t_ii(:,1),y_ii(:,3,3),'go-')
 title('SIR model: various Transmission Rates (a=\{0.5,1.5,3.2\}), fixed Recovery Rate (b=0.23)','Interpreter','latex');
 xlabel('Time (t)','Interpreter','latex');
 ylabel('Solution (ds/dt + di/dt + dr/dt)','Interpreter','latex');
@@ -75,29 +78,28 @@ legend('susceptible:  a=0.5','infected:       a=0.5','recovered:    a=0.5',...
     'susceptible:  a=3.2','infected:       a=3.2','recovered:    a=3.2')
 
 % varied recovery rate
-tSpan = (0:0.1:25)';
-t_ii = zeros(length(tSpan),1);
-y_ii = zeros(length(tSpan),3,3);
-for ii = 1:3
-    a = a_ii(3);
-    b = b_ii(ii);
-    f = @(t,x) [-a*x(1)*x(2); a*x(1)*x(2)-b*x(2); b*x(2)];
-    [t,y]=ode45(f,tSpan, [S0 I0 R0]);
+for ii = 3
+    for jj = 1:3
+        a = a_ii(ii);
+        b = b_jj(jj);
+        f = @(t,x) [-a*x(1)*x(2); a*x(1)*x(2)-b*x(2); b*x(2)];
+        [t,y]=ode45(f,tSpan, [S0 I0 R0]);
 
-    t_ii(:,ii) = t;
-    y_ii(:,:,ii) = y;
+        t_ii(:,ii) = t;
+        y_ii(:,:,ii) = y;
+    end
 end
 
 figure(2)
 plot(t_ii(:,1),y_ii(:,1,1),'b.-',t_ii(:,1),y_ii(:,2,1),'r.-',t_ii(:,1),y_ii(:,3,1),'g.-',...
-    t_ii(:,2),y_ii(:,1,2),'bd-',t_ii(:,2),y_ii(:,2,2),'rd-',t_ii(:,2),y_ii(:,3,2),'gd-',...
-    t_ii(:,3),y_ii(:,1,3),'bo-',t_ii(:,3),y_ii(:,2,3),'ro-',t_ii(:,3),y_ii(:,3,3),'go-')
-title('SIR model: fixed Transmission Rate (a=3.2), various Recovery Rates (b=\{0.23,0.5,0.95\})','Interpreter','latex');
+    t_ii(:,1),y_ii(:,1,2),'bd-',t_ii(:,1),y_ii(:,2,2),'rd-',t_ii(:,1),y_ii(:,3,2),'gd-',...
+    t_ii(:,1),y_ii(:,1,3),'bo-',t_ii(:,1),y_ii(:,2,3),'ro-',t_ii(:,1),y_ii(:,3,3),'go-')
+title('SIR model: fixed Transmission Rate (a=3.2), various Recovery Rates (b=\{0.23,0.5,0.8\})','Interpreter','latex');
 xlabel('Time (t)','Interpreter','latex');
 ylabel('Solution (ds/dt + di/dt + dr/dt)','Interpreter','latex');
 legend('susceptible: b=0.23','infected:       b=0.23','recovered:   b=0.23',...
     'susceptible: b=0.5','infected:       b=0.5','recovered:   b=0.5',...
-    'susceptible: b=0.95','infected:       b=0.95','recovered:   b=0.95')
+    'susceptible: b=0.8','infected:       b=0.8','recovered:   b=0.8')
 
 dock_all_figures;
 

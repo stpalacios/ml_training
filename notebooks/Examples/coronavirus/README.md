@@ -306,7 +306,19 @@ The CDC has estimated the COVID-19 R0 to be somewhere between 1.5 and 3.5. Most 
 
 This means that a person with COVID-19 may infect between 1.5 and 3.5 people. 
 
+Now lets consider the R0 model.  
+	
+	R0 = n / p
 
+where n = number of new cases, and p = number of prior cases.  
+
+We can perform a rough simulation to derive the R0 value for New York City (NYC), where the current number of cases is 151,061 (as of April 8, 2020). Using the CDC data we find that the first confirmed case was February 10th.  The number of days from Feb 10 to April 8 is 58.  Simulating the R0 model we find that for NYC the R0 = 1.23. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/R0_model).
+<p align="center">
+	<img src="figures/R0_model_Figure_1.png" width=600>
+</p>
+<p align="center">
+	<img src="figures/R0_model_Figure_2.png" width=600>
+</p>
 
 
 
