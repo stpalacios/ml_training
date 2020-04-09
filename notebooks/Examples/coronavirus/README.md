@@ -370,13 +370,50 @@ If we write the testing process in terms of probability, then:
 
 ## P-value
 In hypothesis testing, assuming the null hypothesis is correct, the probability value (p-value) is the probability that the test result is as extreme as the results actually observed.  
+
+For example, assume that a city claims that COVID-19 has infected 20% of the population.
+- Null hypothesis: The mean population infected is 20% or less.
+- Alternate hypothesis: The mean population infected is greater than 20%. 
+
+We’ll use one-tailed test in our case since we only care about if the mean population infected is greater than 20%. We’ll disregard the possibility in the other direction since the consequences of having a mean infection lower or equal to 20% is even more preferable.
+
+Since we are testing something that is occuring in nature, it is common to assume a Normal (Gaussian) distribution.
+<p align="center">
+	<img src="figures/gaussian_distribution.png" width=600>
+</p>
+The mean is the central tendency of the distribution. It defines the location of the peak for normal distributions. The standard deviation is a measure of variability. It determines how far the values tend to deviate from the mean.
+
+The normal distribution is commonly associated with the 68-95-99.7 rule.
+- 68% of the data is within 1 standard deviation (σ) of the mean (μ)
+- 95% of the data is within 2 standard deviations (σ) of the mean (μ)
+- 99.7% of the data is within 3 standard deviations (σ) of the mean (μ)
+
+The job of p-value is to answer this question:
+
+"If I’m living in a city where the mean population infected is 20% or less (null hypothesis is true), how surprising is my evidence based on my data?
+
+P-value answers this question with a number - probability.
+
+The lower the p-value, the more surprising the evidence is, and the more ridiculous our null hypothesis looks. What do we do when we feel ridiculous with our null hypothesis? We reject that and choose our alternative hypothesis instead.
+
+If the p-value is lower than a predetermined significance level (in the literature this is called "alpha"), then we reject the null hypothesis.
+
+Returning to our example: After you collect some data, you perform the calculation to find that the infected population is 25% with a p-value=0.03.  This means that in a city where the infected population is 20% or less, there is a 3% chance that the infected population is 25%, due to random noise in your samples. The lower the p-value, the more meaningful the result, because it is less likely to be caused by noise.
+
+The following image illustrates this example for a test with a p-value=0.05.
 <p align="center">
 	<img src="figures/p-value.png" width=600>
 </p>
 
-For example, if the desired COVID-19 test assumes true negative (our null hypothesis), the test must find cases above 95% significance threshold, p=0.05, to determine that an individual is a true positive (they have COVID-19).  The designer of the test typically selects the p-value. 
+There’s a common misinterpretation of p-value for most people in our case: "the p-value=0.03 means that there’s 3% (probability in percentage) that the result is due to chance" - which is not true. P-value is just a value (3% in our example) with which to make a resonable decision about our data collection and its distribution with regard to the mean. 
 
+If, after analyzing the sample data collected, the p-value of 0.03 is lower than the significance level of 0.05 (assume that we set this before our experiment), and we can say that the result is *statistically significant*.
 
+P-value is not enough, we need to set a threshold (the significance level — alpha). The alpha should always be set before an experiment to avoid bias. If the observed p-value is lower than alpha, then we conclude that the result is statistically significant.
+
+The rule of thumb is to set alpha to be either 0.05 or 0.01 (again, the value depends on your problems at hand), meaning that observed p-values lower than 95% or 99% are *statistically significant*.
+
+p-value can be confusing. Fortunately, we have Python and NumPy to do the math for us.  You can now use this method to select your threshold value (alpha) and your p-value (significance test) along with the COVID-19 data for any city, and make a resonable decision about our data collection and its distribution with regard to the mean.
 
 
 
