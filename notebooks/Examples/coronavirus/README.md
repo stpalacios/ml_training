@@ -309,7 +309,7 @@ Mark Twain stated "There are lies, damned lies and statistics"
 
 So how does this apply to the Coronavirus?  As with most medical testing, **no test is 100% accurate** [[49](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121570/)].  Such is the case for COVID-19 testing.  
 
-According to the CDC "The CDC 2019-nCoV Real-Time RT-PCR Diagnostic Panel has been designed to minimize the likelihood of false positive test results." ... "A negative test result for this test means that SARS-CoV-2 RNA was not present in the specimen above the limit of detection. However, a negative result does not rule out COVID-19 and should not be used as the sole basis for treatment or patient management decisions." [[50](https://www.fda.gov/media/134920/download)]
+According to the CDC "The CDC 2019-nCoV Real-Time RT-PCR Diagnostic Panel has been **designed to minimize the likelihood of false positive test results**." ... "A negative test result for this test means that SARS-CoV-2 RNA was not present in the specimen **above the limit of detection**. However, a negative result does not rule out COVID-19 and should not be used as the sole basis for treatment or patient management decisions." [[50](https://www.fda.gov/media/134920/download)]
 
 Notice the language used; **"minimize the likelihood"** and **"limit of detection"**, indicating that the test is not a 0% or 100%, rather it is a likelihood.
 
@@ -381,7 +381,7 @@ For example, assume that a city claims that COVID-19 has infected 20% of the pop
 
 We’ll use one-tailed test in our case since we only care about if the mean population infected is greater than 20%. We’ll disregard the possibility in the other direction since the consequences of having a mean infection lower or equal to 20% is even more preferable.
 
-Since we are testing something that is occuring in nature, it is common to assume a Normal (Gaussian) distribution.
+Since we are testing something that is occurring in nature, it is common to assume a Normal (Gaussian) distribution.
 <p align="center">
 	<img src="figures/gaussian_distribution.png" width=600>
 </p>
@@ -409,7 +409,7 @@ The following image illustrates this example for a test with a p-value=0.05.
 	<img src="figures/p-value.png" width=600>
 </p>
 
-There’s a common misinterpretation of p-value for most people in our case: "the p-value=0.03 means that there’s 3% (probability in percentage) that the result is due to chance" - which is not true. P-value is just a value (3% in our example) with which to make a resonable decision about our data collection and its distribution with regard to the mean. 
+There’s a common misinterpretation of p-value for most people in our case: "the p-value=0.03 means that there’s 3% (probability in percentage) that the result is due to chance" - which is not true. P-value is just a value (3% in our example) with which to make a reasonable decision about our data collection and its distribution with regard to the mean. 
 
 If, after analyzing the sample data collected, the p-value of 0.03 is lower than the significance level of 0.05 (assume that we set this before our experiment), and we can say that the result is *statistically significant*.
 
@@ -417,7 +417,8 @@ P-value is not enough, we need to set a threshold (the significance level — al
 
 The rule of thumb is to set alpha to be either 0.05 or 0.01 (again, the value depends on your problems at hand), meaning that observed p-values lower than 95% or 99% are *statistically significant*.
 
-p-value can be confusing. Fortunately, we have Python and NumPy to do the math for us.  You can now use this method to select your threshold value (alpha) and your p-value (significance test) along with the COVID-19 data for any city, and make a resonable decision about our data collection and its distribution with regard to the mean.
+p-value can be confusing. Fortunately, we have Python and NumPy to do the math for us.  You can now use this method to select your threshold value (alpha) and your p-value (significance test) along with the COVID-19 data for any city, and make a reasonable decision about our data collection and its distribution with regard to the mean.
+
 
 
 
