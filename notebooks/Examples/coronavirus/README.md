@@ -302,7 +302,9 @@ The reproduction number, R0 for short, describes how many additional cases of a 
 <p align="center">
 	<img src="figures/common_R0_values.png" width=600>
 </p>
-The CDC has estimated the COVID-19 R0 to be somewhere between 1.5 and 3.5. Most modeling simulations that project future cases are using R0's in that range [[48](http://www.healthdata.org/covid)].  This means that a person with COVID-19 may infect between 1.5 and 3.5 people. 
+The CDC has estimated the COVID-19 R0 to be somewhere between 1.5 and 3.5. Most modeling simulations that project future cases are using R0's in that range [48].  
+
+This means that a person with COVID-19 may infect between 1.5 and 3.5 people. 
 
 
 
