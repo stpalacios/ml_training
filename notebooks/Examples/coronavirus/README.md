@@ -304,7 +304,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 # Bayes Theorem and Coronavirus <a name="Bayes_Theorem_and_Coronavirus"/>
 Mark Twain stated "There are lies, damned lies and statistics" 
 <p align="center">
-	<img src="figures/lies.png" width=600>
+	<img src="figures/lies.png" width=400>
 </p>
 
 So how does this apply to the Coronavirus?  As with most medical testing, **no test is 100% accurate** [[49](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121570/)].  Such is the case for COVID-19 testing.  
