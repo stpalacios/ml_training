@@ -299,7 +299,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 # R nought <a name="R_nought"/>
 The reproduction number, R0 for short, describes how many additional cases of a disease each infected person will cause during their infectious period. The numbers are a range, because they depend on a variety of factors that vary from situation to situation.
 <p align="center">
-	<img src="figures/common_R0_values.png" width=400>
+	<img src="figures/common_R0_values.png" width=600>
 </p>
 The CDC has estimated the COVID-19 R0 to be somewhere between 1.5 and 3.5. Most modeling simulations that project future cases are using R0's in that range [[48](http://www.healthdata.org/covid)].  This means that a person with COVID-19 may infect between 1.5 and 3.5 people. 
 
