@@ -290,6 +290,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 </p>
 
 
+Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/SIR_model).
 
 
 
@@ -312,7 +313,7 @@ The CDC has estimated the COVID-19 R0 to be somewhere between 1.5 and 3.5. Most 
 
 
 # Bayes Theorem and Coronavirus <a name="Bayes_Theorem_and_Coronavirus"/>
-Mark Twain stated "There are lies, damned lies and statistics" 
+Mark Twain stated
 <p align="center">
 	<img src="figures/lies.png" width=400>
 </p>
@@ -333,6 +334,8 @@ How might our false positive example translate to the USA population?
 According to the CDC, 60% of the USA population (197,536,648 people) will contract COVID-19 [[52](https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html#anchor_1582494216224)].  This means that at 2% (in our example), there are 3,950,733 people with tests that are false positives. Therefore 4 million people, who don’t have COVID-19, will receive medical care for a virus they don’t have.  What is the impact to medical facilities and personnel, and the metal stability of those 4 million people?
 
 So why are the COVID-19 tests not 0% or 100%?  The answer involves Bayesian Statistics, probabilities and p-value.
+
+Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Bayes_Theorem).
 
 
 ### True Positives vs. False Positives
@@ -444,6 +447,9 @@ During times of crisis, the stock market tends to be volatile.  Many people pani
 - S&P 500: [[20](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)], [[43](https://www.macrotrends.net/2324/sp-500-historical-chart-data)]
  
 The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so be mindful when you panic and consider liquidating your retirement accounts and investments.
+
+Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Stock_Market_Analysis).
+
 <p align="center">
 	<img src="matlab/Stock_Market_Analysis/stock_recovery.png" width=800>
 </p>
