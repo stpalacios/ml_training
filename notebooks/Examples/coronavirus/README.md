@@ -103,9 +103,9 @@ The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] t
 
 	(520,000 / 329,227,746) * 100 = 0.157%
 	
-The current death rate (April 8, 2020) is 0.004% (roughly 4 in every 1,000 people):
+The current death percent of population (April 13, 2020) is 0.006% (roughly 6 in every 1,000 people):
 	
-	(12,733 / 329,227,746) * 100 = 0.004%
+	(20,463 / 329,227,746) * 100 = 0.006%
 	
 Compare this to the cancer, 2.915% (roughly 3 in every 100 people):
 
