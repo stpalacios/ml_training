@@ -25,13 +25,15 @@
 
 
 # Introduction <a name="Introduction"/>
-At the time of the writing of this notebook (**updated April 13, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  As Data Scientists, our job is to look at data to make informed data-driven decisions.
+At the time of the writing of this notebook (**updated April 13, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 
 
 
 
 # Definitions <a name="Definitions"/>
+
+Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]. 
 
 ## Corona Virus
 - Coronaviruses are zoonotic viruses (transmitted between animals and people).
@@ -46,7 +48,7 @@ At the time of the writing of this notebook (**updated April 13, 2020**), the wo
 - Caused by a SARS-COV-2 corona virus.
 - First identified in Wuhan, Hubei, China. Earliest reported symptoms reported in November 2019.
 - First cases were linked to contact with the Huanan Seafood Wholesale Market that sold live animals.
-- On January 30, 2020 the WHO declared the outbreak to be a Public Health Emergency of International Concern
+- On January 30, 2020 the WHO declared the outbreak to be a Public Health Emergency of International Concern [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].
 
 
 
