@@ -306,7 +306,7 @@ The CDC has estimated the COVID-19 R0 to be somewhere between 1.5 and 3.5. Most 
 
 This means that a person with COVID-19 may infect between 1.5 and 3.5 people. 
 
-Now lets consider the R0 model.  
+Now lets consider the R0 model,  
 	
 	R0 = n / p
 
