@@ -35,16 +35,16 @@ At the time of the writing of this notebook (**updated April 13, 2020**), the wo
 
 Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]. 
 
-## Corona Virus
+### Corona Virus
 - Coronaviruses are zoonotic viruses (transmitted between animals and people).
 - Symptoms include: fever, cough, respiratory symptoms, and breathing difficulties.
 - In severe cases, it can cause pneumonia, severe acute respiratory syndrome (SARS), kidney failure and even death.
 - Coronaviruses are also asymptomatic, meaning a person can be a carrier of the infection but experience no symptoms.
 
-## Novel coronavirus (nCoV)
+### Novel coronavirus (nCoV)
 - A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.
 
-## COVID-19 (Corona Virus Disease 2019)
+### COVID-19 (Corona Virus Disease 2019)
 - Caused by a SARS-COV-2 corona virus.
 - First identified in Wuhan, Hubei, China. Earliest reported symptoms reported in November 2019.
 - First cases were linked to contact with the Huanan Seafood Wholesale Market that sold live animals.
