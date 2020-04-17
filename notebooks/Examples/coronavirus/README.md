@@ -214,13 +214,12 @@ Daily plots of **new cases** is another great method to determine speed at which
 So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.  Colors (yellow to purple) indicate the number of confirmed cases.  Clearly COVID-19 is much more wide-spread.  Note that this might have some relation to the increased global ability to test, track and confirm viruses in 2020 compared to 2003.
 
 
-## Comparison
-Cases
+## Comparison of Cases
 <p align="center">
 	<img src="figures/covid19_ebola_sars_cases.png" width=800>
 </p>
 
-Deaths
+## Comparison of Cases
 <p align="center">
 	<img src="figures/covid19_ebola_sars_deaths.png" width=800>
 </p>
@@ -229,6 +228,7 @@ Deaths
 	<img src="figures/comparison_num_countries.png" width=800>
 </p>
 
+## Bar Chart Comparisons
 <p align="center">
 	<img src="figures/comparison_mortality_rate.png" width=800>
 </p>
