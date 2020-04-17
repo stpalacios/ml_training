@@ -187,10 +187,10 @@ The size of the *overall block* represents the *total of all countries*.  The si
 ## Log-Log Plots
 Log-Log plots are a better form with which to look at data, specifically epidemics and the "doubling" time or spread of a virus.  A doubling is indicated by a straight line, where the slope indicate the number of days for doubling, whereas a curve to the right indicates a slowing of the spread of the virus.  We have provided "doubling" lines, at various rates, and curves for top 10 countries (with the most cases).  
 <p align="center">
-	<img src="figures/log_log_worldwide_cases.png" width=800>
+	<img src="figures/log_log_worldwide_cases.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/log_log_worldwide_deaths.png" width=800>
+	<img src="figures/log_log_worldwide_deaths.png" width=600>
 </p>
 <p align="center">
 	<img src="figures/log_world_trend.png" width=800>
