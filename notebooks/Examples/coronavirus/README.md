@@ -25,7 +25,7 @@
 
 
 # Introduction <a name="Introduction"/>
-At the time of the writing of this notebook (**updated April 13, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
+At the time of the writing of this notebook (**updated April 17, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 
 
@@ -175,10 +175,6 @@ Confirmed Cases by County (circle size indicates number of cases)
 </p>
 
 
-
-
-
-
 ## Block Chart
 The size of the *overall block* represents the *total of all countries*.  The size of *each block* represents the number of cases/recovered/deaths in that *country*.
 <p align="center">
@@ -186,6 +182,30 @@ The size of the *overall block* represents the *total of all countries*.  The si
 </p>
 
 </p>
+
+
+## Log-Log Plots
+Log-Log plots are a better form with which to look at data, specifically epidemics and the "doubling" time or spread of a virus.  A doubling is indicated by a straight line, where the slope indicate the number of days for doubling, whereas a curve to the right indicates a slowing of the spread of the virus.  We have provided "doubling" lines, at various rates, and curves for top 10 countries (with the most cases).  
+<p align="center">
+	<img src="figures/log_log_worldwide_cases.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/log_log_worldwide_deaths.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/log_world_trend.png" width=800>
+</p>
+
+
+## Daily Plots
+Daily plots of **new cases** is another great method to determine speed at which a virus spreads.  A drop in the curve (e.g. USA) indicates that the virus is not spreading as quickly and the end may be in sight.
+<p align="center">
+	<img src="figures/daily_new_cases.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/daily_deaths.png" width=800>
+</p>
+
 
 
 
@@ -231,9 +251,9 @@ The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 - Suicides= 3,000
 - HIV AIDS = 2,615
 - Alzheimer = 1,918
+- COVID-19 = 1,844
 - Malaria = 1,200
 - Homicide = 1,111
-- COVID-19 = 909
 - Drowning = 877
 - Alcohol_disorder = 507
 - Fire = 331
