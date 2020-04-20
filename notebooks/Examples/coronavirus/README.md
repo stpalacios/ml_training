@@ -25,7 +25,7 @@
 
 
 # Introduction <a name="Introduction"/>
-At the time of the writing of this notebook (**updated April 17, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
+At the time of the writing of this notebook (**updated April 20, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 
 
@@ -103,9 +103,9 @@ The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] t
 
 	(520,000 / 329,227,746) * 100 = 0.157%
 	
-The current death percent of population (April 13, 2020) is 0.006% (roughly 6 in every 1,000 people):
+The current death percent of population (April 20, 2020) is 0.006% (roughly 12 in every 1,000 people):
 	
-	(20,463 / 329,227,746) * 100 = 0.006%
+	(40,661 / 329,227,746) * 100 = 0.012%
 	
 Compare this to the cancer, 2.915% (roughly 3 in every 100 people):
 
@@ -169,18 +169,20 @@ Confirmed cases by county
 	<img src="figures/covid_19_usa_confirmed_by_county.png" width=800>
 </p>
 
-Confirmed Cases by County (circle size indicates number of cases)
+Confirmed Cases by County: Heat Map
 <p align="center">
-	<img src="figures/covid_19_usa_confirmed_by_county_scale.png" width=800>
+	<img src="figures/covid_19_usa_confirmed_by_county_heatmap.png" width=800>
 </p>
 
 
 ## Block Chart
-The size of the *overall block* represents the *total of all countries*.  The size of *each block* represents the number of cases/recovered/deaths in that *country*.
+The size of the *overall block* represents the *total of all countries/states*.  The size of *each block* represents the number of cases/recovered/deaths in that *country/state*.
 <p align="center">
 	<img src="figures/covid_19_block_chart.png" width=800>
 </p>
 
+<p align="center">
+	<img src="figures/covid_19_block_chart_usa.png" width=800>
 </p>
 
 
