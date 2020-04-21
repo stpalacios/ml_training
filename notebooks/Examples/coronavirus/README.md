@@ -131,67 +131,67 @@ If you are still having trouble with this Sigmoid concept, watch this great [You
 ## Cases
 If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
 <p align="center">
-	<img src="figures/china_cases.png" width=800>
+	<img src="figures/china_cases.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/non_china_cases.png" width=800>
+	<img src="figures/non_china_cases.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/mortality_and_recovery_rate.png" width=800>
+	<img src="figures/mortality_and_recovery_rate.png" width=600>
 </p>
 
 
 ## Maps - World
 Confirmed cases by country
 <p align="center">
-	<img src="figures/covid_19_worldwide_confirmed.png" width=800>
+	<img src="figures/covid_19_worldwide_confirmed.png" width=600>
 </p>
 
 Deaths by country
 <p align="center">
-	<img src="figures/covid_19_worldwide_deaths.png" width=800>
+	<img src="figures/covid_19_worldwide_deaths.png" width=600>
 </p>
 
 
 ## Maps - USA 
 Confirmed cases by state
 <p align="center">
-	<img src="figures/covid_19_usa_confirmed.png" width=800>
+	<img src="figures/covid_19_usa_confirmed.png" width=600>
 </p>
 
 Deaths by state
 <p align="center">
-	<img src="figures/covid_19_usa_deaths.png" width=800>
+	<img src="figures/covid_19_usa_deaths.png" width=600>
 </p>
 
 Confirmed cases by county
 <p align="center">
-	<img src="figures/covid_19_usa_confirmed_by_county.png" width=800>
+	<img src="figures/covid_19_usa_confirmed_by_county.png" width=600>
 </p>
 
 Confirmed Cases by County: Heat Map
 <p align="center">
-	<img src="figures/covid_19_usa_confirmed_by_county_heatmap.png" width=800>
+	<img src="figures/covid_19_usa_confirmed_by_county_heatmap.png" width=600>
 </p>
 
 
 ## Block Chart
 The size of the *overall block* represents the *total of all countries/states*.  The size of *each block* represents the number of cases/recovered/deaths in that *country/state*.
 <p align="center">
-	<img src="figures/covid_19_block_chart_confirmed.png" width=800>
+	<img src="figures/covid_19_block_chart_confirmed.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/covid_19_block_chart_deaths.png" width=800>
+	<img src="figures/covid_19_block_chart_deaths.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/covid_19_block_chart_recovered.png" width=800>
+	<img src="figures/covid_19_block_chart_recovered.png" width=600>
 </p>
 
 <p align="center">
-	<img src="figures/covid_19_block_chart_usa_confirmed.png" width=800>
+	<img src="figures/covid_19_block_chart_usa_confirmed.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/covid_19_block_chart_usa_deaths.png" width=800>
+	<img src="figures/covid_19_block_chart_usa_deaths.png" width=600>
 </p>
 
 
@@ -227,43 +227,43 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 
 ## Comparison of Cases
 <p align="center">
-	<img src="figures/covid19_ebola_sars_cases_1.png" width=800>
+	<img src="figures/covid19_ebola_sars_cases_1.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/covid19_ebola_sars_cases_2.png" width=800>
+	<img src="figures/covid19_ebola_sars_cases_2.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/covid19_ebola_sars_cases_3.png" width=800>
+	<img src="figures/covid19_ebola_sars_cases_3.png" width=600>
 </p>
 
 
 ## Comparison of Deaths
 <p align="center">
-	<img src="figures/covid19_ebola_sars_deaths_1.png" width=800>
+	<img src="figures/covid19_ebola_sars_deaths_1.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/covid19_ebola_sars_deaths_2.png" width=800>
+	<img src="figures/covid19_ebola_sars_deaths_2.png" width=600>
 </p>
 <p align="center">
-	<img src="figures/covid19_ebola_sars_deaths_3.png" width=800>
+	<img src="figures/covid19_ebola_sars_deaths_3.png" width=600>
 </p>
 
 
 ## Bar Chart Comparisons
 <p align="center">
-	<img src="figures/comparison_num_countries.png" width=800>
+	<img src="figures/comparison_num_countries.png" width=600>
 </p>
 
 <p align="center">
-	<img src="figures/comparison_mortality_rate.png" width=800>
+	<img src="figures/comparison_mortality_rate.png" width=600>
 </p>
 
 <p align="center">
-	<img src="figures/comparison_num_cases.png" width=800>
+	<img src="figures/comparison_num_cases.png" width=600>
 </p>
 
 <p align="center">
-	<img src="figures/comparison_num_deaths.png" width=800>
+	<img src="figures/comparison_num_deaths.png" width=600>
 </p>
 
 
@@ -293,7 +293,7 @@ The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 The result of *WORLD-WIDE DEATHS PER DAY* is shown here.    
 
 <p align="center">
-	<img src="figures/death_by_other.png" width=800>
+	<img src="figures/death_by_other.png" width=600>
 </p>
 
 Here is another plot showing the top causes of *death per YEAR*.
@@ -327,12 +327,12 @@ therefore,
 
 We can then evaluate the equations with various weights, first consider the case where we hold the Recovery Rate fixed. Notice that if the Transmission Rate is low (a=0.5), the Susceptible population never reaches 0, meaning that the entire population is not affected by the virus, only a portion of it.  Conversely, if the Transmission Rate is high (a=3.2, as expected by the CDC for COVID-19) then the entire population is affected.  The logical solution to reduce Transmission Rate is to reduce the interactions within the population.
 <p align="center">
-	<img src="matlab/SIR_model/covid-19_model_Figure_1.png" width=800>
+	<img src="matlab/SIR_model/covid-19_model_Figure_1.png" width=600>
 </p>
 
 Now consider the case if we hold the Transmission Rate fixed, and vary the Recovery Rate.  If the Recovery Rate is low (ex: b=0.23), the Infected Population is prolonged in time.  Whereas if the Recovery Rate is high (ex: b=0.95), the Infected Population is reduced in time and the Susceptible Population never reaches 100%.  Notice that for b=0.95, the Recovered Population never reaches 1, this is because the Susceptible Population never reaches 0.
 <p align="center">
-	<img src="matlab/SIR_model/covid-19_model_Figure_2.png" width=800>
+	<img src="matlab/SIR_model/covid-19_model_Figure_2.png" width=600>
 </p>
 
 
@@ -360,10 +360,10 @@ where n = number of new cases, and p = number of prior cases.
 
 We can perform a rough simulation to derive the R0 value for New York City (NYC), where the current number of cases is 151,061 (as of April 8, 2020). Using the CDC data we find that the first confirmed case was February 10th.  The number of days from Feb 10 to April 8 is 58.  Simulating the R0 model we find that for NYC the R0 = 1.23. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/R0_model).
 <p align="center">
-	<img src="matlab/R0_model/R0_model_Figure_1.png" width=800>
+	<img src="matlab/R0_model/R0_model_Figure_1.png" width=600>
 </p>
 <p align="center">
-	<img src="matlab/R0_model/R0_model_Figure_2.png" width=800>
+	<img src="matlab/R0_model/R0_model_Figure_2.png" width=600>
 </p>
 
 
@@ -508,7 +508,7 @@ During times of crisis, the stock market tends to be volatile.  Many people pani
 The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so be mindful when you panic and consider liquidating your retirement accounts and investments. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Stock_Market_Analysis).
 
 <p align="center">
-	<img src="matlab/Stock_Market_Analysis/stock_recovery.png" width=800>
+	<img src="matlab/Stock_Market_Analysis/stock_recovery.png" width=600>
 </p>
 
 
