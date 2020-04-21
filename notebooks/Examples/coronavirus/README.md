@@ -178,11 +178,20 @@ Confirmed Cases by County: Heat Map
 ## Block Chart
 The size of the *overall block* represents the *total of all countries/states*.  The size of *each block* represents the number of cases/recovered/deaths in that *country/state*.
 <p align="center">
-	<img src="figures/covid_19_block_chart.png" width=800>
+	<img src="figures/covid_19_block_chart_confirmed.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/covid_19_block_chart_deaths.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/covid_19_block_chart_recovered.png" width=800>
 </p>
 
 <p align="center">
-	<img src="figures/covid_19_block_chart_usa.png" width=800>
+	<img src="figures/covid_19_block_chart_usa_confirmed.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/covid_19_block_chart_usa_deaths.png" width=800>
 </p>
 
 
@@ -218,13 +227,25 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 
 ## Comparison of Cases
 <p align="center">
-	<img src="figures/covid19_ebola_sars_cases.png" width=800>
+	<img src="figures/covid19_ebola_sars_cases_1.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/covid19_ebola_sars_cases_2.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/covid19_ebola_sars_cases_3.png" width=800>
 </p>
 
 
 ## Comparison of Deaths
 <p align="center">
-	<img src="figures/covid19_ebola_sars_deaths.png" width=800>
+	<img src="figures/covid19_ebola_sars_deaths_1.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/covid19_ebola_sars_deaths_2.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/covid19_ebola_sars_deaths_3.png" width=800>
 </p>
 
 

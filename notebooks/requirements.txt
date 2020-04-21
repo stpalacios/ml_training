@@ -17,6 +17,7 @@
 #conda install -c -y conda-forge cartopy==0.17.0
 #conda install -c -y conda-forge basemap==1.2.0
 #conda install -c -y conda-forge basemap-data-hires
+#conda install -c plotly plotly-orca
 
 # now run these
 pandas==0.25.2
