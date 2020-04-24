@@ -77,7 +77,7 @@ So we collected data from the CDC and WHO websites.  But we didn't stop there.  
 Just for completeness, we also collected data on:
 - Stock Prices: DJIA [[18](https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices)], NASDAQ [[19](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices)], and the S&P 500 [[20](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)]
 - Car crashes [[21](https://www.asirt.org/safe-travel/road-safety-facts/)]
-- Suicides [[22](https://www.medicalnewstoday.com/articles/234219.php#1)]
+- Suicides [[22](https://www.who.int/mental_health/prevention/suicide/suicideprevent/en/)]
 - Cancer [[23](https://www.who.int/news-room/fact-sheets/detail/cancer)]
 - Ischemic Heart Disease [[24](https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.118.005375)]
 - Generic US Flu [[25](https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm)]
@@ -216,6 +216,8 @@ Daily plots of **new cases** is another great method to determine speed at which
 <p align="center">
 	<img src="figures/daily_deaths.png" width=800>
 </p>
+
+
 
 
 
@@ -570,7 +572,7 @@ We will continue to update this notebook over the next several weeks, so stay tu
 19. https://www.wsj.com/market-data/quotes/index/COMP/historical-prices
 20. https://www.wsj.com/market-data/quotes/index/SPX/historical-prices
 21. https://www.asirt.org/safe-travel/road-safety-facts/
-22. https://www.medicalnewstoday.com/articles/234219.php#1
+22. https://www.who.int/mental_health/prevention/suicide/suicideprevent/en/
 23. https://www.who.int/news-room/fact-sheets/detail/cancer
 24. https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.118.005375
 25. https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm
