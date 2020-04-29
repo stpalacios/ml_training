@@ -17,6 +17,7 @@
 - [Bayes Theorem and Coronavirus](#Bayes_Theorem_and_Coronavirus)
 - [P-value](#P-value)
 - [Stock Market Analysis](#Stock_Market_Analysis)
+- [Open for Business](#Open_for_Business)
 - [Great videos to watch](#Great_videos)
 - [Conclusion](#Conclusion)
 - [References](#References)
@@ -25,7 +26,7 @@
 
 
 # Introduction <a name="Introduction"/>
-At the time of the writing of this notebook (**updated April 24, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
+At the time of the writing of this notebook (**updated April 28, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 
 
@@ -47,7 +48,6 @@ Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov
 ### COVID-19 (Corona Virus Disease 2019)
 - Caused by a SARS-COV-2 corona virus.
 - First identified in Wuhan, Hubei, China. Earliest reported symptoms reported in November 2019.
-- First cases were linked to contact with the Huanan Seafood Wholesale Market that sold live animals.
 - On January 30, 2020 the WHO declared the outbreak to be a Public Health Emergency of International Concern [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].
 
 
@@ -103,11 +103,11 @@ The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] t
 
 	(520,000 / 329,227,746) * 100 = 0.157%
 	
-The current death percent of population (April 20, 2020) is 0.006% (roughly 12 in every 1,000 people):
+The current death percent of population (April 28, 2020) is 0.017% (roughly 17 in every 1,000 people):
 	
-	(40,661 / 329,227,746) * 100 = 0.012%
+	(56,259 / 329,227,746) * 100 = 0.017%
 	
-Compare this to the cancer, 2.915% (roughly 3 in every 100 people):
+Compare this to the cancer, 2.915%:
 
 	(9,600,000 / 329,227,746) * 100 = 2.915%
 
@@ -360,7 +360,7 @@ Now lets consider the R0 model,
 
 where n = number of new cases, and p = number of prior cases.  
 
-We can perform a rough simulation to derive the R0 value for New York City (NYC), where the current number of cases is 151,061 (as of April 8, 2020). Using the CDC data we find that the first confirmed case was February 10th.  The number of days from Feb 10 to April 8 is 58.  Simulating the R0 model we find that for NYC the R0 = 1.23. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/R0_model).
+We can perform a rough simulation to derive the R0 value for New York City (NYC), where the current number of cases is 291,996 (as of April 28, 2020). Using the CDC data we find that the first confirmed case was February 10th.  The number of days from Feb 10 to April 8 is 78 days.  Simulating the R0 model we find that for NYC the R0 = 1.17. Note: the seasonal flu is 0.9-2.1.  Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/R0_model).
 <p align="center">
 	<img src="matlab/R0_model/R0_model_Figure_1.png" width=600>
 </p>
@@ -512,6 +512,38 @@ The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 0
 <p align="center">
 	<img src="matlab/Stock_Market_Analysis/stock_recovery.png" width=600>
 </p>
+
+
+
+
+
+
+# Open for Business <a name="Open_for_Business"/>
+When should a country or a state consider opening for business?  Many people are concerned with the possibility of an increased number of COVID-19 deaths if states or countries open too soon.  Let’s look at the data for a few states and compare that with other common epidemics.
+
+### California 
+California has a population of 39,512,223 people, a COVID-19 death toll of 1,779.  
+- The COVID-19 death toll is 0.0045 % of the population.  
+- Compare this to the [seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf) death toll (658/39,512,223)*100 = 0.0016%
+- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state) (3,563/39,512,223)*100 = 0.009%.  
+
+There are twice as many deaths due to car accidents as COVID-19.  Maybe California should remain closed until the drivers can re-take drivers education?
+
+### Texas
+Texas has a population of 28,995,881 people, a COVID-19 death toll of 666.  
+- The COVID-19 death toll is 0.0022 % of the population.  
+- Compare this to the death toll [seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx) (6,737/28,995,881)*100 = 0.023%.
+- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state) (3,642/28,995,881)*100 = 0.012%.  
+
+There are 10 times as many deaths due to flu than to COVID-19.  Maybe Texas should remain closed until the flu season is over?
+
+### COVID-19 Secondary affects - Mental Health
+What are the risks of a quarantine?  The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  This is statistically significant!
+
+You are the Data Scientist, consider the data and make your own decision.  Which has higher risk (quarantine or "open for business")?
+
+
+
 
 
 

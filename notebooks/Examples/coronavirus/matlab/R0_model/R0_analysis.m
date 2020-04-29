@@ -5,17 +5,17 @@
 d1 = datetime('02/10/0020');
 
 % today
-d2 = datetime('04/08/0020'); 
+d2 = datetime('04/28/0020'); 
 
 % calculate the number of days 
 day_str = between(d1,d2,'Days');
 day_num = split(day_str,'days');
 
 % Number of cases in NYC today
-cases_NYC = 151061;
+cases_NYC = 291996;
 
 % infection rate
-ir = 1.23;
+ir = 1.176;
 
 % initial infected
 i_0 = ones(day_num,1);
@@ -31,7 +31,7 @@ plot([1:1:day_num],i_0,'b.-')
 % semilogy([1:1:day_num],i_0)
 xlabel('Time (days)','Interpreter','latex');
 ylabel('Number of infections','Interpreter','latex');
-title(sprintf('R0 model: Transmission Rates (a=%1.2f)',a),'Interpreter','latex');
+title(sprintf('R0 model: Transmission Rates (a=%1.2f)',ir),'Interpreter','latex');
 
 
 
@@ -65,4 +65,4 @@ xlabel('Time (days)','Interpreter','latex');
 ylabel('Solution (ds/dt + di/dt + dr/dt)','Interpreter','latex');
 legend('susceptible','infected','recovered')
 
-save_all_figs_OPTION('R0_model','png')
+% save_all_figs_OPTION('R0_model','png')
