@@ -7,20 +7,20 @@
 
 
 # Table of Contents
-- [1. Introduction](#Introduction)
-- [2. Definitions](#Definitions)
-- [3. Data Collection](#Data_Collection)
-- [4. COVID-19 Analysis](#COVID-19_Analysis)
-- [5. Comparison to Other Pandemics](#Comparison_to_Other_Pandemics)
-- [6. SIR Model](#SIR_Model)
-- [7. R nought](#R_nought)
-- [8. Bayes Theorem and Coronavirus](#Bayes_Theorem_and_Coronavirus)
-- [9. P-value](#P-value)
-- [10. Stock Market Analysis](#Stock_Market_Analysis)
-- [11. Open for Business?](#Open_for_Business)
-- [12 .Great videos to watch](#Great_videos)
-- [13. Conclusion](#Conclusion)
-- [References](#References)
+[1. Introduction](#Introduction)
+[2. Definitions](#Definitions)
+[3. Data Collection](#Data_Collection)
+[4. COVID-19 Analysis](#COVID-19_Analysis)
+[5. Comparison to Other Pandemics](#Comparison_to_Other_Pandemics)
+[6. SIR Model](#SIR_Model)
+[7. R nought](#R_nought)
+[8. Bayes Theorem and Coronavirus](#Bayes_Theorem_and_Coronavirus)
+[9. P-value](#P-value)
+[10. Stock Market Analysis](#Stock_Market_Analysis)
+[11. Open for Business?](#Open_for_Business)
+[12 .Great videos to watch](#Great_videos)
+[13. Conclusion](#Conclusion)
+[References](#References)
 
 
 
