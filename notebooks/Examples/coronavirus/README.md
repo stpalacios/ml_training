@@ -7,45 +7,45 @@
 
 
 # Table of Contents
-- [Introduction](#Introduction)
-- [Definitions](#Definitions)
-- [Data Collection](#Data_Collection)
-- [COVID-19 Analysis](#COVID-19_Analysis)
-- [Comparison to Other Pandemics](#Comparison_to_Other_Pandemics)
-- [SIR Model](#SIR_Model)
-- [R nought](#R_nought)
-- [Bayes Theorem and Coronavirus](#Bayes_Theorem_and_Coronavirus)
-- [P-value](#P-value)
-- [Stock Market Analysis](#Stock_Market_Analysis)
-- [Open for Business?](#Open_for_Business)
-- [Great videos to watch](#Great_videos)
-- [Conclusion](#Conclusion)
+- [1. Introduction](#Introduction)
+- [2. Definitions](#Definitions)
+- [3. Data Collection](#Data_Collection)
+- [4. COVID-19 Analysis](#COVID-19_Analysis)
+- [5. Comparison to Other Pandemics](#Comparison_to_Other_Pandemics)
+- [6. SIR Model](#SIR_Model)
+- [7. R nought](#R_nought)
+- [8. Bayes Theorem and Coronavirus](#Bayes_Theorem_and_Coronavirus)
+- [9. P-value](#P-value)
+- [10. Stock Market Analysis](#Stock_Market_Analysis)
+- [11. Open for Business?](#Open_for_Business)
+- [12 .Great videos to watch](#Great_videos)
+- [13. Conclusion](#Conclusion)
 - [References](#References)
 
 
 
 
-# Introduction <a name="Introduction"/>
+# 1. Introduction <a name="Introduction"/>
 At the time of the writing of this notebook (**updated April 29, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 
 
 
 
-# Definitions <a name="Definitions"/>
+# 2. Definitions <a name="Definitions"/>
 
 Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]. 
 
-### Corona Virus
+## 2.1 Corona Virus
 - Coronaviruses are zoonotic viruses (transmitted between animals and people).
 - Symptoms include: fever, cough, respiratory symptoms, and breathing difficulties.
 - In severe cases, it can cause pneumonia, severe acute respiratory syndrome (SARS), kidney failure and even death.
 - Coronaviruses are also asymptomatic, meaning a person can be a carrier of the infection but experience no symptoms.
 
-### Novel coronavirus (nCoV)
+## 2.2 Novel coronavirus (nCoV)
 - A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.
 
-### COVID-19 (Corona Virus Disease 2019)
+## 2.3 COVID-19 (Corona Virus Disease 2019)
 - Caused by a SARS-COV-2 corona virus.
 - First identified in Wuhan, Hubei, China. Earliest reported symptoms reported in November 2019.
 - On January 30, 2020 the WHO declared the outbreak to be a Public Health Emergency of International Concern [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].
@@ -54,7 +54,7 @@ Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov
 
 
 
-# Data Collection <a name="Data_Collection"/>
+# 3. Data Collection <a name="Data_Collection"/>
 So is COVID-19 really a pandemic? If so, how does it compare to other pandemics?  According to the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)], COVID-19 **may** be 10x worse than the common flu, though some people will contract COVID-19 and have little to no symptoms whatsoever.
 
 However, a recent article by Dr. Anthony Fauci, et.al., states that the COVID-19 models are very conservative, and the COVID-19 **mortality rate is considerably less than initial predictions** [[3](https://www.nejm.org/doi/full/10.1056/NEJMe2002387)].
@@ -97,8 +97,10 @@ Just for completeness, we also collected data on:
 
 
 
-# COVID-19 Analysis <a name="COVID-19_Analysis"/>
-## Background
+# 4. COVID-19 Analysis <a name="COVID-19_Analysis"/>
+
+## 4.1 Background
+
 The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is 329,227,746 people [[37](https://www.census.gov)], the percent of the population that will likely die of COVID-19 is 0.16%:
 
 	(520,000 / 329,227,746) * 100 = 0.157%
@@ -128,7 +130,7 @@ This means that **the CDC track the slope (or rate of change) of the Sigmoid.** 
 If you are still having trouble with this Sigmoid concept, watch this great [YouTube video](https://youtu.be/Kas0tIxDvrg).
 
 
-## Cases
+## 4.2 Cases
 If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
 <p align="center">
 	<img src="figures/china_cases.png" width=600>
@@ -141,7 +143,7 @@ If we look at the China data for the *number of cases*, this does appear to look
 </p>
 
 
-## Maps - World
+## 4.3 Maps - World
 Confirmed cases by country
 <p align="center">
 	<img src="figures/covid_19_worldwide_confirmed.png" width=600>
@@ -153,7 +155,7 @@ Deaths by country
 </p>
 
 
-## Maps - USA 
+## 4.4 Maps - USA 
 Confirmed cases by state
 <p align="center">
 	<img src="figures/covid_19_usa_confirmed.png" width=600>
@@ -175,7 +177,7 @@ Confirmed Cases by County: Heat Map
 </p>
 
 
-## Block Chart
+## 4.5 Block Chart
 The size of the *overall block* represents the *total of all countries/states*.  The size of *each block* represents the number of cases/recovered/deaths in that *country/state*.
 <p align="center">
 	<img src="figures/covid_19_block_chart_confirmed.png" width=600>
@@ -195,7 +197,7 @@ The size of the *overall block* represents the *total of all countries/states*. 
 </p>
 
 
-## Log-Log Plots
+## 4.6 Log-Log Plots
 Log-Log plots are a better form with which to look at data, specifically epidemics and the "doubling" time or spread of a virus.  A doubling is indicated by a straight line, where the slope indicate the number of days for doubling, whereas a curve to the right indicates a slowing of the spread of the virus.  We have provided "doubling" lines, at various rates, and curves for top 10 countries (with the most cases).  
 <p align="center">
 	<img src="figures/log_log_worldwide_cases.png" width=600>
@@ -208,7 +210,7 @@ Log-Log plots are a better form with which to look at data, specifically epidemi
 </p>
 
 
-## Daily Plots
+## 4.7 Daily Plots
 Daily plots of **new cases** is another great method to determine speed at which a virus spreads.  A drop in the curve (e.g. USA) indicates that the virus is not spreading as quickly and the end may be in sight.
 <p align="center">
 	<img src="figures/daily_new_cases.png" width=800>
@@ -223,11 +225,11 @@ Daily plots of **new cases** is another great method to determine speed at which
 
 
 
-# Comparison to Other Pandemics <a name="Comparison_to_Other_Pandemics"/>
+# 5 Comparison to Other Pandemics <a name="Comparison_to_Other_Pandemics"/>
 So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-19, Ebola and SARS.  Colors (yellow to purple) indicate the number of confirmed cases.  Clearly COVID-19 is much more wide-spread.  Note that this might have some relation to the increased global ability to test, track and confirm viruses in 2020 compared to 2003.
 
 
-## Comparison of Cases
+## 5.1 Comparison of Cases
 <p align="center">
 	<img src="figures/covid19_ebola_sars_cases_1.png" width=600>
 </p>
@@ -239,7 +241,7 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 </p>
 
 
-## Comparison of Deaths
+## 5.2 Comparison of Deaths
 <p align="center">
 	<img src="figures/covid19_ebola_sars_deaths_1.png" width=600>
 </p>
@@ -251,7 +253,7 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 </p>
 
 
-## Bar Chart Comparisons
+## 5.3 Bar Chart Comparisons
 <p align="center">
 	<img src="figures/comparison_num_countries.png" width=600>
 </p>
@@ -269,7 +271,7 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 </p>
 
 
-## Averages
+## 5.4 Averages
 The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 - Cancer = 26,302
 - Heart Disease = 24,658
@@ -306,7 +308,7 @@ Here is another plot showing the top causes of *death per YEAR*.
 
 
 
-# SIR Model <a name="SIR_Model"/>
+# 6. SIR Model <a name="SIR_Model"/>
 Applying the models found in the literature [38],[39],[40] we can evaluate the spread of a virus by splitting the population into three categories, *Susceptible*, *Infected*, and *Recovered*.  Then using a partial differential equation (recall your calculus), we can solve the rate of change of each category. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/SIR_model).
 
 The weights (or constants) are the Transmission Rate (CDC example: a = 3.2), and Recovery Rate (CDC example: b = 0.23).
@@ -345,7 +347,7 @@ Now consider the case if we hold the Transmission Rate fixed, and vary the Recov
 
 
 
-# R nought <a name="R_nought"/>
+# 7. R nought <a name="R_nought"/>
 The reproduction number, R0 for short, describes how many additional cases of a disease each infected person will cause during their infectious period. The numbers are a range, because they depend on a variety of factors that vary from situation to situation.
 <p align="center">
 	<img src="figures/common_R0_values.png" width=600>
@@ -374,7 +376,9 @@ We can perform a rough simulation to derive the R0 value for New York City (NYC)
 
 
 
-# Bayes Theorem and Coronavirus <a name="Bayes_Theorem_and_Coronavirus"/>
+# 8. Bayes Theorem and Coronavirus <a name="Bayes_Theorem_and_Coronavirus"/>
+
+## 8.1 Introduction
 Mark Twain stated
 <p align="center">
 	<img src="figures/lies.png" width=400>
@@ -399,7 +403,7 @@ So why are the COVID-19 tests not 0% or 100%?  The answer involves Bayesian Stat
 
 
 
-### True Positives vs. False Positives
+## 8.2 True Positives vs. False Positives
 In hypothesis testing there are four distinct scenarios, for a particular test outcome, with respect to a specific person.
 - You may be really infected, and the test says ‘YES’. This is called a **TRUE POSITIVE (TP)**.
 - You may not be infected, but still, the test says ‘YES’. This is called a **FALSE POSITIVE (FP)**.
@@ -417,7 +421,7 @@ We can calculate a number of useful metrics from just the four numbers,
 As data science practitioners, you should be empowered to know that the same tools that you use in your ML algorithms or statistical modeling, are utilized for measuring the success of mission-critical medical testing and public health systems. You can simply assign different costs to each of these metrics and tune the test or algorithm to minimize the overall cost.
 
 
-### Bayes Theory for COVID-19
+## 8.3 Bayes Theory for COVID-19
 Bayes’ theorem is the most powerful rule of probability theory. It describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
 <p align="center">
 	<img src="figures/bayes.png" width=400>
@@ -446,7 +450,7 @@ If we write the testing process in terms of probability, then:
 
 
 
-# P-value <a name="P-value"/>
+#9.  P-value <a name="P-value"/>
 In hypothesis testing, assuming the null hypothesis is correct, the probability value (p-value) is the probability that the test result is as extreme as the results actually observed.  
 
 For example, assume that a city claims that COVID-19 has infected 20% of the population.
@@ -501,7 +505,7 @@ p-value can be confusing. Fortunately, we have Python and NumPy to do the math f
 
 
 
-# Stock Market Analysis <a name="Stock_Market_Analysis"/>
+# 10. Stock Market Analysis <a name="Stock_Market_Analysis"/>
 During times of crisis, the stock market tends to be volatile.  Many people panic and consider liquidating their 401k and other retirement accounts. As Data Scientists we have data to evaluate.  We pulled data from the following:
 - Dow Jones Industrial Average: [[18](https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices)], [[41](https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart)]
 - NASDAQ: [[19](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices)], [[42](https://www.macrotrends.net/1320/nasdaq-historical-chart)]
@@ -518,14 +522,14 @@ The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 0
 
 
 
-# Open for Business? <a name="Open_for_Business"/>
+# 11. Open for Business? <a name="Open_for_Business"/>
 When should a country or a state consider opening for business?  Many people are concerned with the possibility of an increased number of COVID-19 deaths if states or countries open too soon.  Let’s look at the data for a few states and compare that with other common epidemics.
 
-### COVID-19 Secondary affects - Mental Health
+## 11.1 COVID-19 Secondary affects - Mental Health
 What are the risks of a quarantine?  The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  This is statistically significant!
 
 
-### California 
+### 11.1.1 California 
 California has a population of 39,512,223 people, a COVID-19 death toll of 1,779.  The COVID-19 death toll is 0.004 % of the population. Compare this death toll to:
 - [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001%
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
@@ -534,7 +538,7 @@ California has a population of 39,512,223 people, a COVID-19 death toll of 1,779
 There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.
 
 
-### Texas
+### 11.1.2 Texas
 Texas has a population of 28,995,881 people, a COVID-19 death toll of 666.  The COVID-19 death toll is 0.002 % of the population.  Compare this to:
 - [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023%.
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
@@ -543,7 +547,17 @@ Texas has a population of 28,995,881 people, a COVID-19 death toll of 666.  The 
 There are 10 times as many deaths due to flu and six times as many suicides than deaths related to COVID-19.
 
 
-### Risk assesment
+## 11.2 COVID-19 Secondary affects - GDP
+What are the risks of of closing businness, decreasing Gross Domestic Product (GDP) and increading debt through stimulis packages?  What is the breaking point, and the sign of a pending recession?  
+- According to a [World Bank study](https://elibrary.worldbank.org/doi/abs/10.1596/1813-9450-5391) the tipping point for any economy is 77% debt-to-GDP.
+- The current [USA debt](https://www.treasurydirect.gov/NP/debt/current) is $24.8 trillion.
+- The current [USA debt-to-GDP](https://www.bea.gov/data/gdp/gross-domestic-product) ratio is 110%
+
+
+
+
+
+## 11.3 Risk assesment
 You are the Data Scientist, consider the data and make your own decision.  Which has higher risk, quarantine or "open for business"?  Our job as data scientists is to look at data, use statistics ([P-value](#P-value), [Bayes Theory](#Bayes_Theorem_and_Coronavirus), etc.) and evaluate significance levels and [models](#SIR_Model) so that we can inform others that make decisions.
 
 
@@ -552,7 +566,7 @@ You are the Data Scientist, consider the data and make your own decision.  Which
 
 
 
-# Great Videos to Watch <a name="Great_videos"/>
+# 12. Great Videos to Watch <a name="Great_videos"/>
  - ["Exponential growth and epidemics"](https://youtu.be/Kas0tIxDvrg)
  - ["Understanding R nought | Khan Academy"](https://youtu.be/jKUGZvW99os)
  - ["Estimating actual COVID 19 cases (novel corona virus infections) in an area based on deaths"](https://youtu.be/mCa0JXEwDEk)
@@ -565,7 +579,7 @@ You are the Data Scientist, consider the data and make your own decision.  Which
  
 
 
-# Conclusion <a name="Conclusion"/>
+# 13. Conclusion <a name="Conclusion"/>
 So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to the common flu, SARS, MERS, etc.  As you will likely find, as we did, if you are older than 5 and younger than 60 [[44](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html)], you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidelines [[45](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html)] of social distancing and personal health precautions.  
 
 **Note from the authors:** This analysis is based on the study of data science and machine learning. We are not health professionals or epidemiologists, and the analysis/opinions of this article should not be interpreted as professional advice.
