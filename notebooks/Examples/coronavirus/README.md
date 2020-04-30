@@ -463,7 +463,7 @@ If we write the testing process in terms of probability, then:
 
 
 
-#9.  P-value <a name="P-value"/>
+# 9. P-value <a name="P-value"/>
 In hypothesis testing, assuming the null hypothesis is correct, the probability value (p-value) is the probability that the test result is as extreme as the results actually observed.  
 
 For example, assume that a city claims that COVID-19 has infected 20% of the population.
