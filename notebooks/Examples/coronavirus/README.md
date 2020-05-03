@@ -29,7 +29,7 @@
 
 [11. Open for Business?](#Open_for_Business)
 
-[12 .Great videos to watch](#Great_videos)
+[12. Great videos to watch](#Great_videos)
 
 [13. Conclusion](#Conclusion)
 
@@ -39,7 +39,7 @@
 
 
 # 1. Introduction <a name="Introduction"/>
-At the time of the writing of this notebook (**updated April 29, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
+At the time of the writing of this notebook (**updated May 2, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 **Note from the authors:** This analysis is based on the study of data science and machine learning. We are not health professionals or epidemiologists, and the analysis/opinions of this article should not be interpreted as professional advice.
 
@@ -536,28 +536,11 @@ The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 0
 
 
 # 11. Open for Business? <a name="Open_for_Business"/>
-When should a country or a state consider opening for business?  Many people are concerned with the possibility of an increased number of COVID-19 deaths if states or countries open too soon.  Let’s look at the data for a few states and compare that with other common epidemics.
+When should a country or a state consider opening for business?  Many people are concerned with the possibility of an increased number of COVID-19 deaths if countries or states open too soon.  Let’s look at the data for a few data points to compare and contrast this issue.
+
 
 ## 11.1 COVID-19 Secondary affects - Mental Health
 What are the risks of a quarantine?  The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  This is statistically significant!
-
-
-### 11.1.1 California 
-California has a population of 39,512,223 people, a COVID-19 death toll of 1,779.  The COVID-19 death toll is 0.004 % of the population. Compare this death toll to:
-- [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001%
-- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
-- [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011%. 
-
-There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.
-
-
-### 11.1.2 Texas
-Texas has a population of 28,995,881 people, a COVID-19 death toll of 666.  The COVID-19 death toll is 0.002 % of the population.  Compare this to:
-- [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023%.
-- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
-- [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013%. 
-
-There are 10 times as many deaths due to flu and six times as many suicides than deaths related to COVID-19.
 
 
 ## 11.2 COVID-19 Secondary affects - GDP
@@ -567,11 +550,28 @@ What are the risks of of closing businness, decreasing Gross Domestic Product (G
 - The current [USA debt-to-GDP](https://www.bea.gov/data/gdp/gross-domestic-product) ratio is 110%
 
 
+## 11.3 Examples
+
+### 11.1.1 California 
+California has a population of 39,512,223 people, and a COVID-19 death toll of 1,779 people, or 0.004 % of the population. Compare this death toll to:
+- [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001%
+- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
+- [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011%. 
+
+There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.  Based on the data, driving in California is actually quite dangerous (relatively speaking).
 
 
+### 11.1.2 Texas
+Texas has a population of 28,995,881 people, and a COVID-19 death toll of 666 people, or 0.002 % of the population.  Compare this to:
+- [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023%.
+- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
+- [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013%. 
 
-## 11.3 Risk assesment
-You are the Data Scientist, consider the data and make your own decision.  Which has higher risk, quarantine or "open for business"?  Our job as data scientists is to look at data, use statistics ([P-value](#P-value), [Bayes Theory](#Bayes_Theorem_and_Coronavirus), etc.) and evaluate significance levels and [models](#SIR_Model) so that we can inform others that make decisions.
+There are 10 times as many deaths due to flu and six times as many suicides than deaths related to COVID-19.
+
+
+## 11.4 Risk assesment
+You are the Data Scientist, consider the data and make your own decision.  Which has higher risk, quarantine or "open for business"?  Our job as data scientists is to look at data, use statistics ([P-value](#P-value), [Bayes Theory](#Bayes_Theorem_and_Coronavirus), etc.) and evaluate [significance levels](#P-value) and [models](#SIR_Model) so that we can inform others that make decisions.
 
 
 
