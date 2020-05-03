@@ -524,7 +524,7 @@ During times of crisis, the stock market tends to be volatile.  Many people pani
 - NASDAQ: [[19](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices)], [[42](https://www.macrotrends.net/1320/nasdaq-historical-chart)]
 - S&P 500: [[20](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)], [[43](https://www.macrotrends.net/2324/sp-500-historical-chart-data)]
  
-The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so be mindful when you panic and consider liquidating your retirement accounts and investments. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Stock_Market_Analysis).
+The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so take a moment and reflect before you panic and consider liquidating your retirement accounts and investments. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Stock_Market_Analysis).
 
 <p align="center">
 	<img src="matlab/Stock_Market_Analysis/stock_recovery.png" width=600>
@@ -549,13 +549,14 @@ What are the risks of of closing businness, decreasing Gross Domestic Product (G
 - According to a [World Bank study](https://elibrary.worldbank.org/doi/abs/10.1596/1813-9450-5391) the tipping point for any economy is 77% debt-to-GDP.
 - The current [USA debt](https://www.treasurydirect.gov/NP/debt/current) is $24.8 trillion.
 - The current [USA debt-to-GDP](https://www.bea.gov/data/gdp/gross-domestic-product) ratio is 110%.
+
 This is statistically significant!
 
 
 ## 11.2 Examples and Counter-Examples
 
 ### 11.2.1 California 
-California has a population of 39,512,223 people, and a COVID-19 death toll of 1,779 people, or 0.004 % of the population. Compare this death toll to:
+California has a population of 39,512,223 people, and a COVID-19 death toll of 1,779 people, or 0.004 % of the population. Compare this to:
 - [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001%
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011%. 
