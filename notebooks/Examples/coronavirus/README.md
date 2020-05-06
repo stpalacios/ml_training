@@ -39,7 +39,7 @@
 
 
 # 1. Introduction <a name="Introduction"/>
-At the time of the writing of this notebook (**updated May 2, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
+At the time of the writing of this notebook (**updated May 6, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 **Note from the authors:** This analysis is based on the study of data science and machine learning. We are not health professionals or epidemiologists, and the analysis/opinions of this article should not be interpreted as professional advice.
 
@@ -154,7 +154,9 @@ If we look at the China data for the *number of cases*, this does appear to look
 <p align="center">
 	<img src="figures/mortality_and_recovery_rate.png" width=600>
 </p>
-
+<p align="center">
+	<img src="figures/country_spread.png" width=600>
+</p>
 
 ## 4.3 Maps - World
 Confirmed cases by country
@@ -225,6 +227,12 @@ Log-Log plots are a better form with which to look at data, specifically epidemi
 
 ## 4.7 Daily Plots
 Daily plots of **new cases** is another great method to determine speed at which a virus spreads.  A drop in the curve (e.g. USA) indicates that the virus is not spreading as quickly and the end may be in sight.
+<p align="center">
+	<img src="figures/daily_confirmed_cases_global.png" width=800>
+</p>
+<p align="center">
+	<img src="figures/daily_deaths_global.png" width=800>
+</p>
 <p align="center">
 	<img src="figures/daily_new_cases.png" width=800>
 </p>
