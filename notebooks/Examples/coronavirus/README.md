@@ -162,12 +162,12 @@ Daily plots of **new cases** is another great method to determine speed at which
 ## 4.3 Mortality Rate
 Number of tests in each country versus the mortality rate for that country.
 <p align="center">
-	<img src="figures/num_tests_vs_mortiality_rate_vs_country.png" width=800>
+	<img src="figures/num_tests_vs_mortiality_rate_vs_country.png" width=600>
 </p>
 
 The mortality rate for each country versus the test positive rate.  For example, 95.16% of the population that tested positive in the USA had a mortality rate of 5.9%.  Note for some countries there is a discrepancy in the reported population and the reported number of tests positive.  This could be the result of some people taking multiple tests.
 <p align="center">
-	<img src="figures/mortiality_rate_vs_test_positive_vs_country.png" width=800>
+	<img src="figures/mortiality_rate_vs_test_positive_vs_country.png" width=600>
 </p>
 
 
