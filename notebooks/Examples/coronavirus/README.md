@@ -154,6 +154,7 @@ If we look at the China data for the *number of cases*, this does appear to look
 <p align="center">
 	<img src="figures/mortality_and_recovery_rate.png" width=600>
 </p>
+Spread to each country vs. time.
 <p align="center">
 	<img src="figures/country_spread.png" width=600>
 </p>
