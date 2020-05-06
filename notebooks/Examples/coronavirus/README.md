@@ -118,9 +118,9 @@ The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] t
 
 	(520,000 / 329,227,746) * 100 = 0.157%
 	
-The current death percent of population (April 28, 2020) is 0.017% (roughly 17 in every 1,000 people):
+The current death percent of population (May 6, 2020) is 0.017% (roughly 22 in every 1,000 people):
 	
-	(56,259 / 329,227,746) * 100 = 0.017%
+	(71,064 / 329,227,746) * 100 = 0.022%
 	
 Compare this to the cancer, 2.915%:
 
@@ -143,23 +143,48 @@ This means that **the CDC track the slope (or rate of change) of the Sigmoid.** 
 If you are still having trouble with this Sigmoid concept, watch this great [YouTube video](https://youtu.be/Kas0tIxDvrg).
 
 
-## 4.2 Cases
-If we look at the China data for the *number of cases*, this does appear to look like a Sigmoid function.  This may indicate that the end is in sight for China.  Maybe the rest of the world is soon to follow.
+## 4.2 Daily Plots
+Daily plots of **new cases** is another great method to determine speed at which a virus spreads.  A drop in the curve (e.g. USA) indicates that the virus is not spreading as quickly and the end may be in sight.
 <p align="center">
-	<img src="figures/china_cases.png" width=600>
+	<img src="figures/daily_confirmed_cases_global.png" width=800>
 </p>
 <p align="center">
-	<img src="figures/non_china_cases.png" width=600>
+	<img src="figures/daily_deaths_global.png" width=800>
 </p>
 <p align="center">
-	<img src="figures/mortality_and_recovery_rate.png" width=600>
+	<img src="figures/daily_new_cases.png" width=800>
 </p>
-Spread to each country vs. time.
 <p align="center">
-	<img src="figures/country_spread.png" width=600>
+	<img src="figures/daily_deaths.png" width=800>
 </p>
 
-## 4.3 Maps - World
+
+## 4.3 Mortality Rate
+Number of tests in each country versus the mortality rate for that country.
+<p align="center">
+	<img src="figures/num_tests_vs_mortiality_rate_vs_country.png" width=800>
+</p>
+
+The mortiality rate for each country versus the test positive rate.  For example, 95.16% of the population that tested positive in the USA had a mortality rate of 5.9%
+<p align="center">
+	<img src="figures/mortiality_rate_vs_test_positive_vs_country.png" width=800>
+</p>
+
+
+## 4.4 Log-Log Plots
+Log-Log plots are a better form with which to look at data, specifically epidemics and the "doubling" time or spread of a virus.  A doubling is indicated by a straight line, where the slope indicate the number of days for doubling, whereas a curve to the right indicates a slowing of the spread of the virus.  We have provided "doubling" lines, at various rates, and curves for top 10 countries (with the most cases).  
+<p align="center">
+	<img src="figures/log_log_worldwide_cases.png" width=600>
+</p>
+<p align="center">
+	<img src="figures/log_log_worldwide_deaths.png" width=600>
+</p>
+<p align="center">
+	<img src="figures/log_world_trend.png" width=800>
+</p>
+
+
+## 4.5 Maps - World
 Confirmed cases by country
 <p align="center">
 	<img src="figures/covid_19_worldwide_confirmed.png" width=600>
@@ -171,7 +196,7 @@ Deaths by country
 </p>
 
 
-## 4.4 Maps - USA 
+## 4.6 Maps - USA 
 Confirmed cases by state
 <p align="center">
 	<img src="figures/covid_19_usa_confirmed.png" width=600>
@@ -193,7 +218,7 @@ Confirmed Cases by County: Heat Map
 </p>
 
 
-## 4.5 Block Chart
+## 4.7 Block Chart
 The size of the *overall block* represents the *total of all countries/states*.  The size of *each block* represents the number of cases/recovered/deaths in that *country/state*.
 <p align="center">
 	<img src="figures/covid_19_block_chart_confirmed.png" width=600>
@@ -213,33 +238,9 @@ The size of the *overall block* represents the *total of all countries/states*. 
 </p>
 
 
-## 4.6 Log-Log Plots
-Log-Log plots are a better form with which to look at data, specifically epidemics and the "doubling" time or spread of a virus.  A doubling is indicated by a straight line, where the slope indicate the number of days for doubling, whereas a curve to the right indicates a slowing of the spread of the virus.  We have provided "doubling" lines, at various rates, and curves for top 10 countries (with the most cases).  
-<p align="center">
-	<img src="figures/log_log_worldwide_cases.png" width=600>
-</p>
-<p align="center">
-	<img src="figures/log_log_worldwide_deaths.png" width=600>
-</p>
-<p align="center">
-	<img src="figures/log_world_trend.png" width=800>
-</p>
 
 
-## 4.7 Daily Plots
-Daily plots of **new cases** is another great method to determine speed at which a virus spreads.  A drop in the curve (e.g. USA) indicates that the virus is not spreading as quickly and the end may be in sight.
-<p align="center">
-	<img src="figures/daily_confirmed_cases_global.png" width=800>
-</p>
-<p align="center">
-	<img src="figures/daily_deaths_global.png" width=800>
-</p>
-<p align="center">
-	<img src="figures/daily_new_cases.png" width=800>
-</p>
-<p align="center">
-	<img src="figures/daily_deaths.png" width=800>
-</p>
+
 
 
 
