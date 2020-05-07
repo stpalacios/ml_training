@@ -422,11 +422,11 @@ How might our false positive example translate to the USA population?
 
 According to the CDC, 60% of the USA population (197,536,648 people) will contract COVID-19 [[52](https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html#anchor_1582494216224)].  This means that at 2% (in our example), there are 3,950,733 people with tests that are false positives. Therefore 4 million people, who don’t have COVID-19, will receive medical care for a virus they don’t have.  What is the impact to medical facilities and personnel, and the metal stability of those 4 million people?
 
-So why are the COVID-19 tests not 0% or 100%?  The answer involves Bayesian Statistics, probabilities and p-value.
+So why are the COVID-19 tests not 0% or 100%?  The answer involves [Bayesian Statistics](#Bayes_Theory), [probabilities](#False_positives) and [p-value](#P-value).
 
 
 
-## 8.2 True Positives vs. False Positives
+## 8.2 True Positives vs. False Positives <a name="False_positives"/>
 In hypothesis testing there are four distinct scenarios, for a particular test outcome, with respect to a specific person.
 - You may be really infected, and the test says ‘YES’. This is called a **TRUE POSITIVE (TP)**.
 - You may not be infected, but still, the test says ‘YES’. This is called a **FALSE POSITIVE (FP)**.
@@ -444,7 +444,7 @@ We can calculate a number of useful metrics from just the four numbers,
 As data science practitioners, you should be empowered to know that the same tools that you use in your ML algorithms or statistical modeling, are utilized for measuring the success of mission-critical medical testing and public health systems. You can simply assign different costs to each of these metrics and tune the test or algorithm to minimize the overall cost.
 
 
-## 8.3 Bayes Theory for COVID-19
+## 8.3 Bayes Theory for COVID-19 <a name="Bayes_Theory"/>
 Bayes’ theorem is the most powerful rule of probability theory. It describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
 <p align="center">
 	<img src="figures/bayes.png" width=400>
@@ -480,7 +480,7 @@ For example, assume that a city claims that COVID-19 has infected 20% of the pop
 - Null hypothesis: The mean population infected is 20% or less.
 - Alternate hypothesis: The mean population infected is greater than 20%. 
 
-We’ll use one-tailed test in our case since we only care about if the mean population infected is greater than 20%. We’ll disregard the possibility in the other direction since the consequences of having a mean infection lower or equal to 20% is even more preferable.
+We’ll use one-tailed test in our case since we only care if the mean population infected is greater than 20%. We’ll disregard the possibility in the other direction since the consequences of having a mean infection lower or equal to 20% is even more preferable.
 
 Since we are testing something that is occurring in nature, it is common to assume a Normal (Gaussian) distribution.
 <p align="center">
@@ -497,9 +497,9 @@ The job of p-value is to answer this question:
 
 "If I’m living in a city where the mean population infected is 20% or less (null hypothesis is true), how surprising is my evidence based on my data?
 
-P-value answers this question with a number - probability.
+P-value answers this question with a number - **probability**.
 
-The lower the p-value, the more surprising the evidence is, and the more ridiculous our null hypothesis looks. What do we do when we feel ridiculous with our null hypothesis? We reject that and choose our alternative hypothesis instead.
+**The lower the p-value, the more surprising the evidence is, and the more ridiculous our null hypothesis looks.** What do we do when we feel ridiculous with our null hypothesis? We reject that and choose our alternative hypothesis instead.
 
 If the p-value is lower than a predetermined significance level (in the literature this is called "alpha"), then we reject the null hypothesis.
 
@@ -518,7 +518,7 @@ P-value is not enough, we need to set a threshold (the significance level — al
 
 The rule of thumb is to set alpha to be either 0.05 or 0.01 (again, the value depends on your problems at hand), meaning that observed p-values lower than 95% or 99% are *statistically significant*.
 
-p-value can be confusing. Fortunately, we have Python and NumPy to do the math for us.  You can now use this method to select your threshold value (alpha) and your p-value (significance test) along with the COVID-19 data for any city, and make a reasonable decision about our data collection and its distribution with regard to the mean.
+P-value can be confusing. Fortunately, we have Python and NumPy to do the math for us.  You can now use this method to select your threshold value (alpha) and your p-value (significance test) along with the COVID-19 data for any city, and make a reasonable decision about our data collection and its distribution with regard to the mean.
 
 
 
@@ -529,12 +529,12 @@ p-value can be confusing. Fortunately, we have Python and NumPy to do the math f
 
 
 # 10. Stock Market Analysis <a name="Stock_Market_Analysis"/>
-During times of crisis, the stock market tends to be volatile.  Many people panic and consider liquidating their 401k and other retirement accounts. As Data Scientists we have data to evaluate.  We pulled data from the following:
+During times of crisis, the stock market tends to be volatile.  Many people panic and consider liquidating their 401k and other investment accounts. As Data Scientists we have data to evaluate.  We pulled data from the following:
 - Dow Jones Industrial Average: [[18](https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices)], [[41](https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart)]
 - NASDAQ: [[19](https://www.wsj.com/market-data/quotes/index/COMP/historical-prices)], [[42](https://www.macrotrends.net/1320/nasdaq-historical-chart)]
 - S&P 500: [[20](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices)], [[43](https://www.macrotrends.net/2324/sp-500-historical-chart-data)]
  
-The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  In the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so take a moment and reflect before you panic and consider liquidating your retirement accounts and investments. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Stock_Market_Analysis).
+The figure below provides the daily closing values for DJIA, S&P 500, and NASDAQ from 03/20/2000 to 03/20/2020.  Notice that after the 9/11 attacks in 2001, the market recovered in 61 days (just before Christmas).  After the 2008 Recession, the market recovered in 532 days (1 year, 5 months).  **In all cases the market recovered**, so take a moment and reflect before you consider liquidating your retirement accounts and investments. Our Matlab analysis can be found [here](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/matlab/Stock_Market_Analysis).
 
 <p align="center">
 	<img src="matlab/Stock_Market_Analysis/stock_recovery.png" width=600>
@@ -546,21 +546,21 @@ The figure below provides the daily closing for DJIA, S&P 500, and NASDAQ from 0
 
 
 # 11. Open for Business? <a name="Open_for_Business"/>
-When should a country or a state consider opening for business?  Many people are concerned with the possibility of an increased number of COVID-19 deaths if countries or states open too soon.  Let’s look at the data for a few data points to compare and contrast this issue.
+When should a country or a state consider opening for business?  Many people are concerned with the primary effects of COVID-19, namely the possibility of an increased number of COVID-19 deaths if countries or states open too soon.  However what are the secondary effects of COVID-19, and what are the possible issues related to quarantine? Are there other factors that maybe we should consider that are more lethal than COVID-19?  Let’s look at the data for a few data points to compare and contrast this issue.
 
 
 ## 11.1 COVID-19 Secondary affects
 
 ### 11.1.1 Mental Health
-What are the risks of a quarantine?  The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  This is statistically significant!
+The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  An 8,000% increase is statistically significant!
 
 ### 11.1.2 Economic Stability: Debt-to-GDP
-What are the risks of of closing businness, decreasing Gross Domestic Product (GDP) and increading debt through stimulis packages?  What is the breaking point for an economy, and the early signs of a recession or collapse?  
+What are the risks of of closing businness, decreasing Gross Domestic Product (GDP) and increading debt through stimulis packages?  What is the breaking point for an economy, and what are the early signs of a recession or collapse?  
 - According to a [World Bank study](https://elibrary.worldbank.org/doi/abs/10.1596/1813-9450-5391) the tipping point for any economy is 77% debt-to-GDP.
 - The current [USA debt](https://www.treasurydirect.gov/NP/debt/current) is $24.8 trillion.
 - The current [USA debt-to-GDP](https://www.bea.gov/data/gdp/gross-domestic-product) ratio is 110%.
 
-This is statistically significant!
+A debt-to-GDP of 110% is statistically significant!
 
 
 ## 11.2 Examples and Counter-Examples
@@ -571,7 +571,8 @@ California has a population of 39,512,223 people, and a COVID-19 death toll of 1
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011%. 
 
-There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.  Based on the data, driving in California is actually quite dangerous (relatively speaking).
+There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.
+
 
 ### 11.2.2 Texas
 Texas has a population of 28,995,881 people, and a COVID-19 death toll of 666 people, or 0.002 % of the population.  Compare this to:
@@ -579,14 +580,19 @@ Texas has a population of 28,995,881 people, and a COVID-19 death toll of 666 pe
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013%. 
 
-There are 10 times as many deaths due to flu and six times as many suicides than deaths related to COVID-19.
+There are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.
 
 
 ## 11.3 Risk assesment
-You are the Data Scientist, consider the data and make your own decision.  Which has higher risk, quarantine or "open for business"?  Our job as data scientists is to look at data, use statistics ([P-value](#P-value), [Bayes Theory](#Bayes_Theorem_and_Coronavirus), etc.) and evaluate [significance levels](#P-value) and [models](#SIR_Model) so that we can inform others that make decisions.
+**You are the Data Scientist, consider the data and make your own decision.**  Which has higher risk, quarantine or "open for business"?  Our job as data scientists is to look at data, use statistics ([P-value](#P-value), [Bayes Theory](#Bayes_Theorem_and_Coronavirus), etc.) and evaluate [significance levels](#P-value) and [models](#SIR_Model) so that we can inform others to make data-driven decisions.
 
-
-
+Some questions to consider:
+ - Will COVID-19 deaths continue to increase?  At what rate?
+ - Will car fatalities continue to increase?  At what rate?
+ - Will suicides continue to increase?  At what rate?
+ - Will people continue to die of other issues (cancer, flu, heart attack, etc.)?  At what rate?
+ - What are the inherent risks of leaving your home each day prior to COVID-19?  Do those still exist? (e.g. car fatality, heart attack, etc.)
+ - How do you evaluate these both together and individually, and what are the risks?
 
 
 
