@@ -4,6 +4,7 @@
 </p>
 
 
+**---UPDATED May 13, 2020---**
 
 
 # Table of Contents
@@ -39,7 +40,7 @@
 
 
 # 1. Introduction <a name="Introduction"/>
-At the time of the writing of this notebook (**updated May 13, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will consider data publically available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
+At the time of the writing of this notebook, the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will consider data publically available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 **Note from the authors:** This analysis is based on the study of data science and machine learning. We are not health professionals or epidemiologists, and the analysis/opinions of this article should not be interpreted as professional advice.
 
@@ -582,7 +583,7 @@ It may be helpful to consider the two most populus states, one that remains in l
 ### 11.2.1 California 
 California remains in lock-down  (as of May 13, 2020).  
 
-California has a population of 39,512,223 people, and a COVID-19 death toll of 1,779 people, or 0.004 % of the population. Compare this to:
+California has a population of 39,512,223 people, and a COVID-19 death toll of 2,879 people, or 0.007 % of the population. Compare this to:
 - [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001%
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011%. 
@@ -599,7 +600,7 @@ Based on the definition of an [epidemic](#Definition-Epidemic), does California 
 ### 11.2.2 Texas
 Texas has re-opened with a staggered process of roughly 25% per week  (as of May 13, 2020).
 
-Texas has a population of 28,995,881 people, and a COVID-19 death toll of 666 people, or 0.002 % of the population.  Compare this to:
+Texas has a population of 28,995,881 people, and a COVID-19 death toll of 1,146 people, or 0.004 % of the population.  Compare this to:
 - [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023%.
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013%. 
@@ -609,7 +610,7 @@ There are 10 times more deaths due to flu, and six times more suicides than deat
 Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit the definition?
  - Epidemic: 200 per week per 100,000 people. Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991. 
  - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (not 41,432 per week, but total cases).
- - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  That is 25.7% of epidemic levels (7,477/(28,995,881/100,000)) (by the [scientific definition](#Definition-Epidemic))
+ - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  That is 25.7% of epidemic levels (7,477/(28,995,881/100,000)) (by the [scientific definition](#Definition-Epidemic)).
  
 
 ## 11.3 Risk assesment
