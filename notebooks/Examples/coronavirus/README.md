@@ -122,13 +122,13 @@ Just for completeness, we also collected data on:
 
 ## 4.1 Background
 
-The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is 329,227,746 people [[37](https://www.census.gov)], the percent of the population that will likely die of COVID-19 is 0.16%:
+The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is 329,227,746 people [[37](https://www.census.gov)], the percent of the population that will likely die of COVID-19 is 0.16% (roughly 16 in every 100 people):
 
 	(520,000 / 329,227,746) * 100 = 0.157%
 	
-The current death percent of population (May 6, 2020) is 0.017% (roughly 22 in every 1,000 people):
+The current death percent of population (May 13, 2020) is 0.025% (roughly 2 in every 100 people):
 	
-	(71,064 / 329,227,746) * 100 = 0.022%
+	(82,376 / 329,227,746) * 100 = 0.025%
 	
 Compare this to the cancer, 2.915%:
 
@@ -563,7 +563,7 @@ When should a country or a state consider opening for business?  Many people are
 The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. 
 - The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   
 - The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  An 8,000% increase is statistically significant!  
-- The [national domestic violence hotline](https://www.thehotline.org/help/) noted a significant increase in call volume in March and April 2020.  The [BBC](https://www.bbc.com/news/uk-52433520) noted an increase of domestic abuse calls of 49%, and the highest number of domestic abuse deaths in 11 years.  The [National Coalition Against Domestic Violence](https://ncadv.org/statistics) (NCADV) noted that on average, nearly 20 people per minute are physically abused by an intimate partner in the United States. 
+- The [National Domestic Violence Hotline](https://www.thehotline.org/help/) noted a significant increase in call volume in March and April 2020.  The [BBC](https://www.bbc.com/news/uk-52433520) noted an increase of domestic abuse calls of 49%, and the highest number of domestic abuse deaths in 11 years.  The [National Coalition Against Domestic Violence](https://ncadv.org/statistics) (NCADV) noted that on average, nearly 20 people per minute are physically abused by an intimate partner in the United States. 
 
 ### 11.1.2 Economic Stability: Debt-to-GDP
 What are the risks of of closing businness, decreasing Gross Domestic Product (GDP) and increading debt through stimulis packages?  What is the breaking point for an economy, and what are the early signs of a recession or collapse?  
