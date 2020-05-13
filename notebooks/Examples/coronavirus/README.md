@@ -39,7 +39,7 @@
 
 
 # 1. Introduction <a name="Introduction"/>
-At the time of the writing of this notebook (**updated May 6, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will only consider data available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
+At the time of the writing of this notebook (**updated May 13, 2020**), the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will consider data publically available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
 **Note from the authors:** This analysis is based on the study of data science and machine learning. We are not health professionals or epidemiologists, and the analysis/opinions of this article should not be interpreted as professional advice.
 
@@ -47,18 +47,21 @@ At the time of the writing of this notebook (**updated May 6, 2020**), the world
 
 # 2. Definitions <a name="Definitions"/>
 
-Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]. 
+Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)].  
 
-## 2.1 Corona Virus
+## 2.1 Epidemic <a name="Definition-Epidemic"/>
+The epidemic threshold is reached if the [number of cases surpass](https://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-6-16) [200 per week per 100,000 people](https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1a-epidemiology/epidemic-theory).
+
+## 2.2 Corona Virus
 - Coronaviruses are zoonotic viruses (transmitted between animals and people).
 - Symptoms include: fever, cough, respiratory symptoms, and breathing difficulties.
 - In severe cases, it can cause pneumonia, severe acute respiratory syndrome (SARS), kidney failure and even death.
 - Coronaviruses are also asymptomatic, meaning a person can be a carrier of the infection but experience no symptoms.
 
-## 2.2 Novel coronavirus (nCoV)
+## 2.3 Novel coronavirus (nCoV)
 - A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.
 
-## 2.3 COVID-19 (Corona Virus Disease 2019)
+## 2.4 COVID-19 (Corona Virus Disease 2019)
 - Caused by a SARS-COV-2 corona virus.
 - First identified in Wuhan, Hubei, China. Earliest reported symptoms reported in November 2019.
 - On January 30, 2020 the WHO declared the outbreak to be a Public Health Emergency of International Concern [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].
@@ -70,13 +73,17 @@ Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov
 # 3. Data Collection <a name="Data_Collection"/>
 So is COVID-19 really a pandemic? If so, how does it compare to other pandemics?  According to the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)], COVID-19 **may** be 10x worse than the common flu, though some people will contract COVID-19 and have little to no symptoms whatsoever.
 
-However, a recent article by Dr. Anthony Fauci, et.al., states that the COVID-19 models are very conservative, and the COVID-19 **mortality rate is considerably less than initial predictions** [[3](https://www.nejm.org/doi/full/10.1056/NEJMe2002387)].
+In 2017, [Dr. Anthony Fauci](https://www.niaid.nih.gov/news-events/director-in-the-news?page=9) warned of a pandemic in his [speech at Georgetown university](https://gumc.georgetown.edu/gumc-stories/global-health-experts-advise-advance-planning-for-inevitable-pandemic/#) based on his [research](https://alatorax.org/index.php/pt/descargar/adjunto/387_0i2FZP_novel-vaccine-technologies.pdf).
+
+A recent article by Dr. Anthony Fauci, et.al., states that the COVID-19 models are very conservative, and the COVID-19 **mortality rate is considerably less than initial predictions** [[3](https://www.nejm.org/doi/full/10.1056/NEJMe2002387)].
 
 If you are reading this notebook, you realize that you are more than a lay-person.  You have powerful tools at your fingertips ([Data Science](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-DS), [Python](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Python-in-2-days), and [Machine Learning](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Machine-Learning-in-1-day)), and you likely have access to the [Coronavirus raw data](https://github.com/dsbc2020/ml_training/tree/master/notebooks/Examples/coronavirus/data) so that you can analyze and formulate your own opinion.  You realize that to be a Data Scientist requires you to be a creative and critical thinker... an individual.
 
 Team DSBC had the same notion!
 
 So we collected data from the CDC and WHO websites.  But we didn't stop there.  We are critical thinkers too.  We also collected data for:
+- Wuhan Institute of Virology publications [2016](https://link.springer.com/article/10.1007/s12250-016-3713-9), [2017](https://onlinelibrary.wiley.com/doi/full/10.1111/zph.12358), [2018](https://link.springer.com/article/10.1007/s12250-018-0012-7), [2019](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)
+- National institute of Allergy & Infectious Diseases [funding](https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=R01AI110964&arg_ProgOfficeCode=104), and [research of coronavirus](https://www.niaid.nih.gov/diseases-conditions/coronaviruses)
 - The COVID Tracking Project [[4](https://covidtracking.com/)]
 - Coronavirus international incidence dates [[5](https://www.washington.edu/news/2020/02/07/interactive-map-shows-worldwide-spread-of-coronavirus/)]
 - JHU Data sources [[6](https://github.com/CSSEGISandData/COVID-19)], [[7](https://github.com/imdevskp/covid_19_jhu_data_web_scrap_and_cleaning)]
@@ -552,7 +559,10 @@ When should a country or a state consider opening for business?  Many people are
 ## 11.1 COVID-19 Secondary affects
 
 ### 11.1.1 Mental Health
-The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  An 8,000% increase is statistically significant!
+The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. 
+- The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   
+- The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  An 8,000% increase is statistically significant!  
+- The [national domestic violence hotline](https://www.thehotline.org/help/) noted a significant increase in call volume in March and April 2020.  The [BBC](https://www.bbc.com/news/uk-52433520) noted an increase of domestic abuse calls of 49%, and the highest number of domestic abuse deaths in 11 years.  The [National Coalition Against Domestic Violence](https://ncadv.org/statistics) (NCADV) noted that on average, nearly 20 people per minute are physically abused by an intimate partner in the United States. 
 
 ### 11.1.2 Economic Stability: Debt-to-GDP
 What are the risks of of closing businness, decreasing Gross Domestic Product (GDP) and increading debt through stimulis packages?  What is the breaking point for an economy, and what are the early signs of a recession or collapse?  
@@ -565,7 +575,13 @@ A debt-to-GDP of 110% is statistically significant!
 
 ## 11.2 Examples and Counter-Examples
 
+It may be helpful to consider the two most populus states, one that remains in lock-down (as of May 13, 2020) and the other that has re-opened.  
+- Is there a spike in the number of cases after opening?  If so, this would indicate that re-opening is premature?  
+- Is there a continued growth in the number of cases during lock-down?  If so, this might indicate that the lock-down is ineffective.
+
 ### 11.2.1 California 
+California remains in lock-down  (as of May 13, 2020).  
+
 California has a population of 39,512,223 people, and a COVID-19 death toll of 1,779 people, or 0.004 % of the population. Compare this to:
 - [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001%
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
@@ -573,8 +589,16 @@ California has a population of 39,512,223 people, and a COVID-19 death toll of 1
 
 There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.
 
+Based on the definition of an [epidemic](#Definition-Epidemic), does California fit the definition?
+ - Epidemic: 200 per week per 100,000 people. Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024. 
+ - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (not 70,978 per week, but total cases).
+ - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  That is 13.2% of epidemic levels ((13,211/100,000)*100) (by the [scientific definition](#Definition-Epidemic)).
+
+	
 
 ### 11.2.2 Texas
+Texas has re-opened with a staggered process of roughly 25% per week  (as of May 13, 2020).
+
 Texas has a population of 28,995,881 people, and a COVID-19 death toll of 666 people, or 0.002 % of the population.  Compare this to:
 - [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023%.
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
@@ -582,6 +606,11 @@ Texas has a population of 28,995,881 people, and a COVID-19 death toll of 666 pe
 
 There are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.
 
+Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit the definition?
+ - Epidemic: 200 per week per 100,000 people. Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991. 
+ - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (not 41,432 per week, but total cases).
+ - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  That is 7.4% of epidemic levels ((7,477/100,000)*100) (by the [scientific definition](#Definition-Epidemic))
+ 
 
 ## 11.3 Risk assesment
 **You are the Data Scientist, consider the data and make your own decision.**  Which has higher risk, quarantine or "open for business"?  Our job as data scientists is to look at data, use statistics ([P-value](#P-value), [Bayes Theory](#Bayes_Theorem_and_Coronavirus), etc.) and evaluate [significance levels](#P-value) and [models](#SIR_Model) so that we can inform others to make data-driven decisions.
