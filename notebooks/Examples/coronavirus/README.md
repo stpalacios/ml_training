@@ -593,7 +593,7 @@ There are twice as many deaths due to car accidents and suicides than deaths rel
 Based on the definition of an [epidemic](#Definition-Epidemic), does California fit the definition?
  - Epidemic: 200 per week per 100,000 people. Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024. 
  - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (not 70,978 per week, but total cases).
- - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  That is 33.4% of epidemic levels (13,211/(39,512,223/100,000)) (by the [scientific definition](#Definition-Epidemic)).
+ - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  That is **66.6% below epidemic levels** (13,211/(39,512,223/100,000)) (by the [scientific definition](#Definition-Epidemic)).
 
 	
 
@@ -610,7 +610,7 @@ There are 10 times more deaths due to flu, and six times more suicides than deat
 Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit the definition?
  - Epidemic: 200 per week per 100,000 people. Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991. 
  - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (not 41,432 per week, but total cases).
- - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  That is 25.7% of epidemic levels (7,477/(28,995,881/100,000)) (by the [scientific definition](#Definition-Epidemic)).
+ - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  That is **74.3% below epidemic levels** (7,477/(28,995,881/100,000)) (by the [scientific definition](#Definition-Epidemic)).
  
 
 ## 11.3 Risk assesment
