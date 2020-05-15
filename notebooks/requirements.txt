@@ -51,7 +51,7 @@ arviz==0.5.1
 moviepy==1.0.0
 pandas-datareader==0.8.1
 tabulate==0.8.5
-tensorflow==1.13.1
+tensorflow>=1.13.1
 tensorboardX==1.8
 https://download.pytorch.org/whl/cpu/torch-1.0.1-cp37-cp37m-win_amd64.whl
 opencv-python==4.1.1.26
