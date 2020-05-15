@@ -130,7 +130,7 @@ The current death percent of population (May 13, 2020) is 0.025% (roughly 2 in e
 	
 	(82,376 / 329,227,746) * 100 = 0.025%
 	
-Compare this to (others)[#Averages]
+Compare this to [other epidemics](#Averages).
 
 **According to the CDC, epidemics like the Coronavirus initially follow an exponential growth model**, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:
 <p align="center">
