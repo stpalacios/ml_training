@@ -618,6 +618,7 @@ Some questions to consider:
  - Will COVID-19 deaths continue to increase?  At what rate?
  - Will car fatalities continue to increase?  At what rate?
  - Will suicides continue to increase?  At what rate?
+ - If the lockdown is effective, what as the impact to seasonal things like the seasonal flu?  
  - Will people continue to die of other issues (cancer, flu, heart attack, etc.)?  At what rate?
  - What are the inherent risks of leaving your home each day prior to COVID-19?  Do those still exist? (e.g. car fatality, heart attack, etc.)
  - How do you evaluate these both together and individually, and what are the risks?
