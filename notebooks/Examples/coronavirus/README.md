@@ -130,9 +130,7 @@ The current death percent of population (May 13, 2020) is 0.025% (roughly 2 in e
 	
 	(82,376 / 329,227,746) * 100 = 0.025%
 	
-Compare this to the cancer, 2.915%:
-
-	(9,600,000 / 329,227,746) * 100 = 2.915%
+Compare this to (others)[#Averages]
 
 **According to the CDC, epidemics like the Coronavirus initially follow an exponential growth model**, then reach an inflection point, before subsiding.  The curve (called a Sigmoid function) looks like this:
 <p align="center">
@@ -302,7 +300,7 @@ So how does COVID-19 compare to other pandemics?  Here is a comparison of COVID-
 </p>
 
 
-## 5.4 Averages
+## 5.4 Averages <a name="Averages"/>
 The following is the number of *DEATHS PER DAY ON AVERAGE* from the links above.
 - Cancer = 26,302
 - Heart Disease = 24,658
