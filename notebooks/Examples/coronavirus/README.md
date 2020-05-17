@@ -39,11 +39,11 @@
 
 
 # Preface
-We have been tracking this issue for the last 18 weeks using COVID-19 raw data obtained from the CDC and John's Hopkins.  In summary we have found the following:
+We have been tracking this issue for the last 18 weeks using COVID-19 raw data obtained from the CDC and John's Hopkins. In summary we have found the following:
 
 - **Death toll:** Initially the CDC expected 520,000 deaths in the US; roughly 0.157% of the total US population.  As of May 17, the death toll is 0.025%, or 15% of the initial estimates by the CDC (however, the pandemic is not over yet). 
-- **Epidemic:** The CDC and WHO define an epidemic threshold as the week when the number of cases surpass 200 per week per 100,000 people.  In the example of California and Texas (the two most populous states), they are 66.6% and 74.3% below  epidemic levels respectively, with the week of May 9 being the worst week of new cases.
-- **Re-opening:** Effects of social distancing and stay-at-home orders will require more time to evaluate as states begin to open.  Recall that the incubation period for COVID-19 is as many as 14 days, so any spikes due to re-opening a state will require a minimum of 2 weeks delay for analysis.  Note that the USA now has a [log-log slope](#log-log_plot) less than the slope for monthly doubling time. This is an indication that the USA, like many contries, has been successful in dramatically slowing the spread of COVID-19.  Also note that many countries have started to re-open and the slope is unchanged after re-opening.
+- **Epidemic:** The CDC and WHO define an epidemic threshold as the week when the number of cases surpass 200 per week per 100,000 people.  In the example of California and Texas (the two most populous states), they are 66.6% and 74.3% below epidemic levels respectively, with the week of May 9 being the worst week of new cases.
+- **Re-opening:** Effects of social distancing and stay-at-home orders will require more time to evaluate as states begin to open.  Recall that the incubation period for COVID-19 is as many as 14 days, so any spikes due to re-opening a state will require a minimum of 2 weeks delay for analysis.  Note that the USA now has a [log-log slope](#log-log_plot) less than the slope for monthly doubling time. This is an indication that the USA, like many countries, has been successful in dramatically slowing the spread of COVID-19.  Also note that many countries have started to re-open and the slope is unchanged after re-opening.
 - **R0:** CDC initial estimates of the rate of spread, R0, was 2.5-5.  Current data suggests R0=1.17, before and during lock-down.  For reference the common flu is R0=0.9-2.1, and measles is R0=12-18 (very contagious).
 - **Testing:** According to multiple studies, there are four types of COVID-19 tests.  Of them, the false-positive rate is 15-45%.  As more data is collected and testing improves, the CDC anticipates false positive rates similar to other tests, e.g. AIDS testing has a false-positive rate less than 1%.
 - **Mental Health:** According to the literature on isolation and lock-downs due to epidemics, the secondary effects generally fall into two categories; mental health and economic health.  The Didi Hirsch Suicide Hotline noted an 8000% increase (that is not a typo) in call volume for March and April, and a significant increase in suicides.  The National Domestic Violence Hotline noted a 45% increase in calls, and the highest number of domestic violence related deaths in 11 years.
@@ -53,11 +53,12 @@ We have been tracking this issue for the last 18 weeks using COVID-19 raw data o
 - **Masks:** A recent paper from the New England Journal of Medicine found that home-made masks were less than 30% effective in protecting the individual.  As stated in the article, 70% of particulates are transmitted through the mask, while up to 30% was passed around the mask.  The caveat is the effectiveness of the seal of the mask to the skin on the face of the individual, and discounts the transmission through the eyes. A recent study suggests that an N95 mask with a rubber gasket (similar to an industrial painting mask) is the most effective.
 
 
-**Note from the authors:** This analysis is based on the study of data science and machine learning applied to open-source raw data. We are not health professionals or epidemiologists, we are mathematicians and statisticians.  In the last 18 weeks we have worked with world-class epidemiologists to assist them with the math and statistics.  Our theoretical analysis is based on journal papers and articles on infectious diseases, mental health, criminal behavior, and economics.  Our practical analysis is based on conversations and collaboration with experts in epidemiology, law enforcement, mental health, and economics.  This article should not be interpreted as professional advice.  All references are provided as hyperlinks.
+**Note from the authors:** This analysis is based on the study of data science and machine learning applied to open-source raw data. We are not health professionals or epidemiologists, we are mathematicians and statisticians.  In the last 18 weeks we have worked with world-class epidemiologists to assist them with the math and statistics.  Our theoretical analysis is based on journal papers and articles on infectious diseases, mental health, criminal behavior, and economics.  Our practical analysis is based on conversations and collaboration with experts in epidemiology, law enforcement, mental health, and economics.  This article should not be interpreted as professional advice.  All references are provided as hyperlinks.
 
-**If you are concerned that you may have contracted COVID-19**, you can take an **online screening test** created by the CDC and Apple [[46](https://www.apple.com/covid19)].  
 
-You can get the latest information for the USA at [coronavirus.gov](https://www.coronavirus.gov/) [[47](https://www.coronavirus.gov/)].
+**If you are concerned that you may have contracted COVID-19**, you can take an **online screening test** created by [Apple in collaboration with the CDC](https://www.apple.com/covid19).  
+
+You can get the latest information for the USA at [coronavirus.gov](https://www.coronavirus.gov/).
 
 
 # 1. Introduction <a name="Introduction"/>
@@ -607,16 +608,21 @@ It may be helpful to consider the two most populus states, one that remains in l
 California remains in lock-down  (as of May 17, 2020).  
 
 California has a population of 39,512,223 people, and a COVID-19 death toll of 3,208 people, or 0.007 % of the population. Compare this to:
-- [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001%
-- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
-- [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011%. 
+- [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001% of the population.
+- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009% of the population.  
+- [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011% of the population. 
 
 **In California there are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does California fit the definition?
- - An epidemic is defined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024. 
+ - An epidemic is defined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: 
+
+(39,512,223/100,000)*200 = 79,024
+ 
  - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (total, not 70,978 per week).
- - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic) **California is 66.6% below epidemic levels** (13,211/(39,512,223/100,000)).
+ - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic) **California is 66.6% below epidemic levels.**
+ 
+ 100-(13,211/(39,512,223/100,000)) = 66.6% below epidemic levels
 
 	
 
@@ -624,16 +630,21 @@ Based on the definition of an [epidemic](#Definition-Epidemic), does California 
 Texas has re-opened with a staggered process of roughly 25% per week  (as of May 17, 2020).
 
 Texas has a population of 28,995,881 people, and a COVID-19 death toll of 1,318 people, or 0.004 % of the population.  Compare this to:
-- [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023%.
-- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
-- [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013%. 
+- [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023% of the population.
+- [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012% of the population.  
+- [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013% of the population. 
 
 **In Texas there are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit the definition?
- - An epidemic is dfined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991. 
+ - An epidemic is dfined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: 
+ 
+ (39,512,223/100,000)*200 = 57,991
+ 
  - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (total, not 41,432 per week).
- - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic)  **Texas is 74.3% below epidemic levels** (7,477/(28,995,881/100,000)).
+ - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic)  **Texas is 74.3% below epidemic levels with no apparent spike after re-opening.** 
+ 
+ 100-(7,477/(28,995,881/100,000)) = 74.3% below epidemic levels
  
 
 ## 11.3 Risk assesment
