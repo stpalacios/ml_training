@@ -615,14 +615,9 @@ California has a population of 39,512,223 people, and a COVID-19 death toll of 3
 **In California there are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does California fit the definition?
- - An epidemic is defined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: 
-
-	(39,512,223/100,000)*200 = 79,024
- 
+ - An epidemic is defined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024.
  - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (total, not 70,978 per week).
- - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic) **California is 66.6% below epidemic levels.**
- 
-	100-(13,211/(39,512,223/100,000)) = 66.6% below epidemic levels
+ - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic) **California is 66.6% below epidemic levels.** (100-(13,211/(39,512,223/100,000)) = 66.6% below epidemic levels)
 
 	
 
@@ -637,14 +632,9 @@ Texas has a population of 28,995,881 people, and a COVID-19 death toll of 1,318 
 **In Texas there are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit the definition?
- - An epidemic is dfined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: 
- 
-	(39,512,223/100,000)*200 = 57,991
- 
+ - An epidemic is dfined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991.
  - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (total, not 41,432 per week).
- - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic)  **Texas is 74.3% below epidemic levels with no apparent spike after re-opening.** 
- 
-	100-(7,477/(28,995,881/100,000)) = 74.3% below epidemic levels
+ - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic)  **Texas is 74.3% below epidemic levels with no apparent spike after re-opening.** (100-(7,477/(28,995,881/100,000)) = 74.3% below epidemic levels)
  
 
 ## 11.3 Risk assesment
@@ -654,11 +644,11 @@ Some questions to consider:
  - Will COVID-19 deaths continue to increase?  At what rate?
  - Will car fatalities continue to increase?  At what rate?
  - Will suicides continue to increase?  At what rate?
- - **If the lockdown is effective, what is the impact to seasonal things like the seasonal flu?** Hint, this was the worst flu season in recent history evethough the USA was in lock-down for part of the "flu season".
+ - **If the lockdown is effective, what is the impact to seasonal things like the seasonal flu?** Hint, this was the [worst flu season in recent history](https://www.cdc.gov/flu/about/burden/preliminary-in-season-estimates.htm) evethough the USA was in lock-down for part of the "flu season" ([October-May](https://www.cdc.gov/flu/about/season/flu-season.htm)).
  - Will people continue to die of other issues (cancer, flu, heart attack, etc.)?  At what rate?
  - What are the inherent risks of leaving your home each day prior to COVID-19?  Do those still exist? (e.g. car fatality, heart attack, etc.)
+ - Could the lock-down have been more effective if everything was closed, e.g. grocery stores, mail/UPS service, etc?
  - How do you evaluate these both together and individually, and what are the risks?
-
 
 
 
