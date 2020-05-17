@@ -1,6 +1,6 @@
 # ML Notes
 
-<p align="center">c
+<p align="center">
 	<img width="500" img src="https://github.com/dsbc2020/ml_training/blob/master/media/machine-learning-books.jpg>
 </p>
 
