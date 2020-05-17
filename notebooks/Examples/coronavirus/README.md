@@ -51,7 +51,7 @@ At the time of the writing of this notebook, the world has descended into mass p
 Definitions as defined by the CDC [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)].  
 
 ## 2.1 Epidemic <a name="Definition-Epidemic"/>
-The epidemic threshold is reached if the [number of cases surpass](https://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-6-16) [200 per week per 100,000 people](https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1a-epidemiology/epidemic-theory).
+The epidemic threshold is reached if the [number of cases surpass](https://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-6-16) [200 cases per week per 100,000 people](https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1a-epidemiology/epidemic-theory).
 
 ## 2.2 Corona Virus
 - Coronaviruses are zoonotic viruses (transmitted between animals and people).
@@ -560,7 +560,7 @@ When should a country or a state consider opening for business?  Many people are
 ### 11.1.1 Mental Health
 The [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMp2008017) notes that quarantine often increases problems related to mental health. 
 - The [American Psychiatric Association](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwjcvqX8z4zpAhUCSq0KHd2zC1sQFjADegQIBRAB&url=https%3A%2F%2Fwww.psychiatry.org%2FFile%2520Library%2FPsychiatrists%2FAdvocacy%2FFederal%2FMental-Health-2020-A-Presidential-Initiative-for-Mental-Health.pdf&usg=AOvVaw3D_fCutRhha_75XDfvPjlD) notes that 47 million Americans (1 in 5 adults) suffer from mental health issues.   
-- The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  An 8,000% increase is statistically significant!  
+- The [Didi Hirsch Suicide Hotline](https://didihirsch.org/media/recent-coverage/oc-register-suicide-help-hotline-calls-soar-in-southern-california-over-coronavirus-anxieties/) published a call volume increase of 8,000% (that is not a typo!) from February 2020 to March 2020, with a precipitous increase in actual suicides over last year.  An 8,000% increase is statistically significant!  
 - The [National Domestic Violence Hotline](https://www.thehotline.org/help/) noted a significant increase in call volume in March and April 2020.  The [BBC](https://www.bbc.com/news/uk-52433520) noted an increase of domestic abuse calls of 49%, and the highest number of domestic abuse deaths in 11 years.  The [National Coalition Against Domestic Violence](https://ncadv.org/statistics) (NCADV) noted that on average, nearly 20 people per minute are physically abused by an intimate partner in the United States. 
 
 ### 11.1.2 Economic Stability: Debt-to-GDP
@@ -579,36 +579,36 @@ It may be helpful to consider the two most populus states, one that remains in l
 - Is there a continued growth in the number of cases during lock-down?  If so, this might indicate that the lock-down is ineffective.
 
 ### 11.2.1 California 
-California remains in lock-down  (as of May 13, 2020).  
+California remains in lock-down  (as of May 17, 2020).  
 
-California has a population of 39,512,223 people, and a COVID-19 death toll of 2,879 people, or 0.007 % of the population. Compare this to:
+California has a population of 39,512,223 people, and a COVID-19 death toll of 3,208 people, or 0.007 % of the population. Compare this to:
 - [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001%
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011%. 
 
-**There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.**
+**In California there are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does California fit the definition?
- - An epidemic is dfined as "200 cases per week per 100,000 people". Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024. 
+ - An epidemic is defined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024. 
  - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (total, not 70,978 per week).
- - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  That is **California is 66.6% below epidemic levels** (13,211/(39,512,223/100,000)) (by the [scientific definition](#Definition-Epidemic)).
+ - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic) **California is 66.6% below epidemic levels** (13,211/(39,512,223/100,000)).
 
 	
 
 ### 11.2.2 Texas
-Texas has re-opened with a staggered process of roughly 25% per week  (as of May 13, 2020).
+Texas has re-opened with a staggered process of roughly 25% per week  (as of May 17, 2020).
 
-Texas has a population of 28,995,881 people, and a COVID-19 death toll of 1,146 people, or 0.004 % of the population.  Compare this to:
+Texas has a population of 28,995,881 people, and a COVID-19 death toll of 1,318 people, or 0.004 % of the population.  Compare this to:
 - [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023%.
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013%. 
 
-**There are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.**
+**In Texas there are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit the definition?
- - An epidemic is dfined as "200 cases per week per 100,000 people". Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991. 
+ - An epidemic is dfined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991. 
  - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (total, not 41,432 per week).
- - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  That is **Texas is 74.3% below epidemic levels** (7,477/(28,995,881/100,000)) (by the [scientific definition](#Definition-Epidemic)).
+ - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic)  **Texas is 74.3% below epidemic levels** (7,477/(28,995,881/100,000)).
  
 
 ## 11.3 Risk assesment
