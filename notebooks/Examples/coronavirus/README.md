@@ -4,7 +4,7 @@
 </p>
 
 
-**---UPDATED May 13, 2020---**
+**---UPDATED May 17, 2020---**
 
 
 # Table of Contents
@@ -586,12 +586,12 @@ California has a population of 39,512,223 people, and a COVID-19 death toll of 2
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011%. 
 
-There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.
+**There are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does California fit the definition?
- - Epidemic: 200 per week per 100,000 people. Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024. 
- - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (not 70,978 per week, but total cases).
- - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  That is **66.6% below epidemic levels** (13,211/(39,512,223/100,000)) (by the [scientific definition](#Definition-Epidemic)).
+ - An epidemic is dfined as "200 cases per week per 100,000 people". Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024. 
+ - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (total, not 70,978 per week).
+ - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  That is **California is 66.6% below epidemic levels** (13,211/(39,512,223/100,000)) (by the [scientific definition](#Definition-Epidemic)).
 
 	
 
@@ -603,12 +603,12 @@ Texas has a population of 28,995,881 people, and a COVID-19 death toll of 1,146 
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012%.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013%. 
 
-There are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.
+**There are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit the definition?
- - Epidemic: 200 per week per 100,000 people. Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991. 
- - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (not 41,432 per week, but total cases).
- - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  That is **74.3% below epidemic levels** (7,477/(28,995,881/100,000)) (by the [scientific definition](#Definition-Epidemic)).
+ - An epidemic is dfined as "200 cases per week per 100,000 people". Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991. 
+ - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (total, not 41,432 per week).
+ - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  That is **Texas is 74.3% below epidemic levels** (7,477/(28,995,881/100,000)) (by the [scientific definition](#Definition-Epidemic)).
  
 
 ## 11.3 Risk assesment
@@ -618,7 +618,7 @@ Some questions to consider:
  - Will COVID-19 deaths continue to increase?  At what rate?
  - Will car fatalities continue to increase?  At what rate?
  - Will suicides continue to increase?  At what rate?
- - If the lockdown is effective, what is the impact to seasonal things like the seasonal flu?  
+ - **If the lockdown is effective, what is the impact to seasonal things like the seasonal flu?** Hint, this was the worst flu season in recent history evethough the USA was in lock-down for part of the "flu season".
  - Will people continue to die of other issues (cancer, flu, heart attack, etc.)?  At what rate?
  - What are the inherent risks of leaving your home each day prior to COVID-19?  Do those still exist? (e.g. car fatality, heart attack, etc.)
  - How do you evaluate these both together and individually, and what are the risks?
@@ -640,7 +640,7 @@ Some questions to consider:
 
 
 # 13. Conclusion <a name="Conclusion"/>
-So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to the common flu, SARS, MERS, etc.  As you will likely find, as we did, if you are older than 5 and younger than 60 [[44](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html)], you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidelines [[45](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html)] of social distancing and personal health precautions.  
+So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to the common flu, SARS, MERS, etc.  As you will likely find, as we did, if you are younger than 60 [[44](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html)], you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidelines [[45](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html)] of social distancing and personal health precautions.  
 
 **If you are concerned that you may have contracted COVID-19**, you can take an **online screening test** created by the CDC and Apple [[46](https://www.apple.com/covid19)].  
 
