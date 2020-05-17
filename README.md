@@ -12,7 +12,7 @@ A carefully-curated repository of Data Science literature and Jupyter Notebook "
 ## Project Overview
 The DSBC team has spent years developing tools and training materials for Applied Math and Data Science.
 In this project you will find the following tools.
-* ["Notes on ..."](https://github.com/pfroysdon/books/tree/master/math_notes) these are cheet sheets on various topics of math for Machine Learning, e.g. algebra, probability theory, etc., as well as Machine Learning topics, e.g. linear regression, hypothesis testing, etc.
+* ["Notes on ..."](https://github.com/dsbc2020/ml_training/tree/master/math_notes) these are cheet sheets on various topics of math for Machine Learning, e.g. algebra, probability theory, etc., as well as Machine Learning topics, e.g. linear regression, hypothesis testing, etc.
 * ["Cheat-Sheets"](https://github.com/dsbc2020/ml_training/tree/master/cheat_sheets) are for various Python toolboxes, e.g. [Numpy](https://github.com/dsbc2020/ml_training/blob/master/cheat_sheets/Numpy_Cheat_Sheet.pdf), [MatPlotLib](https://github.com/dsbc2020/ml_training/blob/master/cheat_sheets/MatPlotLib_Cheat_Sheet.pdf), [SciKitLearn](https://github.com/dsbc2020/ml_training/blob/master/cheat_sheets/SciKitLearn_Cheat_Sheet.pdf), [Keras](https://github.com/dsbc2020/ml_training/blob/master/cheat_sheets/Keras_Cheat_Sheet.pdf), etc.
 * ["10 steps to Data Science"](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-DS) is a series of notebooks to teach you the most common tools used in Data Science.
 * ["10 steps to Machine Learning"](https://github.com/dsbc2020/ml_training/tree/master/notebooks/10-steps-to-ML) is a series of notebooks to teach you some advanced tools used in Machine Learning. 
