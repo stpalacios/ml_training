@@ -38,11 +38,32 @@
 
 
 
+# Preface
+We have been tracking this issue for the last 18 weeks using COVID-19 raw data obtained from the CDC and John's Hopkins.  In summary we have found the following:
+
+- **Death toll:** Initially the CDC expected 520,000 deaths in the US; roughly 0.157% of the total US population.  As of May 17, the death toll is 0.025%, or 15% of the initial estimates by the CDC (however, the pandemic is not over yet). 
+- **Epidemic:** The CDC and WHO define an epidemic threshold as the week when the number of cases surpass 200 per week per 100,000 people.  In the example of California and Texas (the two most populous states), they are 66.6% and 74.3% below  epidemic levels respectively, with the week of May 9 being the worst week of new cases.
+- **Re-opening:** Effects of social distancing and stay-at-home orders will require more time to evaluate as states begin to open.  Recall that the incubation period for COVID-19 is as many as 14 days, so any spikes due to re-opening a state will require a minimum of 2 weeks delay for analysis.
+- **R0:** CDC initial estimates of the rate of spread, R0, was 2.5-5.  Current data suggests R0=1.17, before and during lock-down.  For reference the common flu is R0=0.9-2.1, and measles is R0=12-18 (very contagious).
+- **Testing:** According to multiple studies, there are four types of COVID-19 tests.  Of them, the false-positive rate is 15-45%.  As more data is collected and testing improves, the CDC anticipates false positive rates similar to other tests, e.g. AIDS testing has a false-positive rate less than 1%.
+- **Mental Health:** According to the literature on isolation and lock-downs due to epidemics, the secondary effects generally fall into two categories; mental health and economic health.  The Didi Hirsch Suicide Hotline noted an 8000% increase (that is not a typo) in call volume for March and April, and a significant increase in suicides.  The National Domestic Violence Hotline noted a 45% increase in calls, and the highest number of domestic violence related deaths in 11 years.
+- **Economic Health:** According to a World Bank study, 77% debt-to-GDP is the tipping point for an economy prior to recession.  The US current debt-to-GDP is 110%.
+- **Stock Market:** According to data pulled from 1920-2020, events of economic decline were always followed by a return.  For example, after the 9/11 attacks, the stock market had a drop for 61 days before returning to pre-9/11 levels.  Similarly, the 2008 Recession took 532 days to recover.  Historical data suggests that the current drop may last several months.
+- **Population:** Current data suggests that the least COVID-19 affected population is ages 0-18 (so far only 1 child death in the US), and the most affected population is 65+ with pre-existing health conditions.
+- **Masks:** A recent paper from the New England Journal of Medicine found that home-made masks were less than 30% effective in protecting the individual.  As stated in the article, 70% of particulates are transmitted through the mask, while up to 30% was passed around the mask.  The caveat is the effectiveness of the seal of the mask to the skin on the face of the individual, and discounts the transmission through the eyes. A recent study suggests that an N95 mask with a rubber gasket (similar to an industrial painting mask) is the most effective.
+
+
+**Note from the authors:** This analysis is based on the study of data science and machine learning applied to open-source raw data. We are not health professionals or epidemiologists, we are mathematicians and statisticians.  In the last 18 weeks we have worked with world-class epidemiologists to assist them with the math and statistics.  Our theoretical analysis is based on journal papers and articles on infectious diseases, mental health, criminal behavior, and economics.  Our practical analysis is based on conversations and collaboration with experts in epidemiology, law enforcement, mental health, and economics.  This article should not be interpreted as professional advice.  All references are provided as hyperlinks.
+
+**If you are concerned that you may have contracted COVID-19**, you can take an **online screening test** created by the CDC and Apple [[46](https://www.apple.com/covid19)].  
+
+You can get the latest information for the USA at [coronavirus.gov](https://www.coronavirus.gov/) [[47](https://www.coronavirus.gov/)].
+
 
 # 1. Introduction <a name="Introduction"/>
 At the time of the writing of this notebook, the world has descended into mass panic, fueled by misinformation in media and social media.  Unfortunately, both fact and hype exist in discussions regarding COVID-19.  This notebook will consider data publically available from the Centers for Disease Control and Prevention (CDC) [[1](https://www.cdc.gov/coronavirus/2019-ncov/index.html)]  and World Health Organization (WHO) [[2](https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/)].  **As Data Scientists, it is our job to analyze data to help others make informed data-driven decisions.**
 
-**Note from the authors:** This analysis is based on the study of data science and machine learning. We are not health professionals or epidemiologists, and the analysis/opinions of this article should not be interpreted as professional advice.
+
 
 
 
@@ -641,10 +662,6 @@ Some questions to consider:
 
 # 13. Conclusion <a name="Conclusion"/>
 So why did we go through all of this trouble, and where are we on the Sigmoid curve?  Well, like any problem, we like to have as much data as possible to make good scientific decisions, and compare results where possible.  In this case, it is nice to compare COVID-19 to the common flu, SARS, MERS, etc.  As you will likely find, as we did, if you are younger than 60 [[44](https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html)], you may contract COVID-19 but are less likely to die of COVID-19.  However, it is advisable to closely follow the CDC guidelines [[45](https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html)] of social distancing and personal health precautions.  
-
-**If you are concerned that you may have contracted COVID-19**, you can take an **online screening test** created by the CDC and Apple [[46](https://www.apple.com/covid19)].  
-
-You can get the latest information for the USA at [coronavirus.gov](https://www.coronavirus.gov/) [[47](https://www.coronavirus.gov/)].
 
 The IHME COVID-19 SIR models can be found at [[48](http://www.healthdata.org/covid)], and world population data [[49](https://www.populationpyramid.net/)].
 
