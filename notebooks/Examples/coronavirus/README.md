@@ -200,6 +200,10 @@ The mortality rate for each country versus the test positive rate.  For example,
 
 ## 4.4 Log-Log Plots
 Log-Log plots are a better form with which to look at data, specifically epidemics and the "doubling" time or spread of a virus.  A doubling is indicated by a straight line, where the slope indicate the number of days for doubling, whereas a curve to the right indicates a slowing of the spread of the virus.  We have provided "doubling" lines, at various rates, and curves for top 10 countries (with the most cases).  
+
+**Note that the USA now has a slope less than the slope for monthly doubling time.** This is an indication that the USA, like many contries, has been successful in dramatically slowing the spread of COVID-19.  **Also note that many countries have started to re-open and the slope is unchanged after re-opening.**
+
+
 <p align="center">
 	<img src="figures/log_log_worldwide_cases.png" width=600>
 </p>
