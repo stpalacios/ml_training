@@ -1,7 +1,7 @@
 # ML Books
 
 <p align="center">
-	<img width="500" img src="https://github.com/dsbc2020/ml_training/blob/master/media/machine-learning-books.jpg">
+	<img width="500" img src="https://github.com/dsbc2020/ml_training/blob/master/media/textbooks.jpg">
 </p>
 
 **Dr. Roysdon has posted several free machine learning books and associated software.**  You can find them [here](https://github.com/pfroysdon/books)
