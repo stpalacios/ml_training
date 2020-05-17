@@ -43,7 +43,7 @@ We have been tracking this issue for the last 18 weeks using COVID-19 raw data o
 
 - **Death toll:** Initially the CDC expected 520,000 deaths in the US; roughly 0.157% of the total US population.  As of May 17, the death toll is 0.025%, or 15% of the initial estimates by the CDC (however, the pandemic is not over yet). 
 - **Epidemic:** The CDC and WHO define an epidemic threshold as the week when the number of cases surpass 200 per week per 100,000 people.  In the example of California and Texas (the two most populous states), they are 66.6% and 74.3% below  epidemic levels respectively, with the week of May 9 being the worst week of new cases.
-- **Re-opening:** Effects of social distancing and stay-at-home orders will require more time to evaluate as states begin to open.  Recall that the incubation period for COVID-19 is as many as 14 days, so any spikes due to re-opening a state will require a minimum of 2 weeks delay for analysis.
+- **Re-opening:** Effects of social distancing and stay-at-home orders will require more time to evaluate as states begin to open.  Recall that the incubation period for COVID-19 is as many as 14 days, so any spikes due to re-opening a state will require a minimum of 2 weeks delay for analysis.  Note that the USA now has a [log-log slope](#log-log_plot) less than the slope for monthly doubling time. This is an indication that the USA, like many contries, has been successful in dramatically slowing the spread of COVID-19.  Also note that many countries have started to re-open and the slope is unchanged after re-opening.
 - **R0:** CDC initial estimates of the rate of spread, R0, was 2.5-5.  Current data suggests R0=1.17, before and during lock-down.  For reference the common flu is R0=0.9-2.1, and measles is R0=12-18 (very contagious).
 - **Testing:** According to multiple studies, there are four types of COVID-19 tests.  Of them, the false-positive rate is 15-45%.  As more data is collected and testing improves, the CDC anticipates false positive rates similar to other tests, e.g. AIDS testing has a false-positive rate less than 1%.
 - **Mental Health:** According to the literature on isolation and lock-downs due to epidemics, the secondary effects generally fall into two categories; mental health and economic health.  The Didi Hirsch Suicide Hotline noted an 8000% increase (that is not a typo) in call volume for March and April, and a significant increase in suicides.  The National Domestic Violence Hotline noted a 45% increase in calls, and the highest number of domestic violence related deaths in 11 years.
@@ -198,7 +198,7 @@ The mortality rate for each country versus the test positive rate.  For example,
 </p>
 
 
-## 4.4 Log-Log Plots
+## 4.4 Log-Log Plots <a name="log-log_plot"/>
 Log-Log plots are a better form with which to look at data, specifically epidemics and the "doubling" time or spread of a virus.  A doubling is indicated by a straight line, where the slope indicate the number of days for doubling, whereas a curve to the right indicates a slowing of the spread of the virus.  We have provided "doubling" lines, at various rates, and curves for top 10 countries (with the most cases).  
 
 **Note that the USA now has a slope less than the slope for monthly doubling time.** This is an indication that the USA, like many contries, has been successful in dramatically slowing the spread of COVID-19.  **Also note that many countries have started to re-open and the slope is unchanged after re-opening.**
