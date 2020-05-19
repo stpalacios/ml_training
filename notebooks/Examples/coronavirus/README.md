@@ -637,13 +637,13 @@ Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit t
 ### 11.2.3 Plots
 Here we can compare California and Texas with the cumulative cases, as well as the new cases and deaths each week.  Notice that the curves have flattened several weeks ago.  This indicates that while more people are now exposed to COVID-19, the rate of spread has decreased.  Note the the number of new cases is still below the threshold for an epidemic, and is also below the levels of seasonal flu, which **is** annually classified as an epidemic in the USA.
 <p align="center">
-	<img src="matlab/Time_Series_Anlaysis/timeseries_Figure_1.png" width=600>
+	<img src="matlab/Time_Series_Analysis/timeseries_Figure_1.png" width=600>
 </p>
 <p align="center">
-	<img src="matlab/Time_Series_Anlaysis/timeseries_Figure_3.png" width=600>
+	<img src="matlab/Time_Series_Analysis/timeseries_Figure_2.png" width=600>
 </p>
 <p align="center">
-	<img src="matlab/Time_Series_Anlaysis/timeseries_Figure_6.png" width=600>
+	<img src="matlab/Time_Series_Analysis/timeseries_Figure_3.png" width=600>
 </p>
 
 
