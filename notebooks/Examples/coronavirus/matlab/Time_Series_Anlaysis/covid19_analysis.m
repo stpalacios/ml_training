@@ -24,7 +24,7 @@ opts.ExtraColumnsRule = "ignore";
 opts.EmptyLineRule = "read";
 
 % Import the data
-timeseriescovid19confirmedUS = readtable("E:\Technical_Work\DS_Boot_Camp\ml_training\Examples\covid-19-analysis\data\novel-corona-virus-2019-dataset\time_series_covid_19_confirmed_US.csv", opts);
+timeseriescovid19confirmedUS = readtable("..\..\data\novel-corona-virus-2019-dataset\time_series_covid_19_confirmed_US.csv", opts);
 
 
 % Clear temporary variables
@@ -70,6 +70,21 @@ legend('California','Texas','Location','NW')
 xlabel('Time (days)','Interpreter','latex');
 ylabel('Cumulative number of cases','Interpreter','latex');
 title('Cumulative number of cases vs time','Interpreter','latex');
+% jan 21: first covid case in US
+vline(t(1),0.65,'b','First COVID-19 case in US')
+% jan 31: US blocks travel from china
+vline(t(7),0.7,'g','US blocks travel from China')
+% march 11: US borders closed
+vline(t(47),0.75,'r','US borders closed')
+% march 13: national emergency declared
+vline(t(49),0.8,'m','National emergency declared')
+% march 17: workforce asked to stay home
+vline(t(53),0.85,'b','Workforce asked to stay home')
+% april 1: lock-down
+vline(t(68),0.9,'g','Lock-down')
+% may 1: texas re-opens
+vline(t(98),0.95,'r','Texas re-opens')
+
 
 figure
 plot(t,daily_diff(:,1),...
@@ -79,7 +94,20 @@ legend('California','Texas','Location','NW')
 xlabel('Time (days)','Interpreter','latex');
 ylabel('Daily number of new cases','Interpreter','latex');
 title('Daily number of new cases vs time','Interpreter','latex');
-
+% jan 21: first covid case in US
+vline(t(1),0.65,'b','First COVID-19 case in US')
+% jan 31: US blocks travel from china
+vline(t(7),0.7,'g','US blocks travel from China')
+% march 11: US borders closed
+vline(t(47),0.75,'r','US borders closed')
+% march 13: national emergency declared
+vline(t(49),0.8,'m','National emergency declared')
+% march 17: workforce asked to stay home
+vline(t(53),0.85,'b','Workforce asked to stay home')
+% april 1: lock-down
+vline(t(68),0.9,'g','Lock-down')
+% may 1: texas re-opens
+vline(t(98),0.95,'r','Texas re-opens')
 
 figure
 plot(weekly_date,weekly_diff(:,1),...
@@ -108,7 +136,7 @@ opts.ExtraColumnsRule = "ignore";
 opts.EmptyLineRule = "read";
 
 % Import the data
-timeseriescovid19deathsUS = readtable("E:\Technical_Work\DS_Boot_Camp\ml_training\Examples\covid-19-analysis\data\novel-corona-virus-2019-dataset\time_series_covid_19_deaths_US.csv", opts);
+timeseriescovid19deathsUS = readtable("..\..\data\novel-corona-virus-2019-dataset\time_series_covid_19_deaths_US.csv", opts);
 
 
 % Clear temporary variables
@@ -155,6 +183,20 @@ legend('California','Texas','Location','NW')
 xlabel('Time (days)','Interpreter','latex');
 ylabel('Cumulative number of deaths','Interpreter','latex');
 title('Cumulative number of deaths vs time','Interpreter','latex');
+% jan 21: first covid case in US
+vline(t(1),0.65,'b','First COVID-19 case in US')
+% jan 31: US blocks travel from china
+vline(t(7),0.7,'g','US blocks travel from China')
+% march 11: US borders closed
+vline(t(47),0.75,'r','US borders closed')
+% march 13: national emergency declared
+vline(t(49),0.8,'m','National emergency declared')
+% march 17: workforce asked to stay home
+vline(t(53),0.85,'b','Workforce asked to stay home')
+% april 1: lock-down
+vline(t(68),0.9,'g','Lock-down')
+% may 1: texas re-opens
+vline(t(98),0.95,'r','Texas re-opens')
 
 figure
 plot(t,daily_diff(:,1),...
@@ -164,6 +206,22 @@ legend('California','Texas','Location','NW')
 xlabel('Time (days)','Interpreter','latex');
 ylabel('Daily number of new deaths','Interpreter','latex');
 title('Daily number of new deaths vs time','Interpreter','latex');
+y=get(gca,'ylim');
+ylim([0 y(2)])
+% jan 21: first covid case in US
+vline(t(1),0.65,'b','First COVID-19 case in US')
+% jan 31: US blocks travel from china
+vline(t(7),0.7,'g','US blocks travel from China')
+% march 11: US borders closed
+vline(t(47),0.75,'r','US borders closed')
+% march 13: national emergency declared
+vline(t(49),0.8,'m','National emergency declared')
+% march 17: workforce asked to stay home
+vline(t(53),0.85,'b','Workforce asked to stay home')
+% april 1: lock-down
+vline(t(68),0.9,'g','Lock-down')
+% may 1: texas re-opens
+vline(t(98),0.95,'r','Texas re-opens')
 
 figure
 plot(weekly_date,weekly_diff(:,1),...
@@ -174,5 +232,6 @@ xlabel('Time (days)','Interpreter','latex');
 ylabel('Weekly number of new deaths','Interpreter','latex');
 title('Weekly number of new deaths vs time','Interpreter','latex');
 
-save_all_figs_OPTION('timeseries','png')
 dock_all_figures
+save_all_figs_OPTION('timeseries','png')
+
