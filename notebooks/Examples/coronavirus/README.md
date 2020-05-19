@@ -144,13 +144,13 @@ Just for completeness, we also collected data on:
 
 ## 4.1 Background
 
-The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is 329,227,746 people [[37](https://www.census.gov)], the percent of the population that will likely die of COVID-19 is 0.16% (roughly 16 in every 100 people):
+The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] that COVID-19 will be 10 times more deadly than the common flu.  This means that if the common flu related deaths is 52,000 for the USA in 2020, the expected number of deaths for COVID-19 is 520,000.  If the US population in the year 2020 is 329,227,746 people [[37](https://www.census.gov)], the percent of the population that will likely die of COVID-19 is 0.16% (roughly 16 in every 10,000 people):
 
 	(520,000 / 329,227,746) * 100 = 0.157%
 	
-The current death percent of population (May 13, 2020) is 0.025% (roughly 2 in every 100 people):
+The current death percent of population (May 13, 2020) is 0.025% (roughly 2 in every 10,000 people):
 	
-	(82,376 / 329,227,746) * 100 = 0.025%
+	(88,754 / 329,227,746) * 100 = 0.026%
 	
 Compare this to [other epidemics](#Averages).
 
@@ -619,8 +619,6 @@ Based on the definition of an [epidemic](#Definition-Epidemic), does California 
  - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (total, not 70,978 per week).
  - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic) **California is 66.6% below epidemic levels.** (100-(13,211/(39,512,223/100,000)) = 66.6% below epidemic levels)
 
-	
-
 ### 11.2.2 Texas
 Texas has re-opened with a staggered process of roughly 25% per week  (as of May 17, 2020).
 
@@ -636,6 +634,18 @@ Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit t
  - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (total, not 41,432 per week).
  - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic)  **Texas is 74.3% below epidemic levels with no apparent spike after re-opening.** (100-(7,477/(28,995,881/100,000)) = 74.3% below epidemic levels)
  
+### 11.2.3 Plots
+Here we can compare California and Texas with the cumulative cases, as well as the new cases and deaths each week.  Notice that the curves have flattened several weeks ago.  This indicates that while more people are now exposed to COVID-19, the rate of spread has decreased.  Note the the number of new cases is still below the threshold for an epidemic, and is also below the levels of seasonal flu, which **is** annually classified as an epidemic in the USA.
+<p align="center">
+	<img src="matlab/Time_Series_Anlaysis/timeseries_Figure_1.png" width=600>
+</p>
+<p align="center">
+	<img src="matlab/Time_Series_Anlaysis/timeseries_Figure_3.png" width=600>
+</p>
+<p align="center">
+	<img src="matlab/Time_Series_Anlaysis/timeseries_Figure_6.png" width=600>
+</p>
+
 
 ## 11.3 Risk assesment
 **You are the Data Scientist, consider the data and make your own decision.**  Which has higher risk, quarantine or "open for business"?  Our job as data scientists is to look at data, use statistics ([P-value](#P-value), [Bayes Theory](#Bayes_Theorem_and_Coronavirus), etc.) and evaluate [significance levels](#P-value) and [models](#SIR_Model) so that we can inform others to make data-driven decisions.
