@@ -4,7 +4,7 @@
 </p>
 
 
-**---UPDATED May 31, 2020---**
+**---UPDATED June 14, 2020---**
 
 
 # Table of Contents
@@ -39,12 +39,12 @@
 
 
 # Preface
-We have been tracking this issue for the last 18 weeks using COVID-19 raw data obtained from the CDC and John's Hopkins. In summary we have found the following:
+We have been tracking this issue for the last 6 months using COVID-19 raw data obtained from the CDC and John's Hopkins. In summary we have found the following:
 
-- **Death toll:** Initially the CDC expected 520,000 deaths in the US; roughly 0.157% of the total US population.  As of May 17, the death toll is 0.025%, or 15% of the initial estimates by the CDC (however, the pandemic is not over yet). 
-- **Epidemic:** The CDC and WHO define an epidemic threshold as the week when the number of cases surpass 200 per week per 100,000 people.  In the example of California and Texas (the two most populous states), they are 66.6% and 74.3% below epidemic levels respectively, with the week of May 9 being the worst week of new cases.
+- **Death toll:** Initially the CDC expected 520,000 deaths in the US; roughly 0.157% of the total US population.  As of June 14, the death toll is 0.034%, or 22% of the initial estimates by the CDC (however, the pandemic is not over yet). 
+- **Epidemic:** The CDC and WHO define an epidemic threshold as the week when the number of cases surpass 200 per week per 100,000 people.  In the example of California and Texas (the two most populous states), they are 53.7% and 64.3% below epidemic levels respectively, with the week of May 9 being the worst week of new cases.
 - **Lock-Down:** Further analysis is needed to see if the lock-down was effective.  [This section](#Open_for_Business_plots) provides nice plots.  Within 3 days of the first detected COVID-19 case, the US stopped all flights from China.  The number of new cases per day were below 100 when the US closed its borders, and a national emergency was declared 2 days later.  The data is so noisy, that it is difficult to determine the effectiveness of the lock-down (California is a good example of noisy data with daily spikes that are double the daily average, ultimately skewing the mean).
-- **Re-opening:** Effects of social distancing and stay-at-home orders will require more time to evaluate as states begin to open.  Recall that the incubation period for COVID-19 is as many as 14 days, so any spikes due to re-opening a state will require a minimum of 2 weeks delay for analysis.  Note that the USA now has a [log-log slope](#log-log_plot) less than the slope for monthly doubling time. This is an indication that the USA, like many countries, has been successful in dramatically slowing the spread of COVID-19.  Also note that many countries have started to re-open and the slope is unchanged after re-opening.
+- **Re-opening:** Effects of social distancing and stay-at-home orders will require more time to evaluate as states begin to open.  Recall that the incubation period for COVID-19 is as many as 14 days, so any spikes due to re-opening a state will require a minimum of 2 weeks delay for analysis.  Note that the USA now has a [log-log slope](#log-log_plot) less than the slope for monthly doubling time. This is an indication that the USA, like many countries, has been successful in dramatically slowing the spread of COVID-19.  Also note that many countries have started to re-open and the slope is unchanged after re-opening.  Texas was one of the first states to re-open, and the data suggests that re-opening has little effect on the spread of COVID-19,; see the comparison of [California and Texas](#Open_for_Business).
 - **R0:** CDC initial estimates of the rate of spread, R0, was 2.5-5.  Current data suggests R0=1.17, before and during lock-down.  For reference the common flu is R0=0.9-2.1, and measles is R0=12-18 (very contagious).
 - **Testing:** According to multiple studies, there are four types of COVID-19 tests.  Of them, the false-positive rate is 15-45%.  As more data is collected and testing improves, the CDC anticipates false positive rates similar to other tests, e.g. AIDS testing has a false-positive rate less than 1%.
 - **Mental Health:** According to the literature on isolation and lock-downs due to epidemics, the secondary effects generally fall into two categories; mental health and economic health.  The Didi Hirsch Suicide Hotline noted an 8000% increase (that is not a typo) in call volume for March and April, and a significant increase in suicides.  The National Domestic Violence Hotline noted a 45% increase in calls, and the highest number of domestic violence related deaths in 11 years.
@@ -149,9 +149,9 @@ The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] t
 
 	(520,000 / 329,227,746) * 100 = 0.157%
 	
-The current death percent of population (May 13, 2020) is 0.025% (roughly 2 in every 10,000 people):
+The current death percent of population (June 14, 2020) is 0.034% (roughly 3 in every 10,000 people):
 	
-	(88,754 / 329,227,746) * 100 = 0.026%
+	(114,669 / 329,227,746) * 100 = 0.034%
 	
 Compare this to [other epidemics](#Averages).
 
@@ -606,34 +606,34 @@ It may be helpful to consider the two most populus states, one that remains in l
 - Is there a continued growth in the number of cases during lock-down?  If so, this might indicate that the lock-down is ineffective.
 
 ### 11.2.1 California 
-California remains in lock-down  (as of May 17, 2020).  
+California remains in partial lock-down  (as of June 14, 2020).  
 
-California has a population of 39,512,223 people, and a COVID-19 death toll of 3,208 people, or 0.007 % of the population. Compare this to:
+California has a population of 39,512,223 people, and a COVID-19 death toll of 5,076 people, or 0.012 % of the population. Compare this to:
 - [Seasonal flu](https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/Week2019-2011_FINALReport.pdf): (658/39,512,223)*100 = 0.001% of the population.
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,563/39,512,223)*100 = 0.009% of the population.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (4,491/39,512,223)*100 = 0.011% of the population. 
 
-**In California there are twice as many deaths due to car accidents and suicides than deaths related to COVID-19.**
+**In California there are nearly as many deaths due to car accidents and suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does California fit the definition?
  - An epidemic is defined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of California, there should be 79,024 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 79,024.
- - Over an 18 week period (January-April 2020) California has a total of 70,978 cases (total, not 70,978 per week).
- - The weekly maximum cases in California was 13,211 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic) **California is 66.6% below epidemic levels.** (100-(13,211/(39,512,223/100,000)) = 66.6% below epidemic levels)
+ - Over an 26 week period (January-June 2020) California has a total of 70,978 cases (total, not 70,978 per week).
+ - The weekly maximum cases in California was 18,298 cases for the week ending 6/11/2020.  By [definition](#Definition-Epidemic) **California is 53.7% below epidemic levels.** (100-(18,298/(39,512,223/100,000))) = 53.7% below epidemic levels)
 
 ### 11.2.2 Texas
-Texas has re-opened with a staggered process of roughly 25% per week  (as of May 17, 2020).
+Texas has re-opened with a staggered process of roughly 25% per week  (as of June 14, 2020).
 
-Texas has a population of 28,995,881 people, and a COVID-19 death toll of 1,318 people, or 0.004 % of the population.  Compare this to:
+Texas has a population of 28,995,881 people, and a COVID-19 death toll of 1,971 people, or 0.006 % of the population.  Compare this to:
 - [Seasonal flu](https://www.dshs.state.tx.us/IDCU/disease/influenza/surveillance/2019-2020.aspx): (6,737/28,995,881)*100 = 0.023% of the population.
 - [Fatal car accidents](https://www.iihs.org/topics/fatality-statistics/detail/state-by-state): (3,642/28,995,881)*100 = 0.012% of the population.  
 - [Suicides](https://www.cdc.gov/nchs/pressroom/sosmap/suicide-mortality/suicide.htm): (3,930/28,995,881)*100 = 0.013% of the population. 
 
-**In Texas there are 10 times more deaths due to flu, and six times more suicides than deaths related to COVID-19.**
+**In Texas there are 4 times more deaths due to flu, and 2 times more suicides than deaths related to COVID-19.**
 
 Based on the definition of an [epidemic](#Definition-Epidemic), does Texas fit the definition?
  - An epidemic is dfined as "200 cases per week per 100,000 people" (by the [scientific definition](#Definition-Epidemic)). Based on the population of Texas, there should be 57,991 cases per week to be epidemic levels for the entire state: (39,512,223/100,000)*200 = 57,991.
- - Over an 18 week period (January-April 2020) Texas has a total of 41,432 cases (total, not 41,432 per week).
- - The weekly maximum cases in Texas was 7,477 cases for the week ending 5/9/2020.  By [definition](#Definition-Epidemic)  **Texas is 74.3% below epidemic levels with no apparent spike after re-opening.** (100-(7,477/(28,995,881/100,000)) = 74.3% below epidemic levels)
+ - Over an 26 week period (January-June 2020) Texas has a total of 86,915 cases (total, not 86,915 per week).
+ - The weekly maximum cases in Texas was 10,335 cases for the week ending 6/11/2020.  By [definition](#Definition-Epidemic)  **Texas is 64.3% below epidemic levels with no apparent spike after re-opening.** (100-(10,335/(28,995,881/100,000))) = 64.3% below epidemic levels)
  
 ### 11.2.3 Plots <a name="Open_for_Business_plots"/>
 Here we can compare California and Texas with the cumulative cases, as well as the new cases and deaths each week.  Notice that the curves have flattened several weeks ago.  This indicates that while more people are now exposed to COVID-19, the rate of spread has decreased.  Note the the number of new cases is still below the threshold for an epidemic, and is also below the levels of seasonal flu, which **is** annually classified as an epidemic in the USA.
