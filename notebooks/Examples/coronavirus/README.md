@@ -646,7 +646,15 @@ Here we can compare California and Texas with the cumulative cases, as well as t
 <p align="center">
 	<img src="matlab/Time_Series_Analysis/timeseries_Figure_3.png" width=600>
 </p>
-
+<p align="center">
+	<img src="matlab/Time_Series_Analysis/timeseries_Figure_4.png" width=600>
+</p>
+<p align="center">
+	<img src="matlab/Time_Series_Analysis/timeseries_Figure_5.png" width=600>
+</p>
+<p align="center">
+	<img src="matlab/Time_Series_Analysis/timeseries_Figure_6.png" width=600>
+</p>
 
 ## 11.3 Risk assesment
 **You are the Data Scientist, consider the data and make your own decision.**  Which has higher risk, quarantine or "open for business"?  Our job as data scientists is to look at data, use statistics ([P-value](#P-value), [Bayes Theory](#Bayes_Theorem_and_Coronavirus), etc.) and evaluate [significance levels](#P-value) and [models](#SIR_Model) so that we can inform others to make data-driven decisions.
