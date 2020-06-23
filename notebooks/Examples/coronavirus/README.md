@@ -4,7 +4,7 @@
 </p>
 
 
-**---UPDATED June 14, 2020---**
+**---UPDATED June 22, 2020---**
 
 
 # Table of Contents
@@ -41,7 +41,7 @@
 # Preface
 We have been tracking this issue for the last 6 months using COVID-19 raw data obtained from the CDC and John's Hopkins. In summary we have found the following:
 
-- **Death toll:** Initially the CDC expected 520,000 deaths in the US; roughly 0.157% of the total US population.  As of June 14, the death toll is 0.034%, or 22% of the initial estimates by the CDC (however, the pandemic is not over yet). 
+- **Death toll:** Initially the CDC expected 520,000 deaths in the US; roughly 0.157% of the total US population.  As of June 22, the death toll is 0.036% of the US population, or 22% of the initial estimates by the CDC (however, the pandemic is not over yet). 
 - **Epidemic:** The CDC and WHO define an epidemic threshold as the week when the number of cases surpass 200 per week per 100,000 people.  In the example of California and Texas (the two most populous states), they are 53.7% and 64.3% below epidemic levels respectively, with the week of May 9 being the worst week of new cases.
 - **Lock-Down:** Further analysis is needed to see if the lock-down was effective.  [This section](#Open_for_Business_plots) provides nice plots.  Within 3 days of the first detected COVID-19 case, the US stopped all flights from China.  The number of new cases per day were below 100 when the US closed its borders, and a national emergency was declared 2 days later.  The data is so noisy, that it is difficult to determine the effectiveness of the lock-down (California is a good example of noisy data with daily spikes that are double the daily average, ultimately skewing the mean).
 - **Re-opening:** Effects of social distancing and stay-at-home orders will require more time to evaluate as states begin to open.  Recall that the incubation period for COVID-19 is as many as 14 days, so any spikes due to re-opening a state will require a minimum of 2 weeks delay for analysis.  Note that the USA now has a [log-log slope](#log-log_plot) less than the slope for monthly doubling time. This is an indication that the USA, like many countries, has been successful in dramatically slowing the spread of COVID-19.  Also note that many countries have started to re-open and the slope is unchanged after re-opening.  Texas was one of the first states to re-open, and the data suggests that re-opening has little effect on the spread of COVID-19,; see the comparison of [California and Texas](#Open_for_Business).
@@ -149,9 +149,9 @@ The CDC estimates [[36](https://www.cdc.gov/coronavirus/2019-ncov/index.html)] t
 
 	(520,000 / 329,227,746) * 100 = 0.157%
 	
-The current death percent of population (June 14, 2020) is 0.034% (roughly 3 in every 10,000 people):
+The current death percent of population (June 14, 2020) is 0.036% (roughly 4 in every 10,000 people):
 	
-	(114,669 / 329,227,746) * 100 = 0.034%
+	(119,719 / 329,227,746) * 100 = 0.036%
 	
 Compare this to [other epidemics](#Averages).
 

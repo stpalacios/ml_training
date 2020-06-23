@@ -16,7 +16,7 @@ TX_idx = ismember(timeseriescovid19confirmedUS{:, 7}, 'Texas');
 col_idx = 12;
 num_cols = size(timeseriescovid19confirmedUS,2)-col_idx;
 t1 = datetime(2020,1,23,8,0,0);
-t2 = datetime(2020,6,12,8,0,0);
+t2 = datetime(2020,6,20,8,0,0);
 t = t1:t2;
 
 daily_total = zeros(num_cols,2);
@@ -109,7 +109,7 @@ TX_idx = ismember(timeseriescovid19deathsUS{:, 7}, 'Texas');
 col_idx = 13;
 num_cols = size(timeseriescovid19deathsUS,2)-col_idx;
 t1 = datetime(2020,1,23,8,0,0);
-t2 = datetime(2020,6,12,8,0,0);
+t2 = datetime(2020,6,20,8,0,0);
 t = t1:t2;
 
 daily_total = zeros(num_cols,2);
