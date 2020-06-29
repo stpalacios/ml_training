@@ -1,3 +1,0 @@
-https://www.wsj.com/market-data/quotes/index/COMP/historical-prices
-https://www.wsj.com/market-data/quotes/index/SPX/historical-prices
-https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices
