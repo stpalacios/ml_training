@@ -1,6 +1,6 @@
 # Corona virus: Fact or Hype
 <p align="center">
-	<img src="figures/covid-19.jpg" width=500>
+	<img src="covid-19.jpg" width=500>
 </p>
 
 
